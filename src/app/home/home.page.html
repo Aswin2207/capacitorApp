@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="header">
+    <div class="title">
+      <img src="assets/tieke.png">
+      Tieke
+    </div>
+    <div class="icon">
+      <fa-icon class="plus" [icon]="faPlus" (click)="zoomIn(0.1)"></fa-icon>
+      <fa-icon class="minus"  [icon]="faMinus" (click)="zoomOut(0.1)"></fa-icon>
+    </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content no-bounce>
+ <div id="container" #container ion-fixed style="height: 100%; width: 100%">
+  <iframe height="100%" width="100%" [src]="src"></iframe>
+     <!-- <ion-button (click)="launch()">Launch</ion-button> -->
+  </div> 
+  </ion-content>

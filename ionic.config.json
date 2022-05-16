@@ -1,0 +1,7 @@
+{
+  "name": "tieke",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,72 @@
+#container {
+  text-align: center;
+  padding-top: 50px;
+  height: 100%;
+  background-color: #f3d25e;
+  overflow: hidden;
+
+  iframe {
+    height: 95vh;
+    width: 100vw;
+    // transform: scale(0.9);
+    border: none;
+  }
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-header {
+  font-size: 20px;
+  background-color: white;
+}
+
+ion-button {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+}
+
+ion-content {
+  --ion-background-color:#f3d25e;
+}
+ion-toolbar {
+  --ion-background-color:#a67b5b;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  flex: 1;
+
+  img {
+    width: 30px;
+  }
+}
+
+.header {
+  display: flex;
+
+  .plus {
+      font-size: 30px;
+    }
+    .minus {
+      padding: 0px 30px;
+      font-size: 30px;
+    }
+}
