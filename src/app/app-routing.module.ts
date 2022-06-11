@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { SubjectsComponent } from './subjects/subjects.component';
+import { SubjectviewComponent } from './subjectview/subjectview.component';
 
 const routes: Routes = [
   {
@@ -11,6 +13,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'subjects',
+    component:SubjectsComponent
+  },
+  {
+    path: 'subjectsView',
+    component:SubjectviewComponent
+  }
 ];
 
 @NgModule({

@@ -1,20 +1,43 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <div class="header">
     <div class="title">
       <img src="assets/tieke.png">
       Tieke
-    </div>
-    <div class="icon">
+    </div> -->
+    <!-- <div class="icon">
       <fa-icon class="plus" [icon]="faPlus" (click)="zoomIn(0.1)"></fa-icon>
-      <fa-icon class="minus"  [icon]="faMinus" (click)="zoomOut(0.1)"></fa-icon>
-    </div>
-    </div>
+      <fa-icon class="minus"  [icon]="faMinus" (click)="zoomOut(0.1)"></fa-icon> -->
+    <!-- </div> -->
+    <!-- </div>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 <ion-content no-bounce>
- <div id="container" #container ion-fixed style="height: 100%; width: 100%">
-  <iframe height="100%" width="100%" [src]="src"></iframe>
-     <!-- <ion-button (click)="launch()">Launch</ion-button> -->
-  </div> 
+  <section class="overall">
+  <div class="inner-container">
+    <img src="assets/logo.png" alt="Trulli" width="500" height="20" class="logo-img">
+        <div class="login-form">
+          <div class="inputBlock">
+            <label>User Name </label>
+            <input type="text" value="Dinesh Kumar" />
+          </div>
+          <div class="inputBlock">
+            <label>Password </label>
+            <input type="password" value="*********">
+          </div>
+            <div class="forgot-pass">
+                <span>Forgot password!</span>
+            </div>
+            <div class="login">
+                <button class="btn" (click)="route()">LOGIN</button>
+            </div>
+        </div>
+</div>
+</section>
+<div class="footer">
+</div>
+ <!-- <div id="container" #container ion-fixed style="height: 100%; width: 100%"> -->
+  <!-- <iframe height="100%" width="100%" [src]="src"></iframe> -->
+       <!-- <ion-button (click)="launch()">Launch</ion-button> -->
+  <!-- </div>  -->
   </ion-content>

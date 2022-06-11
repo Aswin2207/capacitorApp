@@ -14,7 +14,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CommonModule
   ],
   declarations: [HomePage],
   providers:[InAppBrowser],

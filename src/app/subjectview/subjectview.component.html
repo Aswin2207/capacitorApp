@@ -1,0 +1,25 @@
+<ion-content>
+  <section class="overall">
+    <img src="assets/logo.png" alt="Trulli" width="500" height="20" class="logo-img">
+    <div class="header">
+<h2>Name : Dinesh Kumar</h2>
+<h2>Std: IX</h2>
+<h2>Last Login: 12/12/2022 15:32</h2>
+    </div>
+    <div class="subjcont">
+      <strong *ngIf="math">Mathematics</strong>
+      <strong *ngIf="!math">Science</strong>
+    </div>
+    <div class="subSec">
+      <div *ngFor="let item of data">
+    <div class="scidata">
+      <strong>{{item.name}}</strong>
+      <!-- <p class="exc">Excercise</p> -->
+    </div>
+  </div>
+    </div>
+  </section>
+  <div class="footer" (click)="route()">
+    <img src="assets/home.png">
+  </div>
+</ion-content>

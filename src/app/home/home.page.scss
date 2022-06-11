@@ -1,72 +1,201 @@
-#container {
-  text-align: center;
-  padding-top: 50px;
-  height: 100%;
-  background-color: #f3d25e;
-  overflow: hidden;
+// #container {
+//   text-align: center;
+//   padding-top: 50px;
+//   height: 100%;
+//   background-color: #f3d25e;
+//   overflow: hidden;
 
-  iframe {
-    height: 95vh;
-    width: 100vw;
-    // transform: scale(0.9);
-    border: none;
+//   iframe {
+//     height: 95vh;
+//     width: 100vw;
+//     // transform: scale(0.9);
+//     border: none;
+//   }
+// }
+
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
+
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
+//   color: #8c8c8c;
+
+//   margin: 0;
+// }
+
+// #container a {
+//   text-decoration: none;
+// }
+
+// ion-header {
+//   font-size: 20px;
+//   background-color: white;
+// }
+
+// ion-button {
+//   width: 250px;
+//   height: 50px;
+//   font-size: 25px;
+// }
+
+// ion-content {
+//   --ion-background-color:#f3d25e;
+// }
+// ion-toolbar {
+//   --ion-background-color:#a67b5b;
+// }
+
+// .title {
+//   display: flex;
+//   align-items: center;
+//   padding-left: 10px;
+//   flex: 1;
+
+//   img {
+//     width: 30px;
+//   }
+// }
+
+// .header {
+//   display: flex;
+
+//   .plus {
+//       font-size: 30px;
+//     }
+//     .minus {
+//       padding: 0px 30px;
+//       font-size: 30px;
+//     }
+// }
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background: #153c66;
+  border: 10px solid #dd772a;
+  padding: 50px 16px 35px 16px;
+  border-radius: 15px;
+}
+
+input {
+  width: 60%;
+  height: 45px;
+  border: 1px solid black;
+  font-size: 24px;
+  line-height: 23px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  background: #faefc9;
+}
+
+label {
+  color: #ffffff;
+}
+
+.forgot-pass {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left:50px;
+}
+
+.login {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.btn {
+  background: #dd772a;
+  height: 43px;
+  color: #ffffff;
+  width: 140px;
+}
+
+.inner-container {
+  background: #faefc9;
+  flex:0.6;
+  // padding: 65px 15px 120px 15px;
+  // margin: 50px 70px 0px 70px;
+  margin-top: 125px;
+  section{
+    // margin-left: 125px;
+    // margin-right: 125px;
+  .login-form{
+    margin-top: 20px;
   }
 }
+  }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-ion-header {
-  font-size: 20px;
-  background-color: white;
-}
-
-ion-button {
-  width: 250px;
+.logo-img {
+  position: absolute;
+  right: 77px;
+  top: 65px;
+  display: flex;
+  width: 220px;
   height: 50px;
-  font-size: 25px;
 }
-
 ion-content {
   --ion-background-color:#f3d25e;
 }
-ion-toolbar {
-  --ion-background-color:#a67b5b;
+.footer{
+  background-color: #153c66;
+    height: 60px;
+    /* height: 100%; */
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
-
-.title {
+.inputBlock{
   display: flex;
   align-items: center;
-  padding-left: 10px;
-  flex: 1;
-
-  img {
-    width: 30px;
-  }
+  margin-left: 50px;
+  //   margin-right: auto;
+    justify-content: space-between;
+    label{
+      font-size: 30px;
+    }
+}
+.overall{
+  display: flex;
+  justify-content: space-around;
+  background: #faefc9;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 39px;
+  padding-bottom: 100px;
 }
 
-.header {
-  display: flex;
-
-  .plus {
-      font-size: 30px;
+@media (max-width:480px){
+  .overall{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 0px !important;
+    height: 88%;
+    .login-form{
+      padding-left: 50px;
+      padding-right: 50px;
     }
-    .minus {
-      padding: 0px 30px;
-      font-size: 30px;
+    .inputBlock{
+      flex-direction: column;
+      margin-left: 0px !important;
+      input{
+        width:225px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
+    .forgot-pass,.login{
+      margin-left: 0px !important;
+    }
+    .inner-container{
+      flex:0.9;
+    }
+    .logo-img{
+      right:25px !important;
+    }
+  }
 }
