@@ -6,17 +6,48 @@
 <h2>Std: IX</h2>
 <h2>Last Login: 12/12/2022 15:32</h2>
     </div>
+    <div class="line"></div>
     <div class="subjcont">
       <strong *ngIf="math">Mathematics</strong>
       <strong *ngIf="!math">Science</strong>
     </div>
-    <div class="subSec">
-      <div *ngFor="let item of data">
-    <div class="scidata">
+    <div class="subSec" *ngIf="!math">
+      <div *ngFor="let item of data" class="subcont">
+    <div class="scidata" (click)="subjRoute(item.path)">
       <strong>{{item.name}}</strong>
       <!-- <p class="exc">Excercise</p> -->
     </div>
+    <div class="scidata1">
+      <strong>Excercise</strong>
+      <!-- <p class="exc">Excercise</p> -->
+    </div>
   </div>
+
+  </div>
+  <div class="subSec1" *ngIf="math">
+    <div *ngFor="let item of data">
+      <div class="subSec2">
+      <div class="subname">{{item.name}}</div>
+      <div class="subname1"  (click)="subjRoute(item.path)">
+        <strong>Part-1</strong>
+        <ul style="list-style-type:none;" *ngFor="let i of item.part1Data">
+          <li>{{i}}</li>
+        </ul>
+      </div>
+      <div class="subname2" (click)="subjRoute(item.path)">
+        <strong>Part-2</strong>
+        <ul style="list-style-type:none;" *ngFor="let i of item.part2Data">
+          <li>{{i}}</li>
+        </ul>
+      </div>
+      <div class="subname2" (click)="subjRoute(item.path)">
+        <strong>Part-3</strong>
+        <ul style="list-style-type:none;" *ngFor="let i of item.part3Data">
+          <li>{{i}}</li>
+        </ul>
+      </div>
+    </div>
+    </div>
     </div>
   </section>
   <div class="footer" (click)="route()">
