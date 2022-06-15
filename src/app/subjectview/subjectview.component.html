@@ -17,7 +17,7 @@
       <strong>{{item.name}}</strong>
       <!-- <p class="exc">Excercise</p> -->
     </div>
-    <div class="scidata1">
+    <div class="scidata1" (click)="subjRoute(item.pathEx)">
       <strong>Excercise</strong>
       <!-- <p class="exc">Excercise</p> -->
     </div>
@@ -28,19 +28,19 @@
     <div *ngFor="let item of data">
       <div class="subSec2">
       <div class="subname">{{item.name}}</div>
-      <div class="subname1"  (click)="subjRoute(item.path)">
+      <div class="subname1"  (click)="subjRoute(item.path1)">
         <strong>Part-1</strong>
         <ul style="list-style-type:none;" *ngFor="let i of item.part1Data">
           <li>{{i}}</li>
         </ul>
       </div>
-      <div class="subname2" (click)="subjRoute(item.path)">
+      <div class="subname2" (click)="subjRoute(item.path2)">
         <strong>Part-2</strong>
         <ul style="list-style-type:none;" *ngFor="let i of item.part2Data">
           <li>{{i}}</li>
         </ul>
       </div>
-      <div class="subname2" (click)="subjRoute(item.path)">
+      <div class="subname2" (click)="subjRoute(item.path3)">
         <strong>Part-3</strong>
         <ul style="list-style-type:none;" *ngFor="let i of item.part3Data">
           <li>{{i}}</li>
