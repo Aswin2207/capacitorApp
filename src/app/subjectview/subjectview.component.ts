@@ -39,7 +39,7 @@ export class SubjectviewComponent {
   ];
   scienceData = [
     { id: 1, "name": "Measurement","path":"https://digitieke.com/Measurement/artboard-69.html#artboard-69" },
-    { id: 1, "name": "Motion" ,"path":"https://digitieke.com/Anim/Finalmotion/ab-1.html#ab-5" },
+    { id: 1, "name": "Motion" ,"path":"https://digitieke.com/motion.html" },
     { id: 1, "name": "Fluids" ,"path":"https://digitieke.com/Fluids/artboard-69.html#artboard-69" },
     { id: 1, "name": "Electric Charge and Electric Current" },
     { id: 1, "name": "Magnetism and Electromagnetism" },

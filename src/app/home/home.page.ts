@@ -1,6 +1,6 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { InAppBrowser, InAppBrowserOptions } from '@awesome-cordova-plugins/in-app-browser/ngx';
+// import { InAppBrowser, InAppBrowserOptions } from '@awesome-cordova-plugins/in-app-browser/ngx';
 import { faMagnifyingGlassPlus } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlassMinus } from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
@@ -17,15 +17,15 @@ export class HomePage {
  faMinus = faMagnifyingGlassMinus;
  defScale=1.0;
  @ViewChild('container')container:ElementRef
- options: InAppBrowserOptions= {
-  zoom: 'no',
-  toolbarcolor: 'white',
-  closebuttoncaption:'Close',
-  hideurlbar: 'yes', // hide the url toolbar
-  hidenavigationbuttons: 'yes', // hide navigation buttons back/forward
+//  options: InAppBrowserOptions= {
+//   zoom: 'no',
+//   toolbarcolor: 'white',
+//   closebuttoncaption:'Close',
+//   hideurlbar: 'yes', // hide the url toolbar
+//   hidenavigationbuttons: 'yes', // hide navigation buttons back/forward
 
-}
-  constructor(private renderer:Renderer2,private sanitize:DomSanitizer,private iab:InAppBrowser,private router:Router) {
+// }
+  constructor(private renderer:Renderer2,private sanitize:DomSanitizer,private router:Router) {
     this.src=this.sanitize.bypassSecurityTrustResourceUrl("https://digitieke.com/Intro-Login/artboard-1.html");
   //  Browser.open({ url: 'http://capacitorjs.com/',windowName:'Tieke', });
   this.launch();
