@@ -108,7 +108,6 @@ export class SubjectviewComponent {
     localStorage.clear();
   }
   subjRoute(path) {
-    alert(path)
     path ? window.open(path) : ''
   }
 }
