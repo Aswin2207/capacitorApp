@@ -275,6 +275,66 @@ section {
                 }
               }
          }
+         .lesson-7{
+            padding-left: 80px;
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+              
+                strong {
+                  font-size: 18px;
+                }
+                .box {
+                  background-color: #f8cbad;
+                  position: absolute;
+                  height: 47px;
+                  color:black;
+                  font-size: 30px;
+                  text-align: center;
+                  width: 50px;
+                  left: 5px;
+                  top: 0;
+                  right: 0;
+                }
+              }
+              .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+                .lessoncontbox {
+                  color: black;
+                  .leftlesscont{
+                    .leftlessdata{
+                        padding: 20px 0px;
+                    }
+                    .leftlessbottom{
+                        margin-top: 50px;
+                        ol{
+                            padding:30px;
+                            li{
+                                padding:10px;
+                            }
+                        }
+                    }
+                  }
+                }
+                .imgcont {
+                  flex-direction: column;
+                  img {
+                    width: 450px;
+                    height: 280px;
+                    margin-bottom: 30px;
+                  }
+                }
+              }
+         }
     }
 }
 
