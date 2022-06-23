@@ -37,10 +37,11 @@ export class LessonsComponent implements OnInit {
   currentLesson: any = 1;
   constructor(private router: Router) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.currentLesson=1;
+   }
 
   changeView(id) {
-    console.log(id)
     this.currentLesson = id;
 
   }
