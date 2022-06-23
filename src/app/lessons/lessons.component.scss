@@ -244,7 +244,7 @@ section {
                 color: white;
                 padding: 15px 5px 5px 32px;
                 margin-left: 10px;
-                margin-top: 20px;
+                margin-top: 50px;
                 border-radius: 5px;
                 text-align: center;
                 position: relative;
@@ -272,10 +272,137 @@ section {
                 margin-top: 30px;
                 .lessoncontbox {
                   color: black;
+                  li{
+                    padding:10px;
+                }
+                  img{
+                    width: 725px;
+                    margin-top: 50px;
+                  }
                 }
               }
          }
+         .lesson-6{
+            padding-left: 60px;
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+              
+                strong {
+                  font-size: 18px;
+                }
+                .box {
+                  background-color: #f8cbad;
+                  position: absolute;
+                  height: 47px;
+                  color:black;
+                  font-size: 30px;
+                  text-align: center;
+                  width: 50px;
+                  left: 5px;
+                  top: 0;
+                  right: 0;
+                }
+              }
+              .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+                .lessoncontbox {
+                  color: black;
+                  .leftlesscont{
+                    .leftlessdata{
+                        padding: 20px 0px;
+                    }
+                    .leftlessbottom{
+                        margin-top: 30px;
+                        img{
+                            width:200px;
+                            height: 150px;
+                            margin-top:10px;
+                        }
+                    }
+                  }
+                }
+                .imgcont {
+                  flex-direction: column;
+                  img {
+                    width: 400px;
+                    height: 200px;
+                    margin-bottom: 60px;
+                    margin-top:20px;
+                  }
+                }
+              }       
+              
     }
+    .lesson-8{
+        padding-left: 60px;
+        .lessonheader {
+            background-color: #ed7d31;
+            color: white;
+            padding: 15px 5px 5px 32px;
+            margin-left: 10px;
+            margin-top: 50px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+          
+            strong {
+              font-size: 18px;
+            }
+            .box {
+              background-color: #f8cbad;
+              position: absolute;
+              height: 47px;
+              color:black;
+              font-size: 30px;
+              text-align: center;
+              width: 50px;
+              left: 5px;
+              top: 0;
+              right: 0;
+            }
+          }
+          .lessondata {
+            color: white;
+            border-radius: 5px;
+            justify-content: center;
+            margin-top: 30px;
+            .lessoncontbox {
+              color: black;
+              .leftlesscont{
+                .leftlessdata{
+                    padding: 0px 30px 0px 0px;
+                }
+                .leftlessbottom{
+                    margin-top: 30px;
+                    img{
+                        width: 400px;
+                        height: 480px;
+                        margin-bottom: 30px;
+                    }
+                }
+              }
+            }
+            .imgcont {
+              flex-direction: column;
+              img {
+                width: 400px;
+                height: 275px;
+                margin-bottom: 30px;
+              }
+            }
+          }   
+        }
+}
 }
 
 .logo {
