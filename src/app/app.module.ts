@@ -10,9 +10,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectviewComponent } from './subjectview/subjectview.component';
+import { ContainerComponent } from './container/container.component';
+import { LessonsComponent } from './lessons/lessons.component';
 
 @NgModule({
-  declarations: [AppComponent,SubjectsComponent,SubjectviewComponent],
+  declarations: [AppComponent,SubjectsComponent,SubjectviewComponent,ContainerComponent,LessonsComponent],
   entryComponents: [],
   imports: [BrowserModule,CommonModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

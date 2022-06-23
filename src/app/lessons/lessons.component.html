@@ -1,0 +1,35 @@
+<section>
+  <div class="row overall">
+    <img class="logo" src="https://digitieke.com/Heat/img/tieke-connect-logo-10@1x.png">
+  <div class="left-cont">
+    <div class="header">
+   <strong>HEAT</strong>
+  </div>
+   <p [ngClass]="{highLight: expression}" (click)="changeView(item.id)" *ngFor="let item of lessonsList">{{item.heading}}</p>
+  </div>
+  <div class="right-cont">
+    <div class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
+      <strong>Learning Objectives</strong>
+      <p>After completing this lesson, students will be able to:</p>
+       <ul *ngFor="let i of Objectives" >
+        <li>{{i}}</li>
+       </ul>
+    </div>
+    <div class="row lesson-{{currentLesson}}"  *ngIf="currentLesson=='2'">
+      <div class="col-md-3 header">
+        <div class="box" >fdfd</div>
+        <strong>INTRODUCTION</strong>
+      </div>
+      
+    </div>
+    <div class="footer">
+      <div class="footer-icons">
+      <img (click)="route()" class="home" src="https://digitieke.com/Heat/img/home-10@1x.png">
+      <img (click)="route()" class="prev" src="https://digitieke.com/Heat/img/back-10@1x.png">
+      <img (click)="route()" class="next" src="https://digitieke.com/Heat/img/next-10@1x.png">
+    </div>
+    </div>
+  </div>
+  </div>
+
+</section>
