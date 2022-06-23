@@ -335,6 +335,14 @@ section {
                 }
               }
          }
+         .lesson-11{
+            padding: 80px;
+            margin-top: 20px;
+            margin-left: 40px;
+            img{
+               width: 85%;
+            }
+         }
     }
 }
 
@@ -412,4 +420,8 @@ section {
       li {
         list-style-type: disc !important;
       }
+    }
+
+    .highLight{
+        background-color: #fd8800;
     }
