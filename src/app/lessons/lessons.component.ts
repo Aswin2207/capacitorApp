@@ -19,6 +19,7 @@ export class LessonsComponent implements OnInit {
     {id:10,heading:"Excercise"},
     {id:11,heading:"Concept Map"},
   ];
+  transferheaddata=["Conduction","Conduction in Daily Life","Convention","Convention in Daily Life","Radiation","Radiation in Daily Life"]
   Objectives=[
    "Understand the nature and the effects of heat.",
    "Differentiate the conducting powers of various substances.",
