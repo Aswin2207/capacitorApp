@@ -1,13 +1,20 @@
 <section>
   <div class="row overall">
     <img class="logo" src="https://digitieke.com/Heat/img/tieke-connect-logo-10@1x.png">
-    <div class="left-cont">
-      <div class="header">
-        <strong>HEAT</strong>
-      </div>
-      <p [ngClass]="{highLight: expression}" (click)="changeView(item.id)" *ngFor="let item of lessonsList">
-        {{item.heading}}</p>
-    </div>
+  <div class="left-cont">
+    <div class="header">
+   <strong>HEAT</strong>
+  </div>
+   <p [ngClass]="{highLight: item.id==currentLesson}" (click)="changeView(item.id)" *ngFor="let item of lessonsList">{{item.heading}}</p>
+  </div>
+  <!-- <div class="right-cont">
+    <div class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
+      <strong>Learning Objectives</strong>
+      <p>After completing this lesson, students will be able to:</p>
+       <ul *ngFor="let i of Objectives" >
+        <li>{{i}}</li>
+       </ul>
+    </div> -->
     <div class="right-cont">
       <div class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
         <strong>Learning Objectives</strong>
@@ -217,7 +224,40 @@
           </div>
         </div>
         </div>
-
+        <div class="row lesson-{{currentLesson}}"  *ngIf="currentLesson=='7'">
+          <div class="lessonheader col-md-6">
+            <div class="box">7.5</div>
+            <strong>HEAT CAPACITY OR THERMAL CAPACITY</strong>
+          </div>
+          <div class="box">
+            <div class="row lessondata">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-6 leftlesscont">
+                    <div class="leftlessdata">
+                      Heat capacity or thermal capacity is defined as the amount ofheat energy required to raise the temperature of a body by 1°C
+                    </div>
+                    <div class="leftlessdata">
+                     <img src="assets/capacity.png">
+                    </div>
+                  </div>
+                  <div class="col-md-5 d-flex imgcont">
+                    <img src="https://digitieke.com/Heat/img/group-90-1@1x.png" />
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row lesson-{{currentLesson}}"  *ngIf="currentLesson=='10'">
+          <img src="https://digitieke.com/Heat/img/slide20@1x.png">
+        </div>
+        <div class="row lesson-{{currentLesson}}"  *ngIf="currentLesson=='11'">
+          <div class="col-md-10">
+            <img src="https://digitieke.com/Heat/img/group-113-1@1x.png">
+          </div>
+        </div>
       <div class="footer">
         <div class="footer-icons">
           <img (click)="route(1)" class="home" src="https://digitieke.com/Heat/img/home-10@1x.png">
@@ -226,6 +266,14 @@
         </div>
       </div>
     </div>
+    <!-- <div class="footer">
+      <div class="footer-icons">
+      <img (click)="route()" class="home" src="https://digitieke.com/Heat/img/home-10@1x.png">
+      <img (click)="route()" class="prev" src="https://digitieke.com/Heat/img/back-10@1x.png">
+      <img (click)="route()" class="next" src="https://digitieke.com/Heat/img/next-10@1x.png">
+    </div>
+    </div> -->
   </div>
+  <!-- </div> -->
 
 </section>
