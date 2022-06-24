@@ -50,4 +50,17 @@ export class LessonsComponent implements OnInit {
       this.router.navigateByUrl('/lesson')
     }
   }
+  prev(){
+    if(this.currentLesson!=1){
+      this.currentLesson-=1;
+    }
+  }
+  next(){
+    if(this.currentLesson!=11){
+      this.currentLesson+=1;
+    }
+  }
+  home(){
+    window.open("https://digitieke.com/angtieke/#/subjects")
+  }
 }
