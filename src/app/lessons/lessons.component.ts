@@ -35,6 +35,7 @@ export class LessonsComponent implements OnInit {
   value: any;
   i = 0;
   currentLesson: any = 1;
+  currentSubLession:any=1;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -51,16 +52,60 @@ export class LessonsComponent implements OnInit {
     }
   }
   prev(){
-    if(this.currentLesson!=1){
+    if(this.currentLesson==4){
+      if(this.currentSubLession==1){
+        this.currentLesson-=1;
+      }
+      else if(this.currentSubLession!=1){
+        this.currentSubLession-=1;
+      }
+
+    }
+    else if(this.currentLesson==5){
+      if(this.currentSubLession==1){
+        this.currentLesson-=1;
+      }
+      else if(this.currentSubLession!=1){
+        this.currentSubLession-=1;
+      }
+
+    }
+    else if(this.currentLesson!=1){
       this.currentLesson-=1;
     }
   }
   next(){
-    if(this.currentLesson!=11){
+  
+    if(this.currentLesson==4){
+      if(this.currentSubLession!=7){
+        this.currentSubLession+=1;
+      }
+      else if(this.currentSubLession==7){
+        this.currentLesson+=1;
+        this.currentSubLession=1;
+      }
+
+    }
+    else if(this.currentLesson==5){
+      // alert(this.currentSubLession)
+      if(this.currentSubLession!=3){
+        this.currentSubLession+=1;
+      }
+      else if(this.currentSubLession==3){
+        this.currentLesson+=1;
+        this.currentSubLession=1;
+      }
+      // alert(this.currentSubLession)
+
+    }
+    else if(this.currentLesson!=11 ){
       this.currentLesson+=1;
     }
   }
   home(){
     window.open("https://digitieke.com/angtieke/#/subjects")
+  }
+  nextHeat(){
+
   }
 }

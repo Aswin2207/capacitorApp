@@ -34,6 +34,7 @@ section {
                 color: white;
                 font-size: 22px;
                 margin-right: 30px;
+                cursor: pointer;
             }
         }
     }
@@ -169,6 +170,7 @@ section {
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
+             
 
                 .lessoncontbox {
                     color: black;
@@ -230,12 +232,44 @@ section {
                     right: 0;
                 }
             }
+            .lessonheader-1 {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 62px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
 
             .lessondata {
                 color: white;
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
+                .leftlessdataList{
+                    li{
+                        padding: 37px 30px 53px 29px;
+                    }
+                }
 
                 .lessoncontbox {
                     color: black;
@@ -265,6 +299,15 @@ section {
                     img {
                         width: 450px;
                         height: 280px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .imgcont5 {
+                    flex-direction: column;
+
+                    img {
+                        width: 320px;
+                        height: 175px;
                         margin-bottom: 30px;
                     }
                 }
@@ -300,6 +343,35 @@ section {
                     top: 0;
                     right: 0;
                 }
+              
+            }
+            .lessonheaderSub {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 63px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+              
             }
 
             .lessondata {
@@ -609,6 +681,7 @@ section {
     width: 250px;
     right: 10px;
     top: -10px;
+    cursor: pointer;
 }
 
 .footer {
@@ -624,6 +697,7 @@ section {
 
     img {
         width: 50px;
+        cursor: pointer;
     }
 
     .footer-icons {
@@ -797,4 +871,19 @@ section {
 
 .highLight {
     background-color: #fd8800;
+}
+.imgcont7{
+    img{
+        width:300px !important;
+        height:500px !important;
+    }
+
+}
+.imgcont8{
+    flex-direction: column;
+    img {
+      width: 400px;
+      height: 200px;
+      margin-bottom: 40px;
+    }
 }

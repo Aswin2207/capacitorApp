@@ -105,11 +105,35 @@
         </div>
       </div>
       <div class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
-        <div class="lessonheader col-md-4">
+        <div class="lessonheader col-md-4" *ngIf="currentSubLession=='1'">
           <div class="box">7.2</div>
           <strong>TRANSFER OF HEAT</strong>
         </div>
-        <div class="box">
+        <div class="lessonheader-1 col-md-4" *ngIf="currentSubLession=='2'">
+          <div class="box">7.2.1</div>
+          <strong>Conduction</strong>
+        </div>
+        <div class="lessonheader-1 col-md-4" *ngIf="currentSubLession=='3'">
+          <div class="box">7.2.2</div>
+          <strong>Conduction in Daily Life</strong>
+        </div>
+        <div class="lessonheader-1 col-md-4" *ngIf="currentSubLession=='4'">
+          <div class="box">7.2.3</div>
+          <strong>Convection</strong>
+        </div>
+        <div class="lessonheader-1 col-md-4" *ngIf="currentSubLession=='5'">
+          <div class="box">7.2.4</div>
+          <strong>Convention in Daily life</strong>
+        </div>
+        <div class="lessonheader-1 col-md-4" *ngIf="currentSubLession=='6'">
+          <div class="box">7.2.5</div>
+          <strong>Radiation</strong>
+        </div>
+        <div class="lessonheader-1 col-md-4" *ngIf="currentSubLession=='7'">
+          <div class="box">7.2.6</div>
+          <strong>Radiation in Daily life (More Examples)</strong>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='1'">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
               <div class="row">
@@ -138,6 +162,187 @@
                 <div class="col-md-5 d-flex imgcont">
                   <img src="assets/img/group-22-1@1x.png" />
                   <img src="assets/img/group-22-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='2'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    The process of transfer of heat in solids from a region of highertemperature 
+                    to a region of lower temperature without the actualmovement of molecules is called conduction
+                  </div>
+                 
+                  <div class="leftlessdata">
+                    Conduction is the process by which heat energy is transmittedthrough 
+                    collisions between neighbouring atoms or molecules.
+                  </div>
+                  <div class="leftlessbottom">
+                    Conduction occurs more readily in solids and liquids,
+                     where theparticles are closer together than in gases, 
+                     where particles arefurther apart. The rate of energy transfer 
+                     by conduction is higherwhen there is a large temperature difference 
+                     between thesubstances that are in contact
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont">
+                  <img src="assets/img/group-27-1@1x.png" />
+                  <img src="assets/img/group-29-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='3'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdataList">
+                   <ol>
+                    <li>Metals are good conductors of heat. So, 
+                      aluminumis used for making utensils to cook food quickly.</li>
+                        <li>Mercury is used in thermometers because, it is a good conductor of heat.</li>
+                        <li>We wear woolen clothes is winter to keep ourselves warm.
+                          Air, which is a bad conductor, doesnot allow our body heat to escape..</li>
+                   </ol>
+                  </div>
+                  <!-- <div class="leftlessbottom">
+                    Heat transfer takes place in three ways:
+                    <ol>
+                      <li>Conduction</li>
+                      <li>Convection</li>
+                      <li>Radiation</li>
+                    </ol>
+                  </div> -->
+                </div>
+                <div class="col-md-5 d-flex imgcont">
+                  <img src="assets/img/group-32-1@1x.png" />
+                  <img src="assets/img/group-36-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='4'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    Convection is the flow of heat through a fluid from places ofhigher temperature to places of lower temperature bymovement of the fluid itself.
+                  </div>
+                  <div class="leftlessdata">
+                    Convection occurs when a cooler, denser mass of gas or liquidreplaces warmer, less dense mass of gas or liquid by pushingit upward
+                  </div>
+                  <div class="leftlessdata">
+                    When a fluid is continuously heated, the warmer fluid movesupward away from the heat source, it cools down, increasesin density, and sinks into the warmer, less dense fluid below.This process repeats itself, resulting in a continuousconvection current
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont">
+                  <img src="assets/img/group-39-1@1x.png" />
+                  <img src="assets/img/group-41-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='5'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        <b>Boiling Water</b>-When water boils, the heat passes fromthe burner into the pot, heating the water at 
+                        the bottom.This hot water rises, and cooler water moves down toreplace it, causing a circular motion</li>
+                      <li>
+                        <b>Steaming cup of hot tea</b>-The steam you see whendrinking
+                         a cup of hot tea indicates that heat
+                          is beingtransferred into the air.</li>
+                      <li>
+                        <b>Ice melting</b>-Ice melts because heat 
+                        moves to the ice fromthe air. 
+                        As a result, the ice melts from a solid to liquid</li>
+                      <li>
+                        <b>Hot air balloons</b>:Air molecules at the bottom of theballoon 
+                        get heated by a heat source and rise. As the warmair rises,
+                         cold air is pushed downward and it is 
+                        alsoheated. When the hot air is trapped inside the balloon, itrises</li>
+                    </ul>
+                  </div>
+                 
+                </div>
+                <div class="col-md-5 d-flex imgcont5">
+                  <img src="assets/img/group-45-1@1x.png" />
+                  <img src="assets/img/group-47-1@1x.png" />
+                  <img src="assets/img/group-49-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='6'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    Radiation is the flow of heat from one place to another bymeans of electromagnetic waves.
+                  </div>
+                  <div class="leftlessdata">
+                    Transfer of heat energy from the sun reaches us in the formof radiation
+                  </div>
+                  <div class="leftlessbottom">
+                    Heat transfer takes place in three ways:
+                    <ol>
+                      <li>White or light colored cloths are good reflectors of heat. They keep us cool during summer.</li>
+                      <li>Base of cooking utensils is blackened because black surface absorbs more heat from the surrounding.</li>
+                      <li>Surface of airplane is highly polished because it helps 
+                        to reflect most of the heat radiation from the sun</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont5">
+                  <img src="assets/img/group-52-1@1x.png" />
+                  <img src="assets/img/group-54-1@1x.png" />
+                  <img src="assets/img/group-56-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='7'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        <b>Sun</b>-Most of the radiation emitted by the Sun isabsorbed by 
+                        the atmosphere. However, the part which isnot absorbed by the 
+                        atmosphere reaches the earth.Humans are exposed to this part of the radiation almostall times.</li>
+                      <li>
+                        <b>Mobile Phones</b>-The exposure to radiofrequencyradiation causes heating of the area of the body where acell phone is being held like near the ear. 
+                        However, theamount of heat radiated is not sufficient to increase thetemperature of the body.</li>
+                      <li>
+                        <b>Laser Beam</b>-As the name indicates, Light
+                         Amplification Stimulated Emission of Radiation also produces radiation.</li>
+                
+                    </ul>
+                  </div>
+                 
+                </div>
+                <div class="col-md-5 d-flex imgcont5">
+                  <img src="assets/img/group-59-1@1x.png" />
+                  <img src="assets/img/group-61-1@1x.png" />
+                  <img src="assets/img/group-63-1@1x.png" />
                 </div>
               </div>
             </div>
@@ -181,11 +386,19 @@
         </div>
       </div>
       <div class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='5'">
-        <div class="lessonheader col-md-5">
+        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
           <div class="box">7.3</div>
           <strong>CONCEPT OF TEMPERATURE</strong>
         </div>
-        <div class="box">
+        <div class="lessonheaderSub col-md-5" *ngIf="currentSubLession=='3'">
+          <div class="box">7.3.2</div>
+          <strong>Absolute Zero</strong>
+        </div>
+        <div class="lessonheaderSub col-md-5" *ngIf="currentSubLession=='2'">
+          <div class="box">7.3.1</div>
+          <strong>TEMPARATURE SCALES</strong>
+        </div>
+        <div class="box"  *ngIf="currentSubLession=='1'">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox three">
               <ul>
@@ -194,6 +407,45 @@
                 <li>Temperature is measured with a <b style="color:#c00000 ;">Thermometer</b></li>
               </ul>
               <img src="assets/heat_temperature.png">
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='2'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <img src="assets/img/Check.PNG" />
+                  </div>
+                 
+                 
+                </div>
+                <div class="col-md-5 d-flex imgcont7">
+                  <img src="assets/img/group-67-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='3'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    Temperature at which the pressure and volume of agas theoretically reaches zero is called absolute zero
+                  </div>
+                 
+                  <div class="leftlessdata">
+                    For all gases, the pressure extrapolates to zero at thetemperature –273.15°C. It is known as absolute zeroor0 K
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont8">
+                  <img src="assets/img/group-75-1@1x.png" />
+                  <img src="assets/img/group-77-1@1x.png" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
