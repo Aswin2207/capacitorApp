@@ -44,6 +44,12 @@ export class LessonsComponent implements OnInit {
 
   changeView(id) {
     this.currentLesson = id;
+    this.currentSubLession=1;
+       
+        setTimeout(() => {
+           document.getElementById("lesson-"+this.currentLesson).scrollIntoView();
+        }, 100);
+     
 
   }
   route(id) {
@@ -73,6 +79,9 @@ export class LessonsComponent implements OnInit {
     else if(this.currentLesson!=1){
       this.currentLesson-=1;
     }
+    setTimeout(() => {
+      document.getElementById("lesson-"+this.currentLesson).scrollIntoView();
+   }, 100);
   }
   next(){
   
@@ -101,6 +110,10 @@ export class LessonsComponent implements OnInit {
     else if(this.currentLesson!=11 ){
       this.currentLesson+=1;
     }
+    setTimeout(() => {
+      document.getElementById("lesson-"+this.currentLesson).scrollIntoView();
+   }, 100);
+
   }
   home(){
     window.open("https://digitieke.com/angtieke/#/subjects")

@@ -89,7 +89,7 @@ section {
             }
 
             padding-left: 60px;
-            padding-top: 85px;
+            // padding-top: 85px;
 
             .lessondata {
                 color: white;
@@ -241,12 +241,28 @@ section {
                 border-radius: 5px;
                 text-align: center;
                 position: relative;
+                // width: 90%;
 
                 strong {
                     font-size: 15px;
                 }
+                .big{
+                    font-size: 13px !important;
+                }
 
                 .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 69px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+                .boxBig {
                     background-color: #f8cbad;
                     position: absolute;
                     height: 45px;
@@ -334,7 +350,7 @@ section {
                 .box {
                     background-color: #f8cbad;
                     position: absolute;
-                    height: 47px;
+                    height: 44px;
                     color: black;
                     font-size: 30px;
                     text-align: center;
@@ -354,6 +370,7 @@ section {
                 border-radius: 5px;
                 text-align: center;
                 position: relative;
+                // width: 90%;
 
                 strong {
                     font-size: 15px;
@@ -362,7 +379,7 @@ section {
                 .box {
                     background-color: #f8cbad;
                     position: absolute;
-                    height: 45px;
+                    height: 44px;
                     color: black;
                     font-size: 30px;
                     text-align: center;
@@ -415,7 +432,7 @@ section {
                 .box {
                     background-color: #f8cbad;
                     position: absolute;
-                    height: 47px;
+                    height: 44px;
                     color: black;
                     font-size: 30px;
                     text-align: center;
@@ -747,7 +764,16 @@ section {
 @media (max-width:480px){
 
     .lessonheader {
-    width: 300px !important;
+    width: 90% !important;
+    }
+    .lessonheaderSub{
+        width: 90% !important;  
+    }
+    .lessonheaderIn{
+        width: 85% !important; 
+    }
+    .lessonheader-1{
+        width: 90% !important; 
     }
     .lesson-2{
         .lessoncont1,.lessoncont2{
@@ -811,6 +837,10 @@ section {
             strong{
                 font-size: 12px !important;
             }
+            .box {
+                height: 50px !important;
+            }
+
         }
         .leftlesscont{
             padding-left: 0px !important;
