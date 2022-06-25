@@ -70,11 +70,16 @@ export class LessonsComponent implements OnInit {
     else if(this.currentLesson==5){
       if(this.currentSubLession==1){
         this.currentLesson-=1;
+        this.currentSubLession=7;
       }
       else if(this.currentSubLession!=1){
         this.currentSubLession-=1;
       }
 
+    }
+    else if(this.currentLesson==6){
+      this.currentLesson-=1;
+      this.currentSubLession=3;
     }
     else if(this.currentLesson!=1){
       this.currentLesson-=1;
