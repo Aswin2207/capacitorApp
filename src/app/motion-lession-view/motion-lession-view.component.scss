@@ -64,6 +64,11 @@ section {
         .lesson-13 {
             padding-left: 80px;
             padding-top: 50px;
+            padding: 10px;
+            @media (min-width:768px) {
+                padding-left: 80px;
+                padding-top: 50px; 
+            }
 
             strong {
                 font-size: 30px;
@@ -157,7 +162,10 @@ section {
         }
 
         .lesson-3 {
-            padding-left: 80px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -234,7 +242,10 @@ section {
         }
 
         .lesson-4 {
-            padding-left: 80px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -366,7 +377,10 @@ section {
         }
 
         .lesson-5 {
-            padding-left: 80px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -448,7 +462,10 @@ section {
         }
 
         .lesson-6 {
-            padding-left: 60px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -518,7 +535,10 @@ section {
         }
 
         .lesson-8 {
-            padding-left: 60px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -592,7 +612,10 @@ section {
         }
 
         .lesson-12 {
-            padding-left: 50px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -668,7 +691,10 @@ section {
         }
 
         .lesson-9{
-            padding-left: 40px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
             .lessonheader {
                 background-color: #ed7d31;
                 color: white;
@@ -727,7 +753,10 @@ section {
               }
          }
          .lesson-10 {
-            padding-left: 80px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -794,7 +823,10 @@ section {
             }
         }
         .lesson-11 {
-            padding-left: 80px;
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
 
             .lessonheader {
                 background-color: #ed7d31;
@@ -1164,5 +1196,32 @@ section {
       width: 400px;
       height: 200px;
       margin-bottom: 40px;
+    }
+}
+.lesson-titlebox{
+    background-color: #ed7d31;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    min-height: 50px;
+    padding:0 30px 0 15px;
+    margin-top: 50px;
+    .titleno{
+        background-color: #f8cbad;
+        padding: 10px;
+        color: #000;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    strong{
+        white-space: wrap;
+    }
+    img{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -40%);
+        width: 50px;
     }
 }

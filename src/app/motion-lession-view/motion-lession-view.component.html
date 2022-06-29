@@ -51,16 +51,17 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='3'">
-        <div class="lessonheader col-md-4">
-          <div class="box">7.1</div>
-          <strong>Rest and Motion
-            
-          </strong>
-        </div>
-          <div class="col-md-4">
+      <div id="lesson-{{currentLesson}}" class=" lesson-{{currentLesson}}" *ngIf="currentLesson=='3'">
+        <div class="lesson-titlebox">
+          <div class="titleno">2.1</div>
+          <div>
+            <strong>Rest and Motion</strong>
+          </div>
           <img src="assets/img_motion/image-1@1x.png"> 
         </div>
+          <!-- <div class="col-md-4">
+          <img src="assets/img_motion/image-1@1x.png"> 
+        </div> -->
         <div class="box">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
@@ -104,14 +105,16 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
-        <div class="lessonheader col-md-4" *ngIf="currentSubLession=='1'">
-          <div class="box">2.2</div>
-          <strong>Types of Motion</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'">
+          <div class="titleno">2.2</div>
+          <div> <strong>Types of Motion</strong></div>
+         
         </div>
-        <div class="lessonheader col-md-4" *ngIf="currentSubLession=='2'">
-          <div class="box">2.2.1</div>
-          <strong>Uniform & Non Uniform motion</strong>
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='2'">
+          <div class="titleno">2.2</div>
+          <div> <strong>Uniform & Non Uniform motion</strong></div>
+         
         </div>
         <div class="box" *ngIf="currentSubLession=='1'">
           <div class="row lessondata">
@@ -196,10 +199,11 @@
         </div>
        
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='9'">
-        <div class="lessonheader col-md-4">
-          <div class="box">7.7</div>
-          <strong>LATENT HEAT</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='9'">
+        <div class="lesson-titlebox">
+          <div class="titleno">2.2</div>
+          <div> <strong>Uniform & Non Uniform motion</strong></div>
+         
         </div>
         <div class="box">
           <div class="row lessondata">
@@ -232,10 +236,11 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='5'">
-        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
-          <div class="box">7.3</div>
-          <strong>CONCEPT OF TEMPERATURE</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='5'">
+        <div class="lesson-titlebox">
+          <div class="titleno">7.3</div>
+          <div> <strong>Uniform & Non Uniform motion</strong></div>
+         
         </div>
         <div class="lessonheaderSub col-md-5" *ngIf="currentSubLession=='3'">
           <div class="box">7.3.2</div>
@@ -297,10 +302,11 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='6'">
-        <div class="lessonheader col-md-5">
-          <div class="box">7.4</div>
-          <strong>SPECIFIC HEAT CAPACITY</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='6'">
+        <div class="lesson-titlebox" >
+          <div class="titleno">2.2</div>
+          <div> <strong>Uniform & Non Uniform motion</strong></div>
+         
         </div>
         <div class="box">
           <div class="row lessondata">
@@ -335,10 +341,11 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='8'">
-        <div class="lessonheader col-md-5">
-          <div class="box">2.6</div>
-          <strong>Equations of Motion</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='8'">
+        <div class="lesson-titlebox" >
+          <div class="titleno">2.6</div>
+          <div> <strong>Equations of Motion</strong></div>
+         
         </div>
         <div class="box">
           <div class="row lessondata">
@@ -371,10 +378,11 @@
           </div>
         </div>
         </div>
-        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='10'">
-          <div class="lessonheader col-md-4">
-            <div class="box">2.8</div>
-            <strong>Uniform circular motion</strong>
+        <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='10'">
+          <div class="lesson-titlebox">
+            <div class="titleno">2.8</div>
+            <div> <strong>Uniform circular motion</strong></div>
+           
           </div>
           <div class="box">
             <div class="row lessondata">
@@ -408,10 +416,12 @@
             </div>
           </div>
         </div>
-        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='11'">
-          <div class="lessonheader col-md-4" >
-            <div class="box">2.9</div>
-            <strong>Centripetal Acceleration and Centripetal Force</strong>
+        <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='11'">
+         
+          <div class="lesson-titlebox">
+            <div class="titleno">2.9</div>
+            <div> <strong>Centripetal Acceleration and Centripetal Force</strong></div>
+           
           </div>
        
          
@@ -449,10 +459,12 @@
           </div>
         
         </div>
-        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}"  *ngIf="currentLesson=='12'">
-          <div class="lessonheader col-md-6">
-            <div class="box">2.10</div>
-            <strong>Centrifugal Force</strong>
+        <div id="lesson-{{currentLesson}}" class=" lesson-{{currentLesson}}"  *ngIf="currentLesson=='12'">
+         
+          <div class="lesson-titlebox" >
+            <div class="titleno">2.10</div>
+            <div> <strong>Centrifugal Force</strong></div>
+           
           </div>
           <div class="box">
             <div class="row lessondata">
