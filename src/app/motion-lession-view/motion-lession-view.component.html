@@ -1,0 +1,504 @@
+<section>
+  <div class="row overall">
+    <img class="logo" (click)="home()" src="assets/img/tieke-connect-logo-10@1x.png">
+  <div class="left-cont">
+    <div class="header">
+   <strong>Motion</strong>
+  </div>
+  <div [ngClass]="{highLight: item.id==currentLesson}" class="menuitem" *ngFor="let item of lessonsList">
+   <p  (click)="changeView(item.id)">{{item.heading}}</p>
+  </div>
+  </div>
+  <!-- <div class="right-cont">
+    <div class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
+      <strong>Learning Objectives</strong>
+      <p>After completing this lesson, students will be able to:</p>
+       <ul *ngFor="let i of Objectives" >
+        <li>{{i}}</li>
+       </ul>
+    </div> -->
+    <div class="right-cont">
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
+        <strong>Learning Objectives</strong>
+        <p>After completing this lesson, students will be able to:</p>
+        <ul *ngFor="let i of Objectives">
+          <li>{{i}}</li>
+        </ul>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='2'">
+        <div class="lessonheader lessonheaderIn  col-md-4 col-sm-6">
+          <div class="box"></div>
+          <strong>INTRODUCTION</strong>
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-7 lessoncontbox">
+              <div class="lessoncont1">
+                We can define motion as the change of position of an <b>object with respect to time</b>
+              </div>
+              <div class="lessoncont2">
+                A book falling off a table, water flowing from the tap,rattling windows, etc all exhibit motion.
+              </div>
+              <div class="lessoncont3">
+                Even the air that we breathe exhibits motion! Everything in the universe moves. We live in a universe that is incontinual motion.
+              </div>
+            </div>
+            <div class="col-md-4 lessonimg">
+              <div class="imgbox">
+                <img src="assets/img_motion/group-134-1@1x.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='3'">
+        <div class="lessonheader col-md-4">
+          <div class="box">7.1</div>
+          <strong>Rest and Motion
+            
+          </strong>
+        </div>
+          <div class="col-md-4">
+          <img src="assets/img_motion/image-1@1x.png"> 
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="lessoncont1 col-md-7">
+                  <b>Motion</b>&nbsp;&nbsp; - Change in position of an object with respect to its surroundings.
+                </div>
+              </div>
+              <div class="row">
+                <div class="lessoncont1 col-md-7">
+                  <b>Examples:</b>&nbsp;&nbsp; <br>
+                  <ul>
+                    <li>Children playing in the ground</li>
+                    <li>Birds flying in the sky</li>
+                    <li>Cars, Buses and bikes moving on road</li>
+                    <li>Movement of earth around sun</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 lessonimg">
+                    <img src="assets/img_motion/group-137-1@1x.png" />
+                </div>
+                <div class="col-md-3 lessonimg">
+                  <img src="assets/img_motion/group-139-1@1x.png" />
+                </div>
+                <div class="col-md-3 lessonimg">
+                  <img src="assets/img_motion/group-141-1@1x.png" />
+                </div>
+                <div class="col-md-3 lessonimg">
+                  <img src="assets/img_motion/group-143-1@1x.png" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="lessoncont1 col-md-7">
+                  <b>Rest</b>&nbsp;&nbsp;  -There is no change in position of an object with respect to its surroundings.
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
+        <div class="lessonheader col-md-4" *ngIf="currentSubLession=='1'">
+          <div class="box">2.2</div>
+          <strong>Types of Motion</strong>
+        </div>
+        <div class="lessonheader col-md-4" *ngIf="currentSubLession=='2'">
+          <div class="box">2.2.1</div>
+          <strong>Uniform & Non Uniform motion</strong>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='1'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    <b>Types of motion</b>
+                  </div>
+                  <div class="leftlessdata row">
+                    <div class="col-md-3">
+                      Linear motion
+                    </div>
+                    <div class="col-md-8">
+                     - Motion along straight line
+                    </div>
+                  </div>
+                  <div class="leftlessdata row">
+                    <div class="col-md-3">
+                      Circular motion
+                    </div>
+                    <div class="col-md-8">
+                     - Motion along a circular path
+                    </div>
+                  </div>
+                  <div class="leftlessdata row">
+                    <div class="col-md-3">
+                      Oscillatory motion
+                    </div>
+                    <div class="col-md-8">
+                     - To and fro motion of an object
+                    </div>
+                  </div>
+                  <div class="leftlessdata row">
+                    <div class="col-md-3">
+                      Random motion
+                    </div>
+                    <div class="col-md-8">
+                     - Move in any possible way (not uniform)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 lessonimg">
+                    <img src="assets/img_motion/group-146-1@1x.png" />
+                    </div>
+                    <div class="col-md-9 lessonimg">
+                      <img src="assets/img_motion/circular.PNG" />
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='2'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata1">
+                    <b>Uniform motion</b> -An object covers equal distance in equal intervals of time
+                  </div>
+                 
+                  <div class="leftlessdata1">
+                    Example :-
+                    <ul>
+                      <li>A car covering 60km in first, second , third andfourth hour</li>
+                      <li>Clock, Rotating fan</li>
+                    </ul>
+                  </div>
+                  <div class="leftlessbottom">
+                    <b>Non</b>-uniform motion- An object covers unequaldistance in equal intervals of time
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont1">
+                  <img src="assets/img_motion/group-155-1@1x.png" />
+                  <img src="assets/img_motion/group-157-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='9'">
+        <div class="lessonheader col-md-4">
+          <div class="box">7.7</div>
+          <strong>LATENT HEAT</strong>
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    Latent heat means hidden heat or hidden Energy
+                  </div>
+                  <div class="leftlessdata">
+                    Latent heat is the amount of heat energy absorbed or released by a substance during a change in its physical states without any change in its temperature.
+                  </div>
+                  <div class="leftlessdata">
+                    Specific latent heat is the amount of heat energy absorbed or liberated by unit mass of a substance during change of state without causing any change in temperature.
+                  </div>
+                  <div class="leftlessdata">
+                    <b>L=Q/m </b>
+                  </div>
+                  <div class="leftlessbottom">
+               The SI unit of specific latent heat is <b>J/kg.</b>
+               <img src="assets/img/group-100-1@1x.png">
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont">
+                  <img src="assets/img/group-102-1@1x.png" />
+                  <img src="assets/img/group-104-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='5'">
+        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
+          <div class="box">7.3</div>
+          <strong>CONCEPT OF TEMPERATURE</strong>
+        </div>
+        <div class="lessonheaderSub col-md-5" *ngIf="currentSubLession=='3'">
+          <div class="box">7.3.2</div>
+          <strong>Absolute Zero</strong>
+        </div>
+        <div class="lessonheaderSub col-md-5" *ngIf="currentSubLession=='2'">
+          <div class="box">7.3.1</div>
+          <strong>TEMPARATURE SCALES</strong>
+        </div>
+        <div class="box"  *ngIf="currentSubLession=='1'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox three">
+              <ul>
+                <li>Temperature is the degree of hotness or coolness of a body</li>
+                <li>The SI unit of temperature is <b style="color:#c00000 ;">kelvin (K)</b></li>
+                <li>Temperature is measured with a <b style="color:#c00000 ;">Thermometer</b></li>
+              </ul>
+              <img src="assets/heat_temperature.png">
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='2'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <img src="assets/img/Check.PNG" />
+                  </div>
+                 
+                 
+                </div>
+                <div class="col-md-5 d-flex imgcont7">
+                  <img src="assets/img/group-67-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='3'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    Temperature at which the pressure and volume of agas theoretically reaches zero is called absolute zero
+                  </div>
+                 
+                  <div class="leftlessdata">
+                    For all gases, the pressure extrapolates to zero at thetemperature –273.15°C. It is known as absolute zeroor0 K
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont8">
+                  <img src="assets/img/group-75-1@1x.png" />
+                  <img src="assets/img/group-77-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='6'">
+        <div class="lessonheader col-md-5">
+          <div class="box">7.4</div>
+          <strong>SPECIFIC HEAT CAPACITY</strong>
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-7 leftlesscont">
+                  <div class="leftlessdata">
+                    Specific heat capacity of a substance is defined as the amount of heat required to raise the
+                    temperature of 1 kg of the substance by 10C or 1 K
+                  </div>
+                  <div class="leftlessdata">
+                    SI unit of specific heat capacity is Jkg-1K-1
+                  </div>
+                  <div class="leftlessdata">
+                    A <b>high heat capacity</b> means that the substance requires lots of heat in order toraise or lower
+                    the temperature by one unit. Having a high heat capacity meansthat the substance also retains heat
+                    better than substances with lower heat capacities
+                  </div>
+                  <div class="leftlessbottom">
+                    A <b>low heat capacity</b> means that the substance does not require a lot of heat inorder to
+                    raise/lower the temperature by 1°C. A low heat capacity means that thesubstance does not retain heat
+                    as well as substances with a higher heat capacity Formula for Specific Heat Capacity
+                    <div> <img src="assets/img/group-80-1@1x.png"></div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex imgcont">
+                  <img src="assets/img/group-22-1@1x.png" />
+                  <img src="assets/img/group-22-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='8'">
+        <div class="lessonheader col-md-5">
+          <div class="box">2.6</div>
+          <strong>Equations of Motion</strong>
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <img src="assets/img_motion/group-235-1@1x.png">
+                  </div>
+                </div>
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <img src="assets/img_motion/equation.png">
+                  </div>
+                </div>
+                <div class="row leftlessbottom">
+                  <div class="col-md-4 imgcont">
+                    <img class="img" src="assets/img_motion/group-237-1@1x.png" />
+                  </div>
+                  <div class="col-md-4 imgcont">
+                    <img class="img1" src="assets/img_motion/group-239-1@1x.png" />
+                  </div>
+                  <div class="col-md-4 imgcont">
+                    <img class="img" src="assets/img_motion/group-241-1@1x.png" />
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='10'">
+          <div class="lessonheader col-md-4">
+            <div class="box">2.8</div>
+            <strong>Uniform circular motion</strong>
+          </div>
+          <div class="box">
+            <div class="row lessondata">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="lessoncont1 col-md-11">
+                    When an object is moving with a constant speed along a circular path, 
+                    the velocity changes dueto the change in direction. Hence, it is an accelerated motion.
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lessoncont1 col-md-7">
+                    For example, revolution of earth around the sun,revolution of moon around the earth
+                  </div>
+                  <div class="imgbox">
+                    <img src="assets/img_motion/group-257-1@1x.png" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lessoncont1 col-md-11">
+                    If an object, moving along a circular 
+                    path of radius, r takes time, T to come back to its startingposition, 
+                    then the speed, v is given by,
+                    <br>
+                    Speed = Circumference/Time taken
+                    <br>
+                    V = 2pr/T
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='11'">
+          <div class="lessonheader col-md-4" >
+            <div class="box">2.9</div>
+            <strong>Centripetal Acceleration and Centripetal Force</strong>
+          </div>
+       
+         
+          <div class="box">
+            <div class="row lessondata">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-6 leftlesscont">
+                    <div class="leftlessdata">
+                      <b>When the acceleration is directed inwards/to the
+                      centrein a circular motion, it is known as
+                      centripetal acceleration
+                    </b>
+                    </div>
+                    <div class="leftlessdata">
+                      For an object of mass m, moving along a circular
+                      <br>
+                      path of radius r, with a velocity v.
+                      <br>
+                      Its centripetal acceleration is given by
+                      <br>
+                      a = v<sup>2</sup>/r
+                      <br>
+                      Magnitude (F) = Mass x Centripetal Acceleration
+                      <br>
+                      F = mv<sup>2</sup>/r
+                    </div>
+                  </div>
+                  <div class="col-md-5 d-flex imgcont">
+                    <img src="assets/img_motion/group-260-1@1x.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}"  *ngIf="currentLesson=='12'">
+          <div class="lessonheader col-md-6">
+            <div class="box">2.10</div>
+            <strong>Centrifugal Force</strong>
+          </div>
+          <div class="box">
+            <div class="row lessondata">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-7 leftlesscont">
+                    <div class="leftlessdata">
+                      <img src="assets/img_motion/group-263-1@1x.png" />
+                    </div>
+                  </div>
+                    <div class="leftlessdata1">
+                      When the acceleration is directed outwards/ away from the centrein a circular motion, it is known
+                      as centrifugal acceleration and the associated force is centrifugal force
+                    </div>
+               
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}"  *ngIf="currentLesson=='14'">
+            <img src="assets/img_motion/group-266-1@1x.png">
+        </div>
+        <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='13'">
+          <strong>Activities</strong>
+          <ul *ngFor="let i of Activities">
+            <li>{{i}}</li>
+          </ul>
+        </div>
+      <div class="footer">
+        <div class="footer-icons">
+          <img (click)="route(1)" class="home" src="assets/img/home-10@1x.png">
+          <img (click)="prev()" class="prev" src="assets/img/back-10@1x.png">
+          <img (click)="next()" class="next" src="assets/img/next-10@1x.png">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer">
+      <div class="footer-icons">
+      <img (click)="route()" class="home" src="assets/img/home-10@1x.png">
+      <img (click)="route()" class="prev" src="assets/img/back-10@1x.png">
+      <img (click)="route()" class="next" src="assets/img/next-10@1x.png">
+    </div>
+    </div> -->
+  </div>
+  <!-- </div> -->
+
+</section>

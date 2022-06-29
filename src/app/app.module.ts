@@ -12,11 +12,14 @@ import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectviewComponent } from './subjectview/subjectview.component';
 import { ContainerComponent } from './container/container.component';
 import { LessonsComponent } from './lessons/lessons.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MotionLessionViewComponent } from './motion-lession-view/motion-lession-view.component';
+import { MotionContainerComponent } from './motion-container/motion-container.component';
 
 @NgModule({
-  declarations: [AppComponent,SubjectsComponent,SubjectviewComponent,ContainerComponent,LessonsComponent],
+  declarations: [AppComponent,SubjectsComponent,SubjectviewComponent,ContainerComponent,LessonsComponent,MotionLessionViewComponent,MotionContainerComponent],
   entryComponents: [],
-  imports: [BrowserModule,CommonModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule,CommonModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule,FormsModule,ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })

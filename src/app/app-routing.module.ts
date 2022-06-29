@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ContainerComponent } from './container/container.component';
 import { LessonsComponent } from './lessons/lessons.component';
+import { MotionContainerComponent } from './motion-container/motion-container.component';
+import { MotionLessionViewComponent } from './motion-lession-view/motion-lession-view.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectviewComponent } from './subjectview/subjectview.component';
 
@@ -12,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'lesson',
+    redirectTo: 'lesson-motion',
     pathMatch: 'full'
   },
   {
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
     path: 'lesson-view',
     component:LessonsComponent
+  },
+  {
+    path: 'lesson-motion',
+    component:MotionContainerComponent
+  },
+  {
+    path: 'lesson-view-motion',
+    component:MotionLessionViewComponent
   }
 ];
 
