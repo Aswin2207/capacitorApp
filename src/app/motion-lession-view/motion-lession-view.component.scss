@@ -425,6 +425,34 @@ section {
                 }
               
             }
+            .lessonsubheader{
+                background-color: #f8cbad;
+                width:300px;
+                color: black;
+                padding: 1px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #c55a11;
+                    position: absolute;
+                    height: 30px;
+                    color: black;
+                    font-size: 20px;
+                    text-align: center;
+                    width: 60px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
 
             .lessondata {
                 color: white;
@@ -453,11 +481,10 @@ section {
             .lessonheader {
                 background-color: #ed7d31;
                 color: white;
-                padding: 15px 5px 5px 32px;
+                padding: 15px 5px 5px 70px;
                 margin-left: 10px;
                 margin-top: 50px;
                 border-radius: 5px;
-                text-align: center;
                 position: relative;
 
                 strong {
@@ -472,6 +499,34 @@ section {
                     font-size: 30px;
                     text-align: center;
                     width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .lessonsubheader{
+                background-color: #f8cbad;
+                width:300px;
+                color: black;
+                padding: 1px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #c55a11;
+                    position: absolute;
+                    height: 30px;
+                    color: black;
+                    font-size: 20px;
+                    text-align: center;
+                    width: 60px;
                     left: 5px;
                     top: 0;
                     right: 0;
@@ -702,27 +757,12 @@ section {
                 margin-top: 30px;
                 .lessoncontbox {
                   color: black;
-                  .leftlesscont{
                     .leftlessdata{
                         padding: 20px 0px;
+                        .img-cont{
+                            height:300px;
+                            width:200px;                        }
                     }
-                    .leftlessbottom{
-                        margin-top: 10px;
-                      img{
-                        width:400px;
-                        height: 200px;
-                        margin-top:20px;
-                      }
-                    }
-                  }
-                }
-                .imgcont {
-                  flex-direction: column;
-                  img {
-                    width: 450px;
-                    height: 280px;
-                    margin-bottom: 40px;
-                  }
                 }
               }
          }
