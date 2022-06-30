@@ -132,6 +132,18 @@ export class MotionLessionViewComponent implements OnInit {
       // alert(this.currentSubLession)
 
     }
+    else if(this.currentLesson==7){
+      // alert(this.currentSubLession)
+      if(this.currentSubLession!=7){
+        this.currentSubLession+=1;
+      }
+      else if(this.currentSubLession==7){
+        this.currentLesson+=1;
+        this.currentSubLession=1;
+      }
+      // alert(this.currentSubLession)
+
+    }
     else if(this.currentLesson!=14 ){
       this.currentLesson+=1;
     }

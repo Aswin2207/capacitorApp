@@ -587,6 +587,105 @@ section {
                 }
             }
         }
+        .lesson-7 {
+            padding: 10px;
+            @media (min-width:768px) {
+               padding-left: 80px; 
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 70px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 44px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .lessonsubheader{
+                background-color: #f8cbad;
+                width:300px;
+                color: black;
+                padding: 1px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #c55a11;
+                    position: absolute;
+                    height: 30px;
+                    color: black;
+                    font-size: 20px;
+                    text-align: center;
+                    width: 60px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 20px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 30px;
+
+                            img {
+                                width: 257px;
+                                height: 245px;
+
+                            }
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 400px;
+                        height: 200px;
+                        margin-bottom: 60px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
 
         .lesson-8 {
             padding: 10px;
