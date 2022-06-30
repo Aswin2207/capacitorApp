@@ -55,6 +55,7 @@ export class MotionLessionViewComponent implements OnInit {
    }
 
   changeView(id) {
+    this.videoBoolean=false;
     this.currentLesson = id;
     this.currentSubLession=1;
        
@@ -84,8 +85,18 @@ export class MotionLessionViewComponent implements OnInit {
 
     }
     else if(this.currentLesson==7){
+      if(this.currentSubLession==1){
+        this.currentLesson-=1;
+        this.currentSubLession=3;
+      }
+      else if(this.currentSubLession!=1){
+        this.currentSubLession-=1;
+      }
+     
+    }
+    else if(this.currentLesson==8){
       this.currentLesson-=1;
-      this.currentSubLession=3;
+      this.currentSubLession=7;
     }
     else if(this.currentLesson==5){
       this.currentLesson-=1;
@@ -109,6 +120,7 @@ export class MotionLessionViewComponent implements OnInit {
    }, 100);
   }
   next(){
+    this.videoBoolean=false;
   
     if(this.currentLesson==4){
       if(this.currentSubLession!=2){

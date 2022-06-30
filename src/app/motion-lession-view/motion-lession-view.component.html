@@ -302,17 +302,18 @@
       </div>
       <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='6'">
         <div>
-        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
+        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1' && !videoBoolean">
           <div class="box">2.4</div>
           <strong>Speed, Velocity and Acceleration</strong>
         </div>
-        <div *ngIf="currentSubLession=='1'">
+        <div *ngIf="currentSubLession=='1' && !videoBoolean">
         <div class="lessonsubheader" *ngIf="currentSubLession=='1'">
           <div class="box">2.4.1</div>
           <strong>Speed</strong>
+          <img class="videoiimage" src="assets/img_motion/image-1@1x.png" (click)="videoOpen()"> 
         </div>
       </div>
-        <div class="box" *ngIf="currentSubLession=='1'">
+        <div class="box" *ngIf="currentSubLession=='1' && !videoBoolean">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
               <div class="row">
@@ -334,11 +335,12 @@
           </div>
         </div>
       </div> 
-         <div *ngIf="currentSubLession=='2'">
+         <div *ngIf="currentSubLession=='2' && !videoBoolean">
           <div>
             <div class="lessonsubheader">
               <div class="box">2.4.2</div>
               <strong>Velocity</strong>
+              <img class="videoiimage" src="assets/img_motion/image-1@1x.png" (click)="videoOpen()"> 
             </div>
           </div>
           <div class="box">
@@ -390,11 +392,12 @@
             </div>
           </div>
         </div>
-        <div *ngIf="currentSubLession=='3'">
+        <div *ngIf="currentSubLession=='3' && !videoBoolean">
           <div>
             <div class="lessonsubheader">
               <div class="box">2.4.3</div>
               <strong>Acceleration</strong>
+              <img class="videoiimage" src="assets/img_motion/image-1@1x.png" (click)="videoOpen()"> 
             </div>
           </div>
           <div class="box">
@@ -418,6 +421,15 @@
             </div>
           </div>
         </div>
+        <div class="videoimg1" *ngIf="currentSubLession=='1' && videoBoolean">
+          <video class="videotag" src="assets/files/speed.mp4" controls></video>
+           </div>
+           <div class="videoimg1" *ngIf=" currentSubLession=='2' && videoBoolean">
+            <video class="videotag" src="assets/files/velocity.mp4" controls></video>
+             </div>
+             <div class="videoimg1" *ngIf=" currentSubLession=='3' && videoBoolean">
+              <video class="videotag" src="assets/files/acceleration.mp4" controls></video>
+               </div>
       </div>
       <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='7'">
         <div>
@@ -573,6 +585,58 @@
                       Motion with non-uniform speed
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="currentSubLession=='6'"></div>
+        <div *ngIf="currentSubLession=='7'">
+          <div style="margin:50px 25px 50px 25px;"  >
+            Velocity -Time graph (Uniform & Non-uniform Acceleration)
+          </div>
+          <div class="box">
+            <div class="row lessondata">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <!-- Velocity -Time graph (Uniform & Non-uniform Acceleration) -->
+               
+                  <div class="col-md-4">
+                    <div class="leftlessdata"> 
+                      <img src="assets/img_motion/group-227-1@1x.png" style="width: 312px;height: 216px;">
+                    </div>
+                 
+                  </div>
+                  <div class="col-md-4">
+                    <div class="leftlessdata"> 
+                      <img style="width: 391px;" src="assets/img_motion/group-229-1@1x.png">
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="leftlessdata"> 
+                      <img style="width: 391px;" src="assets/img_motion/vel.PNG" style="width:225px;">
+                    </div>
+                    </div>
+                  
+                </div>
+                <div class="row">
+                  <!-- Velocity -Time graph (Uniform & Non-uniform Acceleration) -->
+               
+                  <div class="col-md-4">
+                    <div class="leftlessdata"> 
+                      <img src="assets/img_motion/group-225-1@1x.png" style="width: 312px;height: 216px;" id="ij1">
+                    </div>
+                 
+                  </div>
+                    <div class="col-md-6">
+                    <div class="leftlessdata mt-5 container row" style="border: 2px dashed #ed7d31"> 
+                      <div class="col-md-10" id="ij2">
+                        Calculating the area is complicated due tonon-uniform acceleration
+                      </div>
+                  
+                    </div>
+                    </div>
+                  
                 </div>
               </div>
             </div>
