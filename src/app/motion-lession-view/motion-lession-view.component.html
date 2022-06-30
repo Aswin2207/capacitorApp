@@ -419,11 +419,13 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='7'">
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='7'">
         <div>
-        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
-          <div class="box">2.5</div>
-          <strong>Graphical representation of motion along a straight line</strong>
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'" >
+          <div class="titleno">2.5</div>
+          <div>
+            <strong>Graphical representation of motion along a straight line</strong>
+          </div>
         </div>
         <div *ngIf="currentSubLession=='1'">
         <div class="lessonsubheader" *ngIf="currentSubLession=='1'">
