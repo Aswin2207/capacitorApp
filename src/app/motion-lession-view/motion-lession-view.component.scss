@@ -60,13 +60,15 @@ section {
                 margin-bottom: 20px !important;
             }
         }
+
         .lesson-13 {
             padding-left: 80px;
             padding-top: 50px;
             padding: 10px;
+
             @media (min-width:768px) {
                 padding-left: 80px;
-                padding-top: 50px; 
+                padding-top: 50px;
             }
 
             strong {
@@ -130,6 +132,7 @@ section {
                         margin-top: 40px;
                         font-size: 16px;
                     }
+
                     .lessoncont3 {
                         padding: 15px 30px 30px 21px;
                         margin-top: 40px;
@@ -162,8 +165,9 @@ section {
 
         .lesson-3 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -199,7 +203,7 @@ section {
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
-             
+
 
                 .lessoncontbox {
                     color: black;
@@ -211,10 +215,12 @@ section {
                     .lessoncont2 {
                         padding: 15px 30px 15px 21px;
                     }
-                    li{
-                        padding: 1px 30px 15px 21px; 
+
+                    li {
+                        padding: 1px 30px 15px 21px;
                     }
-                    ul{
+
+                    ul {
                         margin-top: 10px;
                     }
                 }
@@ -234,7 +240,8 @@ section {
                     width: 200px;
                     height: 120px;
                 }
-                .lessonimg{
+
+                .lessonimg {
                     margin-bottom: 15px;
                 }
             }
@@ -242,8 +249,9 @@ section {
 
         .lesson-4 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -273,6 +281,7 @@ section {
                     right: 0;
                 }
             }
+
             .lessonheader-1 {
                 background-color: #ed7d31;
                 color: white;
@@ -287,7 +296,8 @@ section {
                 strong {
                     font-size: 15px;
                 }
-                .big{
+
+                .big {
                     font-size: 12px !important;
                 }
 
@@ -303,6 +313,7 @@ section {
                     top: 0;
                     right: 0;
                 }
+
                 .boxBig {
                     background-color: #f8cbad;
                     position: absolute;
@@ -316,7 +327,8 @@ section {
                     right: 0;
                 }
             }
-            .lessonheader-7{
+
+            .lessonheader-7 {
                 .box {
                     font-size: 25px;
                 }
@@ -327,19 +339,24 @@ section {
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
-                .lessonimg{
+
+                .lessonimg {
                     margin-top: 30px;
-                    img{
+
+                    img {
                         // width: 165px;
                         height: 151px;
                     }
                 }
-                .leftlessbottom{
+
+                .leftlessbottom {
                     margin-top: 50px;
                 }
-                li{
-                    padding: 15px 0px;  
+
+                li {
+                    padding: 15px 0px;
                 }
+
                 .leftlessdata1 {
                     padding: 15px 0px;
                 }
@@ -363,6 +380,7 @@ section {
                         margin-bottom: 30px;
                     }
                 }
+
                 .imgcont1 {
                     flex-direction: column;
 
@@ -377,8 +395,9 @@ section {
 
         .lesson-5 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -407,8 +426,9 @@ section {
                     top: 0;
                     right: 0;
                 }
-              
+
             }
+
             .lessonheaderSub {
                 background-color: #ed7d31;
                 color: white;
@@ -436,11 +456,12 @@ section {
                     top: 0;
                     right: 0;
                 }
-              
+
             }
-            .lessonsubheader{
+
+            .lessonsubheader {
                 background-color: #f8cbad;
-                width:300px;
+                width: 300px;
                 color: black;
                 padding: 1px 5px 5px 32px;
                 margin-left: 10px;
@@ -490,8 +511,9 @@ section {
 
         .lesson-6 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -520,9 +542,10 @@ section {
                     right: 0;
                 }
             }
-            .lessonsubheader{
+
+            .lessonsubheader {
                 background-color: #f8cbad;
-                width:300px;
+                width: 300px;
                 color: black;
                 padding: 1px 5px 5px 32px;
                 margin-left: 10px;
@@ -587,10 +610,12 @@ section {
                 }
             }
         }
+
         .lesson-7 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -619,11 +644,12 @@ section {
                     right: 0;
                 }
             }
-            .lessonsubheader{
+
+            .lessonsubheader {
                 background-color: #f8cbad;
-                width:300px;
+                width: 450px;
                 color: black;
-                padding: 1px 5px 5px 32px;
+                padding: 1px 5px 5px 5px;
                 margin-left: 10px;
                 margin-top: 50px;
                 border-radius: 5px;
@@ -666,7 +692,6 @@ section {
                             margin-top: 30px;
 
                             img {
-                                width: 257px;
                                 height: 245px;
 
                             }
@@ -689,8 +714,9 @@ section {
 
         .lesson-8 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -730,25 +756,26 @@ section {
                 .lessoncontbox {
                     color: black;
 
-                   
-                        .leftlessdata {
-                            padding: 0px 30px 0px 0px;
+
+                    .leftlessdata {
+                        padding: 0px 30px 0px 0px;
+                    }
+
+                    .leftlessbottom {
+                        margin-top: 30px;
+
+                        .img {
+                            width: 377px;
+                            height: 340px;
+                            margin-bottom: 30px;
                         }
 
-                        .leftlessbottom {
-                            margin-top: 30px;
+                        .img1 {
+                            width: 377px;
+                            height: 245px;
+                            margin-bottom: 30px;
+                        }
 
-                            .img {
-                                width: 377px;
-                                height: 340px;
-                                margin-bottom: 30px;
-                            }
-                            .img1 {
-                                width: 377px;
-                                height: 245px;
-                                margin-bottom: 30px;
-                            }
-                        
                     }
                 }
 
@@ -766,8 +793,9 @@ section {
 
         .lesson-12 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -803,7 +831,7 @@ section {
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
-              
+
                 .leftlessdata1 {
                     padding: 20px 20px 0px 0px;
                     padding-right: 50px;
@@ -843,11 +871,13 @@ section {
             }
         }
 
-        .lesson-9{
+        .lesson-9 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
+
             .lessonheader {
                 background-color: #ed7d31;
                 color: white;
@@ -857,43 +887,51 @@ section {
                 border-radius: 5px;
                 text-align: center;
                 position: relative;
-              
+
                 strong {
-                  font-size: 18px;
+                    font-size: 18px;
                 }
+
                 .box {
-                  background-color: #f8cbad;
-                  position: absolute;
-                  height: 47px;
-                  color:black;
-                  font-size: 30px;
-                  text-align: center;
-                  width: 50px;
-                  left: 5px;
-                  top: 0;
-                  right: 0;
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
                 }
-              }
-              .lessondata {
+            }
+
+            .lessondata {
                 color: white;
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
+
                 .lessoncontbox {
-                  color: black;
-                    .leftlessdata{
+                    color: black;
+
+                    .leftlessdata {
                         padding: 20px 0px;
-                        .img-cont{
-                            height:300px;
-                            width:200px;                        }
+
+                        .img-cont {
+                            height: 300px;
+                            width: 200px;
+                        }
                     }
                 }
-              }
-         }
-         .lesson-10 {
+            }
+        }
+
+        .lesson-10 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -929,7 +967,7 @@ section {
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
-             
+
 
                 .lessoncontbox {
                     color: black;
@@ -960,10 +998,12 @@ section {
                 }
             }
         }
+
         .lesson-11 {
             padding: 10px;
+
             @media (min-width:768px) {
-               padding-left: 80px; 
+                padding-left: 80px;
             }
 
             .lessonheader {
@@ -993,6 +1033,7 @@ section {
                     right: 0;
                 }
             }
+
             .lessonheader-1 {
                 background-color: #ed7d31;
                 color: white;
@@ -1007,7 +1048,8 @@ section {
                 strong {
                     font-size: 15px;
                 }
-                .big{
+
+                .big {
                     font-size: 12px !important;
                 }
 
@@ -1023,6 +1065,7 @@ section {
                     top: 0;
                     right: 0;
                 }
+
                 .boxBig {
                     background-color: #f8cbad;
                     position: absolute;
@@ -1036,7 +1079,8 @@ section {
                     right: 0;
                 }
             }
-            .lessonheader-7{
+
+            .lessonheader-7 {
                 .box {
                     font-size: 25px;
                 }
@@ -1047,8 +1091,9 @@ section {
                 border-radius: 5px;
                 justify-content: center;
                 margin-top: 30px;
-                .leftlessdataList{
-                    li{
+
+                .leftlessdataList {
+                    li {
                         padding: 37px 30px 53px 29px;
                     }
                 }
@@ -1084,6 +1129,7 @@ section {
                         margin-bottom: 30px;
                     }
                 }
+
                 .imgcont5 {
                     flex-direction: column;
 
@@ -1153,7 +1199,7 @@ section {
         width: 80% !important;
         margin-right: 0px !important;
         margin-bottom: 10px;
-        padding-left:0;
+        padding-left: 0;
     }
 
     .right-cont {
@@ -1175,9 +1221,11 @@ section {
     .footer {
         width: 90% !important;
     }
-    .videoimg1{
+
+    .videoimg1 {
         width: 100% !important;
-        .videotag{
+
+        .videotag {
             text-align: center !important;
             width: 69% !important;
             height: 409px !important;
@@ -1185,136 +1233,165 @@ section {
             top: 91px !important;
             position: absolute !important;
         }
-  
+
     }
 }
-@media (max-width:480px){
+
+@media (max-width:480px) {
 
     .lessonheader {
-    width: 90% !important;
+        width: 90% !important;
     }
-    .lessonheaderSub{
-        width: 90% !important;  
+
+    .lessonheaderSub {
+        width: 90% !important;
     }
-    .lessonheaderIn{
-        width: 85% !important; 
+
+    .lessonheaderIn {
+        width: 85% !important;
     }
-    .lessonheader-1{
-        width: 90% !important; 
+
+    .lessonheader-1 {
+        width: 90% !important;
     }
-    .lesson-2{
-        .lessoncont1,.lessoncont2,.lessoncont3{
-            padding:0px !important;
+
+    .lesson-2 {
+
+        .lessoncont1,
+        .lessoncont2,
+        .lessoncont3 {
+            padding: 0px !important;
         }
+
         // .lessoncont2{
         //     margin-top:30px;
         //     margin-bottom: 20px;
         // }
-        .lessoncont3{
-            margin-top:30px;
+        .lessoncont3 {
+            margin-top: 30px;
             margin-bottom: 20px;
         }
-        .lessonimg{
-            .imgbox{
-             margin-bottom: 30px !important;
+
+        .lessonimg {
+            .imgbox {
+                margin-bottom: 30px !important;
             }
         }
     }
-    .lesson-3{
-        .lessondata{
-            .lessoncontbox{
-                .lessoncont1{
+
+    .lesson-3 {
+        .lessondata {
+            .lessoncontbox {
+                .lessoncont1 {
                     padding: 30px 30px 30px 10px !important;
-                }                
                 }
-                .imgbox{
-                    width:300px !important;
-                    img{
-                        width:300px !important;
-                    }
+            }
+
+            .imgbox {
+                width: 300px !important;
+
+                img {
+                    width: 300px !important;
                 }
             }
         }
-    .lesson-4{
-        .leftlesscont{
-            padding:0 !important;
+    }
+
+    .lesson-4 {
+        .leftlesscont {
+            padding: 0 !important;
         }
-        .lessondata{
+
+        .lessondata {
             margin-right: 0 !important;
         }
     }
-    .lesson-5{
-        .lessoncontbox{
-            img{
+
+    .lesson-5 {
+        .lessoncontbox {
+            img {
                 height: 75px !important;
                 margin-top: 10px !important;
                 margin-bottom: 20px !important;
             }
         }
     }
-    .lesson-6{
-        .leftlesscont{
-            padding-left:0 !important;
+
+    .lesson-6 {
+        .leftlesscont {
+            padding-left: 0 !important;
         }
-        .imgcont{
-            img{
-                width:275px !important;
+
+        .imgcont {
+            img {
+                width: 275px !important;
             }
         }
     }
-    .lesson-7{
-        .lessonheader{
+
+    .lesson-7 {
+        .lessonheader {
             padding: 15px 0px 10px 60px !important;
-            strong{
+
+            strong {
                 font-size: 12px !important;
             }
+
             .box {
                 height: 50px !important;
             }
 
         }
-        .leftlesscont{
+
+        .leftlesscont {
             padding-left: 0px !important;
         }
-        .imgcont{
-            img{
-                width:300px !important;
+
+        .imgcont {
+            img {
+                width: 300px !important;
             }
         }
     }
-    .lesson-8{
-        .leftlessbottom{
+
+    .lesson-8 {
+        .leftlessbottom {
             margin-right: 30px !important;
         }
-        .imgcont{
-         img{
-            width:300px !important;
-         }
+
+        .imgcont {
+            img {
+                width: 300px !important;
+            }
         }
     }
-    .lesson-9{
-        .lessondata{
-            .leftlesscont{
+
+    .lesson-9 {
+        .lessondata {
+            .leftlesscont {
                 padding-left: 0 !important;
             }
-            .leftlessbottom{
-                img{
+
+            .leftlessbottom {
+                img {
                     margin-bottom: 30px;
                     width: 300px !important;
                 }
             }
-            .imgcont{
-                img{
-                    width:300px !important;
-                    
+
+            .imgcont {
+                img {
+                    width: 300px !important;
+
                 }
             }
         }
     }
-    .lesson-14{
-    padding: 50px 10px 10px 0px !important;
-    margin-bottom: 40px !important;
-        }
+
+    .lesson-14 {
+        padding: 50px 10px 10px 0px !important;
+        margin-bottom: 40px !important;
+    }
 
 }
 
@@ -1333,41 +1410,48 @@ section {
 .highLight {
     background-color: #fd8800;
 }
-.imgcont7{
-    img{
-        width:300px !important;
-        height:500px !important;
+
+.imgcont7 {
+    img {
+        width: 300px !important;
+        height: 500px !important;
     }
 
 }
-.imgcont8{
+
+.imgcont8 {
     flex-direction: column;
+
     img {
-      width: 400px;
-      height: 200px;
-      margin-bottom: 40px;
+        width: 400px;
+        height: 200px;
+        margin-bottom: 40px;
     }
 }
-.lesson-titlebox{
+
+.lesson-titlebox {
     background-color: #ed7d31;
     color: #ffffff;
     display: inline-flex;
     align-items: center;
     position: relative;
     min-height: 50px;
-    padding:0 30px 0 15px;
+    padding: 0 30px 0 15px;
     margin-top: 50px;
-    .titleno{
+
+    .titleno {
         background-color: #f8cbad;
         padding: 10px;
         color: #000;
         font-size: 20px;
         margin-right: 10px;
     }
-    strong{
+
+    strong {
         white-space: wrap;
     }
-    img{
+
+    img {
         position: absolute;
         top: 50%;
         right: 0;
@@ -1375,7 +1459,8 @@ section {
         width: 50px;
     }
 }
-.videoimg1{
+
+.videoimg1 {
     color: #fff;
     background-image: url("../../assets/img_motion/asset-1-1@1x.png");
     // width:700px;
@@ -1383,15 +1468,15 @@ section {
     background-size: 100% 100%;
     height: 643px;
     position: relative;
-   
 
-.videotag{
-    text-align: center;
-    width: 72%;
-    height: 295px;
-    left: 52px;
-    top: 209px;
-    position: absolute;
-    
-}
+
+    .videotag {
+        text-align: center;
+        width: 72%;
+        height: 295px;
+        left: 52px;
+        top: 209px;
+        position: absolute;
+
+    }
 }
