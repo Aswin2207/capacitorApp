@@ -9,14 +9,6 @@
         <p (click)="changeView(item.id)">{{item.heading}}</p>
       </div>
     </div>
-    <!-- <div class="right-cont">
-    <div class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
-      <strong>Learning Objectives</strong>
-      <p>After completing this lesson, students will be able to:</p>
-       <ul *ngFor="let i of Objectives" >
-        <li>{{i}}</li>
-       </ul>
-    </div> -->
     <div class="right-cont">
       <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
         <strong>Learning Objectives</strong>
@@ -52,16 +44,17 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='3'">
-        <div class="lessonheader col-md-4">
-          <div class="box">7.1</div>
-          <strong>Rest and Motion
-
-          </strong>
+      <div id="lesson-{{currentLesson}}" class=" lesson-{{currentLesson}}" *ngIf="currentLesson=='3'">
+        <div class="lesson-titlebox">
+          <div class="titleno">2.1</div>
+          <div>
+            <strong>Rest and Motion</strong>
+          </div>
+          <img src="assets/img_motion/image-1@1x.png"> 
         </div>
-        <div class="col-md-4">
-          <img src="assets/img_motion/image-1@1x.png">
-        </div>
+          <!-- <div class="col-md-4">
+          <img src="assets/img_motion/image-1@1x.png"> 
+        </div> -->
         <div class="box">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
@@ -105,14 +98,16 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
-        <div class="lessonheader col-md-4" *ngIf="currentSubLession=='1'">
-          <div class="box">2.2</div>
-          <strong>Types of Motion</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'">
+          <div class="titleno">2.2</div>
+          <div> <strong>Types of Motion</strong></div>
+         
         </div>
-        <div class="lessonheader col-md-4" *ngIf="currentSubLession=='2'">
-          <div class="box">2.2.1</div>
-          <strong>Uniform & Non Uniform motion</strong>
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='2'">
+          <div class="titleno">2.2</div>
+          <div> <strong>Uniform & Non Uniform motion</strong></div>
+         
         </div>
         <div class="box" *ngIf="currentSubLession=='1'">
           <div class="row lessondata">
@@ -197,10 +192,11 @@
         </div>
 
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='9'">
-        <div class="lessonheader col-md-6">
-          <div class="box">2.7</div>
-          <strong>Motion of Freely Falling Body</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='9'">
+        <div class="lesson-titlebox">
+          <div class="titleno">2.2</div>
+          <div> <strong>Uniform & Non Uniform motion</strong></div>
+         
         </div>
         <div class="box">
           <div class="row lessondata">
@@ -409,10 +405,11 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='8'">
-        <div class="lessonheader col-md-5">
-          <div class="box">2.6</div>
-          <strong>Equations of Motion</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='8'">
+        <div class="lesson-titlebox" >
+          <div class="titleno">2.6</div>
+          <div> <strong>Equations of Motion</strong></div>
+         
         </div>
         <div class="box">
           <div class="row lessondata">
@@ -445,17 +442,18 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='10'">
-        <div class="lessonheader col-md-4">
-          <div class="box">2.8</div>
-          <strong>Uniform circular motion</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='10'">
+        <div class="lesson-titlebox">
+          <div class="titleno">2.8</div>
+          <div> <strong>Uniform circular motion</strong></div>
+         
         </div>
         <div class="box">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
               <div class="row">
                 <div class="lessoncont1 col-md-11">
-                  When an object is moving with a constant speed along a circular path,
+                  When an object is moving with a constant speed along a circular path, 
                   the velocity changes dueto the change in direction. Hence, it is an accelerated motion.
                 </div>
               </div>
@@ -469,8 +467,8 @@
               </div>
               <div class="row">
                 <div class="lessoncont1 col-md-11">
-                  If an object, moving along a circular
-                  path of radius, r takes time, T to come back to its startingposition,
+                  If an object, moving along a circular 
+                  path of radius, r takes time, T to come back to its startingposition, 
                   then the speed, v is given by,
                   <br>
                   Speed = Circumference/Time taken
@@ -482,13 +480,15 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='11'">
-        <div class="lessonheader col-md-4">
-          <div class="box">2.9</div>
-          <strong>Centripetal Acceleration and Centripetal Force</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='11'">
+         
+        <div class="lesson-titlebox">
+          <div class="titleno">2.9</div>
+          <div> <strong>Centripetal Acceleration and Centripetal Force</strong></div>
+         
         </div>
-
-
+     
+       
         <div class="box">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
@@ -496,9 +496,9 @@
                 <div class="col-md-6 leftlesscont">
                   <div class="leftlessdata">
                     <b>When the acceleration is directed inwards/to the
-                      centrein a circular motion, it is known as
-                      centripetal acceleration
-                    </b>
+                    centrein a circular motion, it is known as
+                    centripetal acceleration
+                  </b>
                   </div>
                   <div class="leftlessdata">
                     For an object of mass m, moving along a circular
@@ -521,12 +521,14 @@
             </div>
           </div>
         </div>
-
+      
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='12'">
-        <div class="lessonheader col-md-6">
-          <div class="box">2.10</div>
-          <strong>Centrifugal Force</strong>
+      <div id="lesson-{{currentLesson}}" class=" lesson-{{currentLesson}}"  *ngIf="currentLesson=='12'">
+         
+        <div class="lesson-titlebox" >
+          <div class="titleno">2.10</div>
+          <div> <strong>Centrifugal Force</strong></div>
+         
         </div>
         <div class="box">
           <div class="row lessondata">
@@ -537,12 +539,12 @@
                     <img src="assets/img_motion/group-263-1@1x.png" />
                   </div>
                 </div>
-                <div class="leftlessdata1">
-                  When the acceleration is directed outwards/ away from the centrein a circular motion, it is known
-                  as centrifugal acceleration and the associated force is centrifugal force
-                </div>
-
-
+                  <div class="leftlessdata1">
+                    When the acceleration is directed outwards/ away from the centrein a circular motion, it is known
+                    as centrifugal acceleration and the associated force is centrifugal force
+                  </div>
+             
+            
               </div>
             </div>
           </div>
@@ -564,15 +566,7 @@
           <img (click)="next()" class="next" src="assets/img/next-10@1x.png">
         </div>
       </div>
-    </div>
-    <!-- <div class="footer">
-      <div class="footer-icons">
-      <img (click)="route()" class="home" src="assets/img/home-10@1x.png">
-      <img (click)="route()" class="prev" src="assets/img/back-10@1x.png">
-      <img (click)="route()" class="next" src="assets/img/next-10@1x.png">
-    </div>
-    </div> -->
   </div>
-  <!-- </div> -->
+  </div>
 
 </section>
