@@ -47,6 +47,7 @@ export class MotionLessionViewComponent implements OnInit {
   i = 0;
   currentLesson: any = 1;
   currentSubLession:any=1;
+  videoBoolean:boolean=false;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -69,6 +70,10 @@ export class MotionLessionViewComponent implements OnInit {
     }
   }
   prev(){
+    if(this.videoBoolean){
+      this.videoBoolean=false;
+    }
+    else{
     if(this.currentLesson==4){
       if(this.currentSubLession==1){
         this.currentLesson-=1;
@@ -78,23 +83,27 @@ export class MotionLessionViewComponent implements OnInit {
       }
 
     }
+    else if(this.currentLesson==7){
+      this.currentLesson-=1;
+      this.currentSubLession=3;
+    }
     else if(this.currentLesson==5){
+      this.currentLesson-=1;
+      this.currentSubLession=2;
+    }
+    else if(this.currentLesson==6){
       if(this.currentSubLession==1){
         this.currentLesson-=1;
-        this.currentSubLession=7;
       }
       else if(this.currentSubLession!=1){
         this.currentSubLession-=1;
       }
 
     }
-    else if(this.currentLesson==6){
-      this.currentLesson-=1;
-      this.currentSubLession=3;
-    }
     else if(this.currentLesson!=1){
       this.currentLesson-=1;
     }
+  }
     setTimeout(() => {
       document.getElementById("lesson-"+this.currentLesson).scrollIntoView();
    }, 100);
@@ -102,16 +111,16 @@ export class MotionLessionViewComponent implements OnInit {
   next(){
   
     if(this.currentLesson==4){
-      if(this.currentSubLession!=7){
+      if(this.currentSubLession!=2){
         this.currentSubLession+=1;
       }
-      else if(this.currentSubLession==7){
+      else if(this.currentSubLession==2){
         this.currentLesson+=1;
         this.currentSubLession=1;
       }
 
     }
-    else if(this.currentLesson==5){
+    else if(this.currentLesson==6){
       // alert(this.currentSubLession)
       if(this.currentSubLession!=3){
         this.currentSubLession+=1;
@@ -123,7 +132,7 @@ export class MotionLessionViewComponent implements OnInit {
       // alert(this.currentSubLession)
 
     }
-    else if(this.currentLesson!=11 ){
+    else if(this.currentLesson!=14 ){
       this.currentLesson+=1;
     }
     setTimeout(() => {
@@ -136,5 +145,8 @@ export class MotionLessionViewComponent implements OnInit {
   }
   nextHeat(){
 
+  }
+  videoOpen(){
+    this.videoBoolean=true;
   }
 }

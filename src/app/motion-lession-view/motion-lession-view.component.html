@@ -45,17 +45,17 @@
         </div>
       </div>
       <div id="lesson-{{currentLesson}}" class=" lesson-{{currentLesson}}" *ngIf="currentLesson=='3'">
-        <div class="lesson-titlebox">
+        <div class="lesson-titlebox" *ngIf="!videoBoolean" >
           <div class="titleno">2.1</div>
           <div>
             <strong>Rest and Motion</strong>
           </div>
-          <img src="assets/img_motion/image-1@1x.png"> 
+          <img src="assets/img_motion/image-1@1x.png" (click)="videoOpen()"> 
         </div>
           <!-- <div class="col-md-4">
           <img src="assets/img_motion/image-1@1x.png"> 
         </div> -->
-        <div class="box">
+        <div class="box" *ngIf="!videoBoolean">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
               <div class="row">
@@ -97,19 +97,23 @@
             </div>
           </div>
         </div>
+        
+        <div class="videoimg1" *ngIf="videoBoolean">
+          <video class="videotag" src="https://cdn.animaapp.com/projects/6283b4c0c82ee1c8b40ccc59/files/motion-definition.mp4" controls></video>
+           </div>
       </div>
       <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
-        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'">
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1' && !videoBoolean">
           <div class="titleno">2.2</div>
           <div> <strong>Types of Motion</strong></div>
-         
+          <img src="assets/img_motion/image-1@1x.png" (click)="videoOpen()">
         </div>
-        <div class="lesson-titlebox" *ngIf="currentSubLession=='2'">
-          <div class="titleno">2.2</div>
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='2' && !videoBoolean">
+          <div class="titleno">2.2.1</div>
           <div> <strong>Uniform & Non Uniform motion</strong></div>
-         
+          <img src="assets/img_motion/image-1@1x.png" (click)="videoOpen()">
         </div>
-        <div class="box" *ngIf="currentSubLession=='1'">
+        <div class="box" *ngIf="currentSubLession=='1' && !videoBoolean">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
               <div class="row">
@@ -162,7 +166,7 @@
             </div>
           </div>
         </div>
-        <div class="box" *ngIf="currentSubLession=='2'">
+        <div class="box" *ngIf="currentSubLession=='2'  && !videoBoolean">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
               <div class="row">
@@ -190,12 +194,18 @@
             </div>
           </div>
         </div>
+        <div class="videoimg1" *ngIf="currentSubLession=='1' && videoBoolean">
+          <video class="videotag" src="https://cdn.animaapp.com/projects/6283b4c0c82ee1c8b40ccc59/files/uniform-non-uniform.mp4" controls></video>
+           </div>
+           <div class="videoimg1" *ngIf="currentSubLession=='2' && videoBoolean">
+            <video class="videotag" src="https://cdn.animaapp.com/projects/6283b4c0c82ee1c8b40ccc59/files/uniform-non-uniform.mp4" controls></video>
+             </div>
 
       </div>
       <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='9'">
         <div class="lesson-titlebox">
-          <div class="titleno">2.2</div>
-          <div> <strong>Uniform & Non Uniform motion</strong></div>
+          <div class="titleno">2.7</div>
+          <div> <strong>Motion of Freely Falling Body</strong></div>
          
         </div>
         <div class="box">
@@ -248,18 +258,19 @@
           </div>
         </div>
       </div>
-      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='5'">
-        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
-          <div class="box">2.3</div>
-          <strong>Distance and Displacement</strong>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='5'">
+        <div class="lesson-titlebox" *ngIf="!videoBoolean">
+          <div class="titleno">2.3</div>
+          <div> <strong>Distance and Displacement</strong></div>
+          <img src="assets/img_motion/image-1@1x.png" (click)="videoOpen()">
         </div>
-        <div style="padding-left:0">
+        <div style="padding-left:0"  *ngIf="!videoBoolean">
           <div class="lessonsubheader">
-            <div class="box">2.4.2</div>
+            <div class="box">2.3.1</div>
             <strong>Distance</strong>
           </div>
         </div>
-        <div class="box" >
+        <div class="box"  *ngIf="!videoBoolean" >
           <div class="row mt-4">
             <div class="col-md-7 lessoncontbox">
                 <p>Distance:-Actual length of the path travelled by an moving object.</p>
@@ -271,7 +282,7 @@
             </div>
             <div style="padding-left:0;" class="mb-4">
               <div class="lessonsubheader">
-                <div class="box">2.4.3</div>
+                <div class="box">2.3.2</div>
                 <strong>Displacement</strong>
               </div>
             </div>
@@ -285,20 +296,23 @@
             </div>
           </div>
         </div>
+        <div class="videoimg1" *ngIf="videoBoolean">
+          <video class="videotag" src="https://cdn.animaapp.com/projects/6283b4c0c82ee1c8b40ccc59/files/distance-vs-displacement.mp4" controls></video>
+           </div>
       </div>
       <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='6'">
-        <!-- <div>
-        <div class="lessonheader col-md-5">
+        <div>
+        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
           <div class="box">2.4</div>
           <strong>Speed, Velocity and Acceleration</strong>
         </div>
-        <div>
-        <div class="lessonsubheader">
+        <div *ngIf="currentSubLession=='1'">
+        <div class="lessonsubheader" *ngIf="currentSubLession=='1'">
           <div class="box">2.4.1</div>
           <strong>Speed</strong>
         </div>
       </div>
-        <div class="box">
+        <div class="box" *ngIf="currentSubLession=='1'">
           <div class="row lessondata">
             <div class="col-md-12 lessoncontbox">
               <div class="row">
@@ -319,8 +333,8 @@
             </div>
           </div>
         </div>
-      </div> -->
-        <!-- <div>
+      </div> 
+         <div *ngIf="currentSubLession=='2'">
           <div>
             <div class="lessonsubheader">
               <div class="box">2.4.2</div>
@@ -375,12 +389,12 @@
               </div>
             </div>
           </div>
-        </div> -->
-        <div>
+        </div>
+        <div *ngIf="currentSubLession=='3'">
           <div>
             <div class="lessonsubheader">
-              <div class="box">2.4.2</div>
-              <strong>Velocity</strong>
+              <div class="box">2.4.3</div>
+              <strong>Acceleration</strong>
             </div>
           </div>
           <div class="box">
@@ -563,7 +577,7 @@
         <div class="footer-icons">
           <img (click)="route(1)" class="home" src="assets/img/home-10@1x.png">
           <img (click)="prev()" class="prev" src="assets/img/back-10@1x.png">
-          <img (click)="next()" class="next" src="assets/img/next-10@1x.png">
+          <img (click)="next()" class="next" *ngIf="!videoBoolean" src="assets/img/next-10@1x.png">
         </div>
       </div>
   </div>
