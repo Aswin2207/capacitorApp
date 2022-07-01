@@ -1209,7 +1209,7 @@ section {
         padding-bottom: 30px !important;
 
         .row {
-            padding-left: 20px !important;
+            padding-left: 5px !important;
 
             ul {
                 font-size: 12px;
@@ -1235,12 +1235,20 @@ section {
         }
 
     }
+
+    .lesson-1 {
+        padding-left: 0px !important;
+    }
 }
 
 @media (max-width:480px) {
 
     .lessonheader {
         width: 90% !important;
+    }
+
+    .lesson-1 {
+        padding-left: 0px !important;
     }
 
     .lessonheaderSub {
@@ -1305,6 +1313,10 @@ section {
         .lessondata {
             margin-right: 0 !important;
         }
+
+        .lessonimg {
+            padding-bottom: 10px;
+        }
     }
 
     .lesson-5 {
@@ -1328,19 +1340,20 @@ section {
             }
         }
     }
+    .lesson-12{
+        .lessondata {
+            padding-bottom: 30px;
+        }
+    }
 
     .lesson-7 {
-        .lessonheader {
-            padding: 15px 0px 10px 60px !important;
+        .lessonsubheader {
+            padding-left: 35px !important;
+            width: 350px !important;
 
             strong {
                 font-size: 12px !important;
             }
-
-            .box {
-                height: 50px !important;
-            }
-
         }
 
         .leftlesscont {
@@ -1351,6 +1364,10 @@ section {
             img {
                 width: 300px !important;
             }
+        }
+
+        .lessondata {
+            padding-bottom: 30px;
         }
     }
 
@@ -1386,6 +1403,18 @@ section {
                 }
             }
         }
+
+        .arrow-line {
+            width: 250px;
+        }
+
+        .no-air-block {
+            left: 210px !important;
+            top: -335px !important;
+        }
+        .pl-2{
+            padding-left: 25px !important;
+        }
     }
 
     .lesson-14 {
@@ -1393,6 +1422,13 @@ section {
         margin-bottom: 40px !important;
     }
 
+    .arrow-img {
+        width: 185px;
+    }
+
+    .chair-img {
+        width: 100px !important;
+    }
 }
 
 
@@ -1480,12 +1516,13 @@ section {
 
     }
 }
-.videoiimage{
+
+.videoiimage {
     // img {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(50%, -40%);
-        width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -40%);
+    width: 50px;
     // }
 }
