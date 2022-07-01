@@ -99,7 +99,7 @@
         </div>
         
         <div class="videoimg1" *ngIf="videoBoolean">
-          <video class="videotag" src="assets/files/motion-definition.mp4" controls></video>
+          <video class="videotag" src="assets/files/motion-definition.mp4" controls autoplay loop playsinline></video>
            </div>
       </div>
       <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
@@ -195,10 +195,10 @@
           </div>
         </div>
         <div class="videoimg1" *ngIf="currentSubLession=='1' && videoBoolean">
-          <video class="videotag" src="assets/files/uniform-non-uniform.mp4" controls></video>
+          <video class="videotag" src="assets/files/uniform-non-uniform.mp4" controls autoplay loop></video>
            </div>
            <div class="videoimg1" *ngIf="currentSubLession=='2' && videoBoolean">
-            <video class="videotag" src="assets/files/uniform-non-uniform.mp4" controls></video>
+            <video class="videotag" src="assets/files/uniform-non-uniform.mp4" controls autoplay loop></video>
              </div>
 
       </div>
@@ -297,7 +297,7 @@
           </div>
         </div>
         <div class="videoimg1" *ngIf="videoBoolean">
-          <video class="videotag" src="assets/files/distance-vs-displacement.mp4" controls></video>
+          <video class="videotag" src="assets/files/distance-vs-displacement.mp4" controls autoplay loop></video>
            </div>
       </div>
       <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='6'">
@@ -422,13 +422,13 @@
           </div>
         </div>
         <div class="videoimg1" *ngIf="currentSubLession=='1' && videoBoolean">
-          <video class="videotag" src="assets/files/speed.mp4" controls></video>
+          <video class="videotag" src="assets/files/speed.mp4" controls autoplay loop></video>
            </div>
            <div class="videoimg1" *ngIf=" currentSubLession=='2' && videoBoolean">
-            <video class="videotag" src="assets/files/velocity.mp4" controls></video>
+            <video class="videotag" src="assets/files/velocity.mp4" controls autoplay loop></video>
              </div>
              <div class="videoimg1" *ngIf=" currentSubLession=='3' && videoBoolean">
-              <video class="videotag" src="assets/files/acceleration.mp4" controls></video>
+              <video class="videotag" src="assets/files/acceleration.mp4" controls autoplay loop></video>
                </div>
       </div>
       <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='7'">
