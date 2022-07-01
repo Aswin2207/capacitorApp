@@ -67,7 +67,7 @@ export class MotionLessionViewComponent implements OnInit {
   }
   route(id) {
     if (id == 1){
-      this.router.navigateByUrl('/lesson')
+      this.router.navigateByUrl('/lesson-motion');
     }
   }
   prev(){
@@ -165,7 +165,7 @@ export class MotionLessionViewComponent implements OnInit {
 
   }
   home(){
-    window.open("https://digitieke.com/angtieke/#/subjects")
+    window.open("https://digitieke.com/angtieke/#/subjects");
   }
   nextHeat(){
 
