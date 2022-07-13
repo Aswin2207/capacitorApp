@@ -1,0 +1,2011 @@
+section {
+    background-color: #f3d25e;
+    height: 100%;
+    overflow: scroll;
+    padding-bottom: 30px;
+
+    .overall {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .left-cont {
+        width: 27%;
+        background-color: #153c66;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding-right: 0;
+        margin-right: 30px;
+
+        .header {
+            font-size: 67px;
+            color: #fd8800;
+            text-align: center;
+            // padding-left: 60px;
+            // padding-bottom: 20px;
+            // padding-top: 10px;
+        }
+
+        .menuitem {
+            p {
+                padding-left: 10px;
+                color: white;
+                font-size: 22px;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right-cont {
+        width: 69.666667%;
+        background: #faefc9;
+        padding-right: 30px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding: 0;
+
+        .lesson-1 {
+            padding-left: 80px;
+            padding-top: 50px;
+
+            strong {
+                font-size: 30px;
+                padding-bottom: 20px;
+            }
+
+            ul {
+                margin-left: 20px;
+                margin-bottom: 20px !important;
+            }
+        }
+
+        .lesson-13 {
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 30px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            padding-left: 60px;
+            // padding-top: 85px;
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                margin-top: 50px;
+
+                .lessoncontbox {
+                    color: black;
+                    font-size: 14px;
+                    margin-right: 20px;
+
+                    .lessoncont1 {
+                        padding: 20px 15px 35px 27px;
+                        word-spacing: 5px;
+                        font-size: 16px;
+                    }
+
+                    .lessoncont2 {
+                        padding: 15px 30px 30px 21px;
+                        margin-top: 40px;
+                        font-size: 16px;
+                    }
+
+                    .lessoncont3 {
+                        padding: 15px 30px 30px 21px;
+                        margin-top: 40px;
+                        font-size: 16px;
+                        .imgbox {
+                            width: 300px;
+                            height: 195px;
+                            padding: 10px;
+                            background-color: white;
+                            margin-bottom: 10px;
+                            border: 1px solid #70ad47;
+                            margin-top: 22px;
+                        }
+    
+                        img {
+                            width: 280px;
+                            height: 182px;
+                        }
+                    }
+                }
+
+                strong {
+                    font-size: 18px;
+                }
+
+            }
+        }
+
+        .lesson-2 {
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 30px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            padding-left: 60px;
+            // padding-top: 85px;
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                margin-top: 50px;
+
+                .lessoncontbox {
+                    color: black;
+                    font-size: 14px;
+                    margin-right: 20px;
+
+                    .lessoncont1 {
+                        padding: 15px 0px 30px 20px;
+                        word-spacing: 5px;
+                        font-size: 16px;
+                    }
+
+                    .lessoncont2 {
+                        padding: 15px 30px 30px 21px;
+                        margin-top: 40px;
+                        font-size: 16px;
+                    }
+
+                    .lessoncont3 {
+                        padding: 15px 30px 30px 21px;
+                        margin-top: 40px;
+                        font-size: 16px;
+                        .imgbox {
+                            width: 300px;
+                            height: 195px;
+                            padding: 10px;
+                            background-color: white;
+                            margin-bottom: 10px;
+                            border: 1px solid #70ad47;
+                            margin-top: 22px;
+                        }
+    
+                        img {
+                            width: 280px;
+                            height: 182px;
+                        }
+                    }
+                }
+
+                strong {
+                    font-size: 18px;
+                }
+
+            }
+        }
+
+        .lesson-3 {
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 30px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            padding-left: 60px;
+            // padding-top: 85px;
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                margin-top: 50px;
+
+                .lessoncontbox {
+                    color: black;
+                    font-size: 14px;
+                    margin-right: 20px;
+
+                    .lessoncont1 {
+                        padding: 15px 0px 30px 20px;
+                        word-spacing: 5px;
+                        font-size: 16px;
+                    }
+
+                    .lessoncont2 {
+                        padding: 15px 30px 30px 21px;
+                        margin-top: 40px;
+                        font-size: 16px;
+                    }
+
+                    .lessoncont3 {
+                        padding: 15px 30px 30px 21px;
+                        margin-top: 40px;
+                        font-size: 16px;
+                        .imgbox {
+                            width: 300px;
+                            height: 195px;
+                            padding: 10px;
+                            background-color: white;
+                            margin-bottom: 10px;
+                            border: 1px solid #70ad47;
+                            margin-top: 22px;
+                        }
+    
+                        img {
+                            width: 280px;
+                            height: 182px;
+                        }
+                    }
+                }
+
+                strong {
+                    font-size: 18px;
+                }
+
+            }
+        }
+
+        .lesson-4 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-1 {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+                // width: 90%;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .big {
+                    font-size: 12px !important;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 69px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+
+                .boxBig {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 28px;
+                    text-align: center;
+                    width: 62px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-7 {
+                .box {
+                    font-size: 25px;
+                }
+            }
+            .lessondata1{
+                .leftlesscont{
+              padding-top:50px ;  
+            //   margin-top:50px ;  
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+
+                .lessonimg {
+                    margin-top: 30px;
+
+                    img {
+                        // width: 165px;
+                        height: 151px;
+                    }
+                }
+
+                .leftlessbottom {
+                    margin-top: 50px;
+                }
+
+                li {
+                    padding: 15px 0px;
+                }
+
+                .leftlessdata1 {
+                    padding: 15px 0px;
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 10px 0px;
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 450px;
+                        height: 280px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .imgcont1 {
+                    flex-direction: column;
+
+                    img {
+                        width: 357px;
+                        height: 225px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        .lesson-5 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+            .lessoncontbox1 {
+                font-size: 14px;
+                 line-height: 32px; 
+                }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 44px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+
+            }
+
+            .lessonheaderSub {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+                // width: 90%;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 44px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 63px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+
+            }
+
+            .lessonsubheader {
+                background-color: #f8cbad;
+                width: 300px;
+                color: black;
+                padding: 1px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #c55a11;
+                    position: absolute;
+                    height: 30px;
+                    color: black;
+                    font-size: 20px;
+                    text-align: center;
+                    width: 60px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                
+                }
+            }
+            .lessondata1{
+                
+             
+                margin-top: 90px;
+                margin-bottom: 50px;
+            }
+            .lessondata2{
+                
+             
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .lessoncontbox {
+                    color: black;
+
+                    li {
+                        padding: 10px;
+                    }
+
+                    img {
+                        width: 725px;
+                        margin-top: 50px;
+                    }
+                }
+               
+            }
+        }
+
+        .lesson-6 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 70px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 44px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonsubheader {
+                background-color: #f8cbad;
+                width: 300px;
+                color: black;
+                padding: 1px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #c55a11;
+                    position: absolute;
+                    height: 30px;
+                    color: black;
+                    font-size: 20px;
+                    text-align: center;
+                    width: 60px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .lessondata1{
+                padding-top: 70px ;
+                ul{
+                    li{
+                        line-height: 32px;
+                    }
+                }
+
+               
+            }
+            .leftlesscont1{
+                padding-top: 50px ; 
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+                .leftlessdata {
+                    padding: 20px 0px;
+                    img {
+                        width: 350px;
+                        height: 300px;
+                        margin-top: 5px;
+                    }
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 20px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 30px;
+
+                            img {
+                                width: 200px;
+                                height: 150px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 400px;
+                        height: 200px;
+                        margin-bottom: 60px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .lesson-7 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 70px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 44px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonsubheader {
+                background-color: #f8cbad;
+                width: 450px;
+                color: black;
+                padding: 1px 5px 5px 20px;
+                margin-left: 10px;
+                margin-top: 50px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .box {
+                    background-color: #c55a11;
+                    position: absolute;
+                    height: 30px;
+                    color: black;
+                    font-size: 20px;
+                    text-align: center;
+                    width: 60px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+                .lessonimg{
+                    margin-top: 30px;
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 20px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 30px;
+
+                            img {
+                                height: 245px;
+
+                            }
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 400px;
+                        height: 200px;
+                        margin-bottom: 60px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .lesson-8 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .leftlessdata1 {
+                    padding: 20px 20px 0px 0px;
+                    padding-right: 50px;
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 20px 20px 0px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 50px;
+
+                            ol {
+                                padding: 30px;
+
+                                li {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 350px;
+                        height: 220px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .imgcont1 {
+                    flex-direction: column;
+
+                    img {
+                        width: 220px;
+                        height: 160px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        .lesson-12 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .leftlessdata1 {
+                    padding: 20px 20px 0px 0px;
+                    padding-right: 50px;
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 20px 20px 0px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 50px;
+
+                            ol {
+                                padding: 30px;
+
+                                li {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 450px;
+                        height: 250px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        .lesson-9 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlessdata {
+                        padding: 20px 0px;
+
+                      
+                    }
+                    .imgbox {
+                        width: 250px;
+                        height: 179px;
+                        background: #faefc9;
+                        margin-bottom: 30px;
+                    }
+    
+                    img {
+                        width: 250px;
+                        height: 179px;
+                    }
+                }
+            }
+        }
+
+        .lesson-10 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+
+                .lessoncontbox {
+                    color: black;
+
+                    .lessoncont1 {
+                        padding: 30px 30px 30px 21px;
+                    }
+
+                    .lessoncont2 {
+                        padding: 15px 30px 30px 21px;
+                    }
+                }
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .imgbox {
+                    width: 250px;
+                    height: 179px;
+                    background: #faefc9;
+                    margin-bottom: 30px;
+                }
+
+                img {
+                    width: 250px;
+                    height: 179px;
+                }
+                .imgbox1 {
+                    width: 325px;
+                    height: 200px;
+                    background: #faefc9;
+                    margin-bottom: 30px;
+                    img {
+                        width: 325px !important;
+                        height: 200px !important;
+                    }
+                }
+
+              
+            }
+        }
+
+        .lesson-11 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-1 {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+                // width: 90%;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .big {
+                    font-size: 12px !important;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 69px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+
+                .boxBig {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 28px;
+                    text-align: center;
+                    width: 62px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-7 {
+                .box {
+                    font-size: 25px;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .leftlessdataList {
+                    li {
+                        padding: 37px 30px 53px 29px;
+                    }
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 20px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 50px;
+
+                            ol {
+                                padding: 30px;
+
+                                li {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                    
+    
+                        .imgbox {
+                            width: 210px;
+                            height: 160px;
+                            margin-bottom: 30px;
+                            img{
+                                width: 210px;
+                            height: 160px; 
+                            }
+                        }
+                        .imgbox1 {
+                            width: 310px;
+                            height: 160px;
+                            margin-bottom: 30px;
+                            img{
+                                width: 310px;
+                            height: 160px; 
+                            }
+                        }
+                    
+    
+                    .imgcont5 {
+                        flex-direction: column;
+    
+                        img {
+                            width: 320px;
+                            height: 175px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 450px;
+                        height: 280px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .imgcont5 {
+                    flex-direction: column;
+
+                    img {
+                        width: 320px;
+                        height: 175px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .lesson-14 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-1 {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+                // width: 90%;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .big {
+                    font-size: 12px !important;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 69px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+
+                .boxBig {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 28px;
+                    text-align: center;
+                    width: 62px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-7 {
+                .box {
+                    font-size: 25px;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .leftlessdataList {
+                    li {
+                        padding: 37px 30px 53px 29px;
+                    }
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 20px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 50px;
+
+                            ol {
+                                padding: 30px;
+
+                                li {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 450px;
+                        height: 280px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .imgcont5 {
+                    flex-direction: column;
+
+                    img {
+                        width: 320px;
+                        height: 175px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .lesson-15 {
+            padding: 10px;
+
+            @media (min-width:768px) {
+                padding-left: 80px;
+            }
+
+            .lessonheader {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+
+                strong {
+                    font-size: 18px;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 47px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 50px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-1 {
+                background-color: #ed7d31;
+                color: white;
+                padding: 15px 5px 5px 32px;
+                margin-left: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+                // width: 90%;
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .big {
+                    font-size: 12px !important;
+                }
+
+                .box {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 69px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+
+                .boxBig {
+                    background-color: #f8cbad;
+                    position: absolute;
+                    height: 45px;
+                    color: black;
+                    font-size: 28px;
+                    text-align: center;
+                    width: 62px;
+                    left: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .lessonheader-7 {
+                .box {
+                    font-size: 25px;
+                }
+            }
+
+            .lessondata {
+                color: white;
+                border-radius: 5px;
+                justify-content: center;
+                margin-top: 30px;
+
+                .leftlessdataList {
+                    li {
+                        padding: 37px 30px 53px 29px;
+                    }
+                }
+
+                .lessoncontbox {
+                    color: black;
+
+                    .leftlesscont {
+                        .leftlessdata {
+                            padding: 9px 0px;
+                        }
+
+                        .leftlessbottom {
+                            margin-top: 50px;
+
+                            ol {
+                                padding: 30px;
+
+                                li {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .imgcont {
+                    flex-direction: column;
+
+                    img {
+                        width: 450px;
+                        height: 280px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .imgcont5 {
+                    flex-direction: column;
+
+                    img {
+                        width: 320px;
+                        height: 175px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+
+        .lesson-15 {
+            padding: 80px;
+            margin-top: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.logo {
+    position: absolute;
+    width: 250px;
+    right: 10px;
+    top: -10px;
+    cursor: pointer;
+}
+
+.footer {
+    padding-top: 40px;
+    position: absolute;
+    bottom: 0px;
+    /* right: 4px; */
+    /* left: 0; */
+    background-color: #153c66;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 69.6777%;
+
+    img {
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .footer-icons {
+        position: absolute;
+        top: -20px;
+        right: 25px;
+    }
+}
+
+@media (min-width:380px) and (max-width:800px) {
+    .overall {
+        justify-content: center;
+
+        .logo {
+            right: 75px !important;
+            top: -15px !important;
+        }
+    }
+
+    .left-cont {
+        width: 90% !important;
+        margin-right: 0px !important;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+    .right-cont {
+        width: 90% !important;
+        margin-right: 0px !important;
+        margin-bottom: 10px;
+        padding-bottom: 30px !important;
+
+        .row {
+            padding-left: 5px !important;
+
+            ul {
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .footer {
+        width: 90% !important;
+    }
+
+    .videoimg1 {
+        width: 100% !important;
+
+        .videotag {
+            text-align: center !important;
+            width: 69% !important;
+            height: 409px !important;
+            left: 32px !important;
+            top: 91px !important;
+            position: absolute !important;
+        }
+
+    }
+
+    .lesson-1 {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width:480px) {
+
+    .lessonheader {
+        width: 90% !important;
+    }
+
+    .lesson-1 {
+        padding-left: 0px !important;
+    }
+
+    .lessonheaderSub {
+        width: 90% !important;
+    }
+
+    .lessonheaderIn {
+        width: 85% !important;
+    }
+
+    .lessonheader-1 {
+        width: 90% !important;
+    }
+
+    .lesson-2 {
+
+        .lessoncont1,
+        .lessoncont2,
+        .lessoncont3 {
+            padding: 0px !important;
+        }
+
+        // .lessoncont2{
+        //     margin-top:30px;
+        //     margin-bottom: 20px;
+        // }
+        .lessoncont3 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .lessonimg {
+            .imgbox {
+                margin-bottom: 30px !important;
+            }
+        }
+    }
+
+    .lesson-3 {
+        .lessondata {
+            .lessoncontbox {
+                .lessoncont1 {
+                    padding: 30px 30px 30px 10px !important;
+                }
+            }
+
+            .imgbox {
+                width: 300px !important;
+
+                img {
+                    width: 300px !important;
+                }
+            }
+        }
+    }
+
+    .lesson-4 {
+        .leftlesscont {
+            padding: 0 !important;
+        }
+
+        .lessondata {
+            margin-right: 0 !important;
+        }
+
+        .lessonimg {
+            padding-bottom: 10px;
+        }
+    }
+
+    .lesson-5 {
+        .lessoncontbox {
+            img {
+                height: 75px !important;
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+
+    .lesson-6 {
+        .leftlesscont {
+            padding-left: 0 !important;
+        }
+
+        .imgcont {
+            img {
+                width: 275px !important;
+            }
+        }
+    }
+    .lesson-12{
+        .lessondata {
+            padding-bottom: 30px;
+        }
+    }
+
+    .lesson-7 {
+        .lessonsubheader {
+            padding-left: 50px !important;
+            width: 350px !important;
+
+            strong {
+                font-size: 12px !important;
+            }
+        }
+
+        .leftlesscont {
+            padding-left: 0px !important;
+        }
+
+        .imgcont {
+            img {
+                width: 300px !important;
+            }
+        }
+
+        .lessondata {
+            padding-bottom: 30px;
+        }
+    }
+
+    .lesson-8 {
+        .leftlessbottom {
+            margin-right: 30px !important;
+        }
+
+        .imgcont {
+            img {
+                width: 300px !important;
+            }
+        }
+    }
+
+    .lesson-9 {
+        .lessondata {
+            .leftlesscont {
+                padding-left: 0 !important;
+            }
+
+            .leftlessbottom {
+                img {
+                    margin-bottom: 30px;
+                    width: 300px !important;
+                }
+            }
+
+            .imgcont {
+                img {
+                    width: 300px !important;
+
+                }
+            }
+        }
+
+        .arrow-line {
+            width: 250px;
+        }
+
+        .no-air-block {
+            left: 210px !important;
+            top: -335px !important;
+        }
+        .pl-2{
+            padding-left: 25px !important;
+        }
+    }
+
+    .lesson-16 {
+        padding: 50px 10px 10px 0px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .arrow-img {
+        width: 185px;
+    }
+
+    .chair-img {
+        width: 100px !important;
+    }
+}
+
+
+.three {
+    ul {
+        padding-left: 1em !important;
+        margin-left: 1em;
+    }
+
+    li {
+        list-style-type: disc !important;
+    }
+}
+
+.highLight {
+    background-color: #fd8800;
+}
+
+.imgcont7 {
+    img {
+        width: 300px !important;
+        height: 500px !important;
+    }
+
+}
+
+.imgcont8 {
+    flex-direction: column;
+
+    img {
+        width: 400px;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+}
+
+.lesson-titlebox {
+    background-color: #ed7d31;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    min-height: 50px;
+    padding: 0 30px 0 15px;
+    margin-top: 50px;
+
+    .titleno {
+        background-color: #f8cbad;
+        padding: 10px;
+        color: #000;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    strong {
+        white-space: wrap;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -40%);
+        width: 50px;
+    }
+}
+.lesson-titleboxSub {
+    background-color: #f8cbad;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    min-height: 35px;
+    padding: 0 30px 0 15px;
+    margin-top: 50px;
+
+    .titleno {
+        background-color: #ed7d31;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 9px;
+        margin-right: 10px;
+    }
+
+    strong {
+        white-space: wrap;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -40%);
+        width: 50px;
+    }
+}
+
+.videoimg1 {
+    color: #fff;
+    background-image: url("../../assets/img_motion/asset-1-1@1x.png");
+    // width:700px;
+    width: 80%;
+    background-size: 100% 100%;
+    height: 643px;
+    position: relative;
+
+
+    .videotag {
+        text-align: center;
+        width: 72%;
+        height: 295px;
+        left: 52px;
+        top: 209px;
+        position: absolute;
+
+    }
+}
+
+.videoiimage {
+    // img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -40%);
+    width: 50px;
+    // }
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

@@ -1,0 +1,1146 @@
+<section>
+  <div class="row overall">
+    <img class="logo" (click)="home()" src="assets/img/tieke-connect-logo-10@1x.png">
+    <div class="left-cont">
+      <div class="header">
+        <strong>Motion</strong>
+      </div>
+      <div [ngClass]="{highLight: item.id==currentLesson}" class="menuitem" *ngFor="let item of lessonsList">
+        <p (click)="changeView(item.id)">{{item.heading}}</p>
+      </div>
+    </div>
+    <div class="right-cont">
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='1'">
+        <strong>Learning Objectives</strong>
+        <p>After completing this lesson, students will be able to:</p>
+        <ul *ngFor="let i of Objectives">
+          <li>{{i}}</li>
+        </ul>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='2'">
+        <div class="lessonheader lessonheaderIn  col-md-4 col-sm-6">
+          <div class="box"></div>
+          <strong>INTRODUCTION</strong>
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-7 lessoncontbox">
+              <div class="lessoncont1">
+                Sound is a form of energy which produces sensation of hearing in our ears.
+                 Some sounds are pleasant to hear and some others are not. 
+                 But, all sounds are produced by vibrations of substances
+              </div>
+              
+              <div class="lessoncont3">
+                <div class="imgbox">
+                  <img src="assets/img_sound/group-3-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class=" lesson-{{currentLesson}}" *ngIf="currentLesson=='3'">
+        <div class="lesson-titlebox"  >
+          <div class="titleno">8.1</div>
+          <div>
+            <strong>Production of Sound
+            </strong>
+          </div>
+        </div>
+          <!-- <div class="col-md-4">
+          <img src="assets/img_motion/image-1@1x.png"> 
+        </div> -->
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-7 lessoncontbox">
+              <div class="lessoncont1">
+                When you strike the tuning fork on the rubber pad, 
+                it starts vibrating. These vibrations cause the nearby molecules to vibrate.
+                 Thus, vibrations produce sound
+
+              </div>
+              
+              <div class="lessoncont3">
+                <div class="imgbox">
+                  <img src="assets/img_sound/group-6-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="videoimg1" *ngIf="videoBoolean">
+          <video class="videotag" src="assets/files/motion-definition.mp4" controls autoplay loop playsinline></video>
+           </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='4'">
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'">
+          <div class="titleno">8.2</div>
+          <div> <strong>Propagation of Sound Waves</strong></div>
+
+        </div>
+        <br>
+        <div class="lesson-titleboxSub" *ngIf="currentSubLession=='1'">
+          <div class="titleno">8.2.1</div>
+          <div> <strong>Sound needs a medium for propagation</strong></div>
+        </div>
+        <div class="lesson-titleboxSub" *ngIf="currentSubLession=='2'">
+          <div class="titleno">8.2.2</div>
+          <div> <strong>Sound is a wave</strong></div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='1'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    Sound needs a material medium like air, water, steel etc.,
+                     for its propagation. It cannot travel through vacuum. 
+                     This can be demonstrated by the Bell – Jar experiment.
+
+                  </div>
+                </div>
+                <div class="col-md-3 lessonimg">
+                  <img src="assets/img_sound/group-10-1@1x.png" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 lessonimg">
+                  <img src="assets/img_sound/group-12-1@1x.png" />
+                </div>
+                <div class="col-md-9 lessonimg">
+                  <img src="assets/img_sound/group-14-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='2'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-7 leftlesscont">
+                  <div class="leftlessdata1">
+                  <ul>
+                    <li>
+                      All the particles of the medium restrict themselves 
+                      with only a small to and fro motion called vibration 
+                      which enables the disturbance to be carried forward.
+
+                    </li>
+                  </ul>
+                  </div>
+
+                  <div class="leftlessdata1">
+                    <ul>
+                      <li>
+                        This disturbance which is carried forward in a medium is called wave.
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont1">
+                  <img src="assets/img_sound/group-21-1@1x.png" />
+                </div>
+              </div>
+              <br>
+              <div class="lesson-titleboxSub">
+                <div class="titleno">8.2.3</div>
+                <div> <strong>Longitudinal nature of sound waves</strong></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata1">
+                  <ul>
+                    <li>
+                      The waves that propagates with compressions and rarefactions are called longitudinal waves.
+
+                    </li>
+                  </ul>
+                  </div>
+
+                  <div class="leftlessdata1">
+                    <ul>
+                      <li>
+                        In longitudinal waves the particles of the medium move
+                         to and fro along the direction of propagation of the wave.
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex imgcont1">
+                  <img src="assets/img_sound/group-19-1@1x.png" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='3'">
+          <div class="row lessondata lessondata1">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata1">
+                  <ul>
+                    <li>
+                      Compressions are the regions where particles are crowded together. 
+
+
+                    </li>
+                  </ul>
+                  </div>
+
+                  <div class="leftlessdata1">
+                    <ul>
+                      <li>
+                        Rarefactions are the regions of low pressure where particles are spread apart. 
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div class="leftlessdata1">
+                    <ul>
+                      <li>
+                        A sound wave is an example of a longitudinal mechanical wave.
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex imgcont1">
+                  <img style="width: 363px; height: 407px; padding-top: 46px;" src="assets/img_sound/group-25-1@1x.png" />
+                </div>
+              </div>
+              <br>
+
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='9'">
+        <div class="lesson-titlebox">
+          <div class="titleno">8.7</div>
+          <div> <strong>Echo</strong></div>
+         
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="leftlessdata col-md-8">
+                  <ul>
+                    <li>
+                      When we shout or clap near a suitable reflecting 
+                      surface such as a tall building or a mountain, 
+                      we will hear the same sound again a little later. This sound which we hear is called an echo
+
+                    </li>
+                  </ul>
+                
+                </div>
+                <div class="imgbox col-md-3">
+                  <img src="assets/img_sound/group-63-1@1x.png" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="leftlessdata col-md-7">
+                  <ul>
+                    <li>
+                      The sensation of sound persists in our brain for about 0.1s
+                    </li>
+                  </ul>
+                
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='5'">
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'" >
+          <div class="titleno">8.3</div>
+          <div> <strong>Characteristics of a Sound Wave</strong></div>
+        </div>
+        <div class="box"  *ngIf="currentSubLession=='1'" >
+          <div class="row mt-4">
+            <div class="col-md-12 lessoncontbox">
+              A sound wave can be described completely
+               by five characteristics namely amplitude, frequency, time
+              period, wavelength and velocity or speed
+            </div>
+            <div class="col-md-12">
+              <img class="center" src="assets/img_sound/group-28-1@1x.png">
+            </div>
+           
+          </div>
+        </div>
+        <div class="box"  *ngIf="currentSubLession=='2'" >
+          <div class="row lessondata2">
+            <div class="col-md-10 lessoncontbox1">
+              Amplitude (A)
+              <br>
+              The maximum displacement of the particles of the medium
+               from their original undisturbed positions, when a wave 
+               passes through the medium is called amplitude of the wave.
+                Amplitude is denoted as A. Its SI unit is meter (m).
+
+
+            </div>
+           
+          </div>
+          <div class="row lessondata2">
+            <div class="col-md-10 lessoncontbox1">
+              Frequency (n)
+              <br>
+              The number of vibrations (complete waves or cycles) produced in one 
+              second is called frequency of the wave. It is denoted as n. The SI unit of frequency is s–1 (or) hertz (Hz). 
+              Human ear can hear sound of frequency from 20 Hz to 20,000 Hz. Sound with frequency less than 20 Hz 
+              is called infrasonic sound. 
+              Sound with frequency greater than 20,000 Hz is called ultrasonic sound.
+
+
+            </div>
+           
+          </div>
+          <div class="row lessondata2">
+            <div class="col-md-10 lessoncontbox1">
+              Time period (T)
+              <br>
+              The time required to produce one complete vibration 
+              (wave or cycle) is called time period of the wave. 
+              It is denoted as T. The SI unit of time period is second (s).
+            </div>
+           
+          </div>
+        </div>
+        <div class="box"  *ngIf="currentSubLession=='3'" >
+          <div class="row lessondata1">
+            <div class="col-md-10 lessoncontbox1">
+              Wavelength (λ)
+              <br>
+              The minimum distance in which a sound wave
+               repeats itself is called its wavelength. 
+               In a sound wave, the distance between the centers of 
+               two consecutive compressions or two consecutive rarefactions
+                is also called wavelength. The wavelength is usually denoted
+                 as λ (Greek letter, lambda). The SI unit of wavelength is metre (m).
+
+
+
+            </div>
+           
+          </div>
+          <div class="row lessondata1">
+            <div class="col-md-10 lessoncontbox1">
+              Velocity or speed (v)
+              <br>
+              The distance travelled by the sound wave in
+               one second is called velocity of the sound.
+                The SI unit of velocity of sound is m s<sup>–1</sup>
+
+
+
+            </div>
+           
+          </div>
+        </div>
+      
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='6'">
+        <div>
+        <div class="lessonheader col-md-5" *ngIf="currentSubLession=='1'">
+          <div class="box">8.4</div>
+          <strong>Distinguishing different Sounds</strong>
+        </div>
+        <div *ngIf="currentSubLession=='1'">
+      </div>
+        <div class="box" *ngIf="currentSubLession=='1'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+             
+                  <div class="leftlessdata">
+                    Sounds can be distinguished from one another in terms of the following three different factors
+                  </div>
+                  <div class="leftlessdata">
+                   <ol>
+                    <li>
+                      Loudness
+                    </li>
+                    <li>
+                      Pitch
+                    </li>
+                    <li>
+                      Timbre (or quality)
+                    </li>
+                   </ol>
+                  </div>
+              
+            </div>
+          </div>
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+             
+                  <div class="leftlessdata">
+                   <ol>
+                    <li>
+                      Loudness and Intensity
+                    </li>
+                  
+                   </ol>
+                  </div>
+              
+            </div>
+          </div>
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+             
+                  <div class="leftlessdata">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <img src="assets/img_sound/group-34-1@1x.png" />
+                      </div>
+                      <div class="col-md-5">
+                        <img src="assets/img_sound/group-36-1@1x.png" />
+                      </div>
+
+                    </div>
+                   
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div> 
+         <div *ngIf="currentSubLession=='2'">
+        
+          <div class="box">
+            <div class="row lessondata1">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-6 leftlesscont1">
+                    <div class="leftlessdata">
+                      <p>The intensity of sound heard at a place depends on thefollowing five factors.</p>
+                      <p>i. Amplitude of the source</p>
+                      <p>ii. Distance of the observer from the source.</p>
+                      <p>iii. Surface area of the source</p>
+                      <p>iv. Density of the medium.</p>
+                      <p>v. Frequency of the source</p>
+                      <p>The unit of intensity of sound is decibel (dB).</p>
+                    </div>
+                   
+                   
+                  </div>
+                  <div class="col-md-6 leftlesscont">
+                    <div class="leftlessdata">
+                      <img style="width: 300px; height: 500px;" src="assets/img_sound/group-40-1@1x.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="currentSubLession=='3'">
+          <div class="box">
+            <div class="row lessondata1">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-7 leftlesscont">
+                    <div class="leftlessdata">
+                      2.Pitch
+                      <br>
+                      <br>
+                      <ul>
+                        <li>
+                          Pitch is one of the characteristics of Sound
+                           by which we can distinguish whether a sound is shrill or base.
+                        </li>
+                        <li>
+                          High pitch sound is shrill and low pitch sound is flat.
+                        </li>
+                      </ul>
+                      <br>
+                      3. Timbre or Quality
+                    </div>
+                   
+                  </div>
+                  <div class="col-md-5 leftlesscont">
+                    <div class="leftlessdata"><img src="assets/img_sound/group-43-1@1x.png" /></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row lessondata1">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-12 leftlesscont">
+                    <div class="leftlessdata">
+                      
+                      <ul>
+                        <li>
+                          Timbre is the characteristic which distinguishes two
+                           sounds of same loudness and pitch emitted by two different instruments.
+
+                        </li>
+                        <li>
+                          A sound of single frequency is called a tone and a collection of tones is called a note. 
+                          Timbre is then a general term for the distinguishable characteristics of a tone.
+                        </li>
+                      </ul>
+                      <br>
+                     
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='7'">
+        <div>
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'" >
+          <div class="titleno">8.5</div>
+          <div>
+            <strong>Speed of Sound</strong>
+          </div>
+        </div>
+        <div class="lesson-titleboxSub" *ngIf="currentSubLession=='2'" >
+          <div class="titleno">8.5.1</div>
+          <div>
+            <strong>Speed of sound in different media</strong>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='1'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <!-- <div class="row">
+                <div class="col-md-6 leftlesscont"> -->
+                  <div class="leftlessdata">
+                    <b>Speed of Sound</b>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-4 lessonimg"> <img style="border: 2px solid #ed7d31; width: 209px;" src="assets/img_sound/group-46-1@1x.png" /></div>
+                      <div class="col-md-7 lessonimg">  <img style="border: 2px solid #ed7d31; width: 400px;"  src="assets/img_sound/group-48-1@1x.png" /></div>
+                       </div>
+                  </div>
+                </div>
+              </div>
+            <!-- </div>
+          </div> -->
+        </div>
+      </div> 
+         <div *ngIf="currentSubLession=='2'">
+          <div>
+           
+          </div>
+          <div class="box">
+            <div class="row lessondata">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-6 leftlesscont">
+                    <div class="leftlessdata"> 
+                      Sound propagates through a medium at a finite speed.
+                      </div>
+                    <div class="leftlessdata"> 
+                      <img src="assets/img_sound/group-51-1@1x.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div>
+          </div>
+        </div>
+        <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='8'">
+         
+          <div class="lesson-titlebox">
+            <div class="titleno">8.6</div>
+            <div> <strong>Reflection of Sound
+            </strong></div>
+           
+          </div>
+       
+         
+          <div class="box">
+            <div class="row lessondata">
+              <div class="col-md-12 lessoncontbox">
+                <div class="row">
+                  <div class="col-md-6 leftlesscont">
+                    <div class="leftlessdata">
+                      <ul>
+                        <li>
+                          The angle in which the sound is incident is equal to the angle in which it is reflected.
+
+                        </li>
+                      </ul>
+                    
+  
+                    </div>
+                    <div class="leftlessdata">
+                      <ul>
+                        <li>
+                          Direction of incident sound, the reflected sound and the normal are in the same plane.
+                        </li>
+                      </ul>
+                    
+  
+                    </div>
+                  </div>
+                  <div class="col-md-5 d-flex imgcont">
+                    <img src="assets/img_sound/group-54-1@1x.png" />
+                  </div>
+                </div>
+
+                <div class="lesson-titleboxSub">
+                  <div class="titleno">8.6.1</div>
+                  <div> <strong>Uses of multiple reflections of sound
+                  </strong></div>
+                 
+                </div>
+                <div class="row">
+                  <div class="col-md-8 leftlesscont">
+                    <div class="leftlessdata">
+                      <b>Musical instruments
+                      </b>
+                      <br>
+                      Megaphones, loud speakers, horns, musical instruments such as nathaswaram, 
+                      shehnai and trumpets are all designed to send sound in 
+                      a particular direction without spreading it in all directions
+                    
+  
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex imgcont1">
+                    <img src="assets/img_sound/group-56-1@1x.png" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8 leftlesscont">
+                    <div class="leftlessdata">
+                      <b>Stethoscope
+                      </b>
+                      <br>
+                      Stethoscope is a medical instrument  used for listening to sounds produced in the body.
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex imgcont1">
+                    <img src="assets/img_sound/group-60-1@1x.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='10'">
+        <div class="lesson-titlebox">
+          <div class="titleno">8.8</div>
+          <div> <strong>Reverberation</strong></div>
+         
+        </div>
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="lessoncont1 col-md-8">
+                  <ul>
+                    <li>
+                      A sound created in a big hall will persist by repeated reflection from the walls
+                      until it is reduced to a value where it is no longer audible. 
+                     The repeated reflection that results in this persistence of sound is called reverberation
+                    </li>
+                  </ul>
+                
+                </div>
+                <div class="imgbox col-md-3">
+                  <img src="assets/img_sound/group-67-1@1x.png" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="lessoncont1 col-md-7">
+                  <ul>
+                    <li>
+                      To reduce reverberation, the roof and walls of the auditorium are generally covered with sound 
+                      absorbing materials like compressed fiberboard, flannel cloths, rough plaster and draperies
+                    </li>
+                  </ul>
+                
+                </div>
+              </div>
+              <div class="row">
+                <div class="lessoncont1 col-md-7">
+                  <ul>
+                    <li>
+                      There is a separate branch in physics called 
+                      acoustics which takes these aspects of sound in to 
+                      account while designing auditoria, opera halls, theaters etc  
+                    </li>
+                  </ul>
+               
+                </div>
+                <div class="imgbox1 col-md-4">
+                  <img src="assets/img_sound/group-71-1@1x.png" />
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='12'">
+         
+        <div class="lesson-titlebox">
+          <div class="titleno">8.10</div>
+          <div> <strong>SONAR</strong></div>
+         
+        </div>
+     
+       
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        SONAR stands for Sound Navigation And Ranging. 
+                        Sonar is a device that uses ultrasonic waves to measure the distance,
+                         direction and speed of underwater objects.
+                      </li>
+                    </ul>
+                  
+
+                  </div>
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        Sonar consists of a transmitter and a detector and is installed at the bottom of boats and ships.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        Sonar technique is used to determine the depth of the sea and to locate underwater hills, valleys, submarine, icebergs etc.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont">
+                  <img src="assets/img_sound/group-88-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='11'">
+         
+        <div class="lesson-titlebox" *ngIf="currentSubLession=='1'">
+          <div class="titleno">8.9</div>
+          <div> <strong>Ultrasonic Sound or Ultrasound</strong></div>
+         
+        </div>
+        <div class="lesson-titleboxSub" *ngIf="currentSubLession=='2'">
+          <div class="titleno">8.9.1</div>
+          <div> <strong>Applications of ultrasonic waves</strong></div>
+         
+        </div>
+     
+       
+        <div class="box" *ngIf="currentSubLession=='1'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        Ultrasonic sound is the term used for sound waves with frequencies greater than 20,000 Hz.
+
+                      </li>
+                    </ul>
+                  
+
+                  </div>
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        Sound waves with frequencies below audible range are termed as 
+                         'Infrasonics‘ and those above audible range are termed as 'Ultrasonics‘.
+
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        These waves cannot be heard by the human ear, 
+                        but the audible frequency range for other animals includes ultrasound frequencies
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="leftlessdata">
+                    <ul>
+                      <li>
+                        Ultrasonic sound is having application in marine surveying also
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont">
+                  <img src="assets/img_sound/group-73-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" *ngIf="currentSubLession=='2'">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="leftlessdata col-md-8">
+                  <ul>
+                    <li>
+                      Ultrasounds can be used in cleaning technology.
+                      Minute foreign particles can be removed from objects
+                       placed in a liquid bath through which ultrasound is passed.
+                    
+
+                    </li>
+                  </ul>
+                
+                </div>
+                <div class="imgbox col-md-3">
+                  <img src="assets/img_sound/group-80-1@1x.png" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="leftlessdata col-md-7">
+                  <ul>
+                    <li>
+                      Ultrasounds can also be used to detect cracks and flaws in metal  blocks.
+                     </li>
+                  </ul>
+                
+                </div>
+                <div class="imgbox1 col-md-4">
+                  <img src="assets/img_sound/group-78-1@1x.png" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="leftlessdata col-md-8">
+                  <ul>
+                    <li>
+                      Ultrasonic waves are made to reflect from various parts 
+                      of the heart and form the Image of the heart. 
+                      This technique is called ‘echo cardiography’
+
+                     </li>
+                  </ul>
+                
+                </div>
+                <div class="imgbox col-md-3">
+                  <img src="assets/img_sound/group-82-1@1x.png" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="leftlessdata col-md-8">
+                  <ul>
+                    <li>
+                      Ultrasound may be employed to break small ‘stones’ 
+                      formed in the kidney into fine grains. These grains later 
+                      get flushed out with urine.
+
+                     </li>
+                  </ul>
+                
+                </div>
+                <div class="imgbox col-md-3">
+                  <img src="assets/img_sound/group-85-1@1x.png" />
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div id="lesson-{{currentLesson}}" class="row lesson-{{currentLesson}}" *ngIf="currentLesson=='16'">
+        <img src="assets/img_sound/group-116-1@1x.png">
+      </div>
+      <div id="lesson-{{currentLesson}}" class=" lesson-{{currentLesson}}" *ngIf="currentLesson=='13'">
+        <div class="lesson-titlebox"  >
+          <div class="titleno">8.11</div>
+          <div>
+            <strong>Electrocardiogram (ECG)
+            </strong>
+          </div>
+        </div>
+          <!-- <div class="col-md-4">
+          <img src="assets/img_motion/image-1@1x.png"> 
+        </div> -->
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-9 lessoncontbox">
+              <div class="lessoncont1">
+                The electrocardiogram (ECG) is one of the simplest and oldest cardiac investigations available.
+                <br>
+                It can provide a wealth of useful information and remains an essential part of the assessment of 
+                cardiac patients. In ECG, the sound variation produced by heart is converted into electric signals.
+
+              </div>
+              
+              <div class="lessoncont3">
+                <div class="imgbox">
+                  <img src="assets/img_sound/group-91-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="videoimg1" *ngIf="videoBoolean">
+          <video class="videotag" src="assets/files/motion-definition.mp4" controls autoplay loop playsinline></video>
+           </div>
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='14'">
+         
+        <div class="lesson-titlebox">
+          <div class="titleno">8.12</div>
+          <div> <strong>Structure of Human Ear</strong></div>
+         
+        </div>
+     
+       
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-6 leftlesscont">
+                  <div class="leftlessdata">
+                    The human ear consists of three parts: the outer ear,
+                     middle ear and inner ear. The ear canal of the outer ear
+                      is separated from the air-filled tympanic cavity of the middle ear by the eardrum.
+
+                  </div>
+                  <div class="leftlessdata">
+                    The ears are organs that provide two main functions :
+                     hearingand balance, that depend on specialized receptors called haircells
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex imgcont">
+                  <img src="assets/img_sound/group-95-1@1x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div id="lesson-{{currentLesson}}" class="lesson-{{currentLesson}}" *ngIf="currentLesson=='15'">
+         
+       
+          <div> <strong>GLOSSARY</strong></div>
+         
+  
+     
+       
+        <div class="box">
+          <div class="row lessondata">
+            <div class="col-md-12 lessoncontbox">
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Amplitude
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    The maximum displacement of a particle
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Compressions
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    The region of increased pressure.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Echo
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    The repetition of sound caused by the reflection of sound.
+                 </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Frequency
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    Number of waves produced in one second.
+
+                 </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Longitudinal wave 
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    The wave that propagates with compressions and rarefactions.
+
+
+                 </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Pitch
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    Characteristics of sound based on frequency.
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Rarefactions
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    The region of decreased pressure.
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Reverberation
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    The repeated reflection that results in persistence of sound is called reverberation.
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Timbre (or quality)
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    Characteristic which distinguishes the two sounds of same loudness  and pitch emitted by two different instruments.
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    Time period 	Time taken to produce one wave.
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Ultrasonic sound 
+
+                  </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    Sound waves with frequencies greater than 20,000 Hz.
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 leftlesscont">
+                  <div class="leftlessdata">
+                    Wave
+                    </div>
+                </div>
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    The propagating disturbance that travels in a medium.
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 leftlesscont">
+                  <div class="leftlessdata">
+                    Wavelength 	The minimum distance in which a sound wave repeats itself.
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div class="footer">
+        <div class="footer-icons">
+          <img (click)="route(1)" class="home" src="assets/img/home-10@1x.png">
+          <img (click)="prev()" class="prev" src="assets/img/back-10@1x.png">
+          <img (click)="next()" class="next" *ngIf="!videoBoolean" src="assets/img/next-10@1x.png">
+        </div>
+      </div>
+  </div>
+  </div>
+
+</section>

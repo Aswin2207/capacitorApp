@@ -15,9 +15,18 @@ import { LessonsComponent } from './lessons/lessons.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MotionLessionViewComponent } from './motion-lession-view/motion-lession-view.component';
 import { MotionContainerComponent } from './motion-container/motion-container.component';
+import { SoundLessonViewComponent } from './sound-lesson-view/sound-lesson-view.component';
+import { SoundContainerComponent } from './sound-container/sound-container.component';
 
 @NgModule({
-  declarations: [AppComponent,SubjectsComponent,SubjectviewComponent,ContainerComponent,LessonsComponent,MotionLessionViewComponent,MotionContainerComponent],
+  declarations: [AppComponent,
+    SubjectsComponent,
+    SubjectviewComponent,
+    ContainerComponent,LessonsComponent,
+    MotionLessionViewComponent,
+    MotionContainerComponent,
+    SoundLessonViewComponent,
+    SoundContainerComponent],
   entryComponents: [],
   imports: [BrowserModule,CommonModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule,FormsModule,ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

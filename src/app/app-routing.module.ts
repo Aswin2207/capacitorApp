@@ -4,6 +4,8 @@ import { ContainerComponent } from './container/container.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { MotionContainerComponent } from './motion-container/motion-container.component';
 import { MotionLessionViewComponent } from './motion-lession-view/motion-lession-view.component';
+import { SoundContainerComponent } from './sound-container/sound-container.component';
+import { SoundLessonViewComponent } from './sound-lesson-view/sound-lesson-view.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectviewComponent } from './subjectview/subjectview.component';
 
@@ -14,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'lesson-motion',
+    redirectTo: 'lesson-sound',
     pathMatch: 'full'
   },
   {
@@ -40,6 +42,14 @@ const routes: Routes = [
   {
     path: 'lesson-view-motion',
     component:MotionLessionViewComponent
+  },
+  {
+    path: 'lesson-sound',
+    component:SoundContainerComponent
+  },
+  {
+    path: 'lesson-view-sound',
+    component:SoundLessonViewComponent
   }
 ];
 
