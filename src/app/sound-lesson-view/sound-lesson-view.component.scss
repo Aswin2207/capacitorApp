@@ -1736,18 +1736,27 @@ section {
         .lessondata {
             .lessoncontbox {
                 .lessoncont1 {
-                    padding: 30px 30px 30px 10px !important;
+                    padding: 10px 30px 30px 10px !important;
+                }
+                .lessoncont3 {
+                    padding: 10px 30px 30px 10px !important;
+                    .imgbox {
+                        width: 245px !important;
+                        height: 195px !important;
+                        padding: 5px !important;
+                       
+                    }
+        
+                    img {
+                        width: 245px !important;
+                        height: 182px !important;
+                    }
                 }
             }
 
-            .imgbox {
-                width: 300px !important;
-
-                img {
-                    width: 300px !important;
-                }
-            }
+            
         }
+    
     }
 
     .lesson-4 {
@@ -1761,6 +1770,24 @@ section {
 
         .lessonimg {
             padding-bottom: 10px;
+        }
+    }
+    .lesson-13{
+        .lessoncont3 {
+            padding: 15px 30px 30px 21px;
+            margin-top: 40px;
+            font-size: 16px;
+            .imgbox {
+                width: 245px !important;
+                height: 195px !important;
+                padding: 5px !important;
+                
+            }
+
+            img {
+                width: 245px !important;
+                height: 182px !important;
+            }
         }
     }
 
