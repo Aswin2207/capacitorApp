@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 @Component({
@@ -52,10 +53,28 @@ export class SoundLessonViewComponent implements OnInit {
   currentLesson: any = 1;
   currentSubLession:any=1;
   videoBoolean:boolean=false;
-  constructor(private router: Router) { }
+  htmlContent:any;
+  constructor(private router: Router,private sanitize:DomSanitizer) { }
 
   ngOnInit() {
     this.currentLesson=1;
+//     var reader = new FileReader();
+// reader.readAsDataURL(JSON.parse(localStorage.getItem('html'))); 
+// reader.onloadend = function() {
+//   var base64data = reader.result;                
+//   console.log(base64data);
+// }
+let x= document.getElementById("right-content");
+var html:any=localStorage.getItem('html');
+	var parser = new DOMParser();
+	var doc = parser.parseFromString(html, 'text/html');
+  // this.htmlContent=doc.body
+x.appendChild(doc.body.firstChild)
+let y=document.getElementById("ppt");
+y.style.top="100px";
+
+  //  this.htmlContent= window.btoa(localStorage.getItem('html'));
+  //  this.sanitize.bypassSecurityTrustHtml(this.htmlContent)
    }
 
   changeView(id) {

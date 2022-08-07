@@ -8,6 +8,7 @@ import { SoundContainerComponent } from './sound-container/sound-container.compo
 import { SoundLessonViewComponent } from './sound-lesson-view/sound-lesson-view.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectviewComponent } from './subjectview/subjectview.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'lesson-sound',
+    redirectTo: 'html-proto',
     pathMatch: 'full'
   },
   {
@@ -48,8 +49,12 @@ const routes: Routes = [
     component:SoundContainerComponent
   },
   {
-    path: 'lesson-view-sound',
+    path: 'subject-View',
     component:SoundLessonViewComponent
+  },
+  {
+    path:"html-proto",
+    component:TestComponent
   }
 ];
 

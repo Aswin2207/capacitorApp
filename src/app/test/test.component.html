@@ -1,0 +1,44 @@
+<div style="overflow:auto;">
+<div class="container">
+    <div class="header" style="text-align:center;padding-top:30px;">
+        <strong style="font-size:30px">Convert ppt to html</strong>
+    </div>
+    <div class="row" style="justify-content: center;
+    padding-top: 100px;">
+        <div class="col-md-6 col-md-offset-3">
+            
+            <!-- Split button -->
+            <div style="display: flex;
+            justify-content: space-evenly;">
+              <div class="fileUpload btn btn-success">
+                <span><i class="glyphicon glyphicon-upload"></i> Choose a PPTX file</span>
+                <input id="uploadBtn" type="file" class="upload" accept="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+              </div>
+              <div (click)="preview()" >
+                <button style="outline: none;" class="btn btn-success" id="download-btn" [disabled]="isDone==false">Download html</button>
+              </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <br>
+
+    
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="error_block" class="alert alert-danger hidden">
+                You will need a recent browser to use this demo :(
+            </div>
+            
+            </div>
+            <div id="result_block" class="hidden">
+                <h3>Slides:</h3>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
