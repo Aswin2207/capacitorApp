@@ -17,7 +17,6 @@ import { MotionLessionViewComponent } from './motion-lession-view/motion-lession
 import { MotionContainerComponent } from './motion-container/motion-container.component';
 import { SoundLessonViewComponent } from './sound-lesson-view/sound-lesson-view.component';
 import { SoundContainerComponent } from './sound-container/sound-container.component';
-
 @NgModule({
   declarations: [AppComponent,
     SubjectsComponent,

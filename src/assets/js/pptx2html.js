@@ -6,6 +6,7 @@ $(document).ready(function() {
 		var isDone = false;
 		
 		$("#uploadBtn").on("change", function(evt) {
+			console.log('cliocked')
 			
 			isDone = false;
 			

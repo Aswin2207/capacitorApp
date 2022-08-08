@@ -14,8 +14,8 @@
                 <span><i class="glyphicon glyphicon-upload"></i> Choose a PPTX file</span>
                 <input id="uploadBtn" type="file" class="upload" accept="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
               </div>
-              <div (click)="preview()" >
-                <button style="outline: none;" class="btn btn-success" id="download-btn" [disabled]="isDone==false">Preview html</button>
+              <div (click)="preview()" id="download-btn" >
+                <button style="outline: none;" class="btn btn-success"  [disabled]="isDone==false">Preview html</button>
               </div>
                 
             </div>
@@ -41,4 +41,5 @@
         </div>
     </div>
 </div>
+
 
