@@ -57,6 +57,7 @@ export class SoundLessonViewComponent {
   videoBoolean: boolean = false;
   htmlContent: any;
   previous:any=1;
+
   constructor(private router: Router, private sanitize: DomSanitizer,public common:CommonService) { }
 
   ionViewDidEnter() {
