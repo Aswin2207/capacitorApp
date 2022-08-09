@@ -22,8 +22,39 @@
         </div>
         
     </div>
+
     
     <br>
+    <div class="row" style="justify-content: center;
+    padding-top: 100px;" *ngIf="ShowBoolean">
+        <div class="col-md-6 col-md-offset-3">
+            
+            <!-- Split button -->
+            <div style="display: flex;
+            justify-content: space-evenly;">
+              <!-- <div class="fileUpload btn btn-success">
+                <span><i class="glyphicon glyphicon-upload"></i> Choose a PPTX file</span> -->
+                <label>Menu Name</label>
+                <input [(ngModel)]="inputMenu"/>
+              <!-- </div> -->
+              <div >
+                <label>Slide No</label>
+                <select [(ngModel)]="inputIndex" >
+                    <option *ngFor="let item of common.pptData; let i=index" value="{{i}}">{{i}}</option>
+                </select>
+              </div>
+              <br>
+              <div >
+               <button class="btn btn-success" (click)="save()">Save</button>
+              </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="row" style="justify-content: center;
+    padding-top: 100px;" *ngIf="ShowBoolean">
+      <button class="btn btn-success" (click)="change()">Show Original</button></div>
 
     
     

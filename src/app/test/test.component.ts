@@ -10,7 +10,11 @@ import { CommonService } from '../common.service';
 })
 export class TestComponent implements OnInit {
 
-  constructor(private route:Router,private common:CommonService) { }
+  constructor(private route:Router,public common:CommonService) { }
+  inputMenu;
+  inputIndex;
+  menuList:any=[];
+  ShowBoolean:boolean=false;
 
   ngOnInit() {
     
@@ -34,14 +38,24 @@ export class TestComponent implements OnInit {
 				// var html = "<!DOCTYPE html><html><head>" + headHtml + "</head><body>" + bodyHtml + "</body></html>";
 				// var blob = new Blob([bodyHtml], {type: "text/html;charset=utf-8"});
 				// localStorage.setItem('html',bodyHtml);
-				func.route.navigateByUrl('/subject-View') 
+				// func.route.navigateByUrl('/subject-View') 
 				console.log(func.common.pptData)
+				localStorage.setItem('pptData',JSON.stringify(func.common.pptData))
+				func.ShowBoolean=true;
 				// saveAs(blob, "slides_p.html");
 			});
 		});
   }
 
   change(){
-	
+	this.route.navigateByUrl('/subject-View') 
+  }
+  save(){
+	let obj={menuName:this.inputMenu,slide:this.inputIndex}
+	this.menuList.push(obj);
+	this.inputMenu=undefined;
+	this.inputIndex=undefined;
+	localStorage.setItem('menulist',JSON.stringify(this.menuList))
+
   }
 }

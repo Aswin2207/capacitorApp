@@ -5,8 +5,8 @@
       <div class="header">
         <strong>Motion</strong>
       </div>
-      <div [ngClass]="{highLight: item.id==currentLesson}" class="menuitem" *ngFor="let item of lessonsList">
-        <p (click)="changeView(item.id)">{{item.heading}}</p>
+      <div [ngClass]="{highLight: item.slide==currentLesson}" class="menuitem" *ngFor="let item of lessonsList">
+        <p (click)="changeView(item.slide)">{{item.menuName}}</p>
       </div>
     </div>
     <div class="right-cont" id="right-content">
@@ -14,8 +14,8 @@
      <!-- <iframe width="100%" height="96%" src={{htmlContent}}></iframe> -->
       <div class="footer">
         <div class="footer-icons">
-          <img (click)="route(1)" class="home" src="assets/img/home-10@1x.png">
-          <img (click)="prev()" class="prev" src="assets/img/back-10@1x.png">
+          <!-- <img (click)="route(1)" class="home" src="assets/img/home-10@1x.png"> -->
+          <!-- <img (click)="prev()" class="prev" src="assets/img/back-10@1x.png"> -->
           <img (click)="next()" class="next" *ngIf="!videoBoolean" src="assets/img/next-10@1x.png">
         </div>
       </div>

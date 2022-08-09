@@ -1,5 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
@@ -17,6 +18,7 @@ import { MotionLessionViewComponent } from './motion-lession-view/motion-lession
 import { MotionContainerComponent } from './motion-container/motion-container.component';
 import { SoundLessonViewComponent } from './sound-lesson-view/sound-lesson-view.component';
 import { SoundContainerComponent } from './sound-container/sound-container.component';
+import { TestComponent } from './test/test.component';
 @NgModule({
   declarations: [AppComponent,
     SubjectsComponent,
@@ -25,7 +27,7 @@ import { SoundContainerComponent } from './sound-container/sound-container.compo
     MotionLessionViewComponent,
     MotionContainerComponent,
     SoundLessonViewComponent,
-    SoundContainerComponent],
+    SoundContainerComponent, TestComponent],
   entryComponents: [],
   imports: [BrowserModule,CommonModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule,FormsModule,ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

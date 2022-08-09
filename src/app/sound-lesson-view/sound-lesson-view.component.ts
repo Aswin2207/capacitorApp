@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { CommonService } from '../common.service';
 
 @Component({
   selector: 'app-sound-lesson-view',
@@ -8,7 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./sound-lesson-view.component.scss'],
 })
 export class SoundLessonViewComponent {
-  lessonsList = [
+  pptData:any=[];
+  lessonsList:any = [
     { id: 1, heading: "Learning Objective" },
     { id: 2, heading: "Introduction" },
     { id: 3, heading: "Production of Sound" },
@@ -54,27 +56,54 @@ export class SoundLessonViewComponent {
   currentSubLession: any = 1;
   videoBoolean: boolean = false;
   htmlContent: any;
-  constructor(private router: Router, private sanitize: DomSanitizer) { }
+  previous:any=1;
+  constructor(private router: Router, private sanitize: DomSanitizer,public common:CommonService) { }
 
   ionViewDidEnter() {
+
+    if(document.getElementById("ppt"))
+    document.getElementById("ppt").remove();
+    this.lessonsList=JSON.parse(localStorage.getItem('menulist'))
+    this.pptData=JSON.parse(localStorage.getItem('pptData'))
+    let pptData=JSON.parse(localStorage.getItem('pptData'))
+    
+    console.log(this.lessonsList)
+    console.log(this.pptData)
     this.currentLesson = 1;
     let x = document.getElementById("right-content");
     var html: any = localStorage.getItem('html');
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(this.pptData[0], 'text/html');
+    x.appendChild(doc.body.firstChild)
+    let y = document.getElementById("ppt");
+    y.style.top = "100px";
+    console.log(this.common.pptData)
+    // window.location.reload();
+  }
+
+  changeView(id) {
+    window.location.reload();
+    this.videoBoolean = false;
+    this.currentLesson = parseInt(id);
+    this.currentSubLession = 1;
+    // this.currentLesson = 1;
+    console.log(this.pptData)
+    // alert(this.currentLesson)
+    // let prev=document.getElementById("ppt-"+this.previous);
+    document.getElementById("ppt").remove();
+    let x = document.getElementById("right-content");
+    var html: any = this.pptData[this.currentLesson-1];
     var parser = new DOMParser();
     var doc = parser.parseFromString(html, 'text/html');
     x.appendChild(doc.body.firstChild)
     let y = document.getElementById("ppt");
     y.style.top = "100px";
-  }
+    this.previous=this.currentLesson;
+    console.log(this.common.pptData)
 
-  changeView(id) {
-    this.videoBoolean = false;
-    this.currentLesson = id;
-    this.currentSubLession = 1;
-
-    setTimeout(() => {
-      document.getElementById("lesson-" + this.currentLesson).scrollIntoView();
-    }, 100);
+    // setTimeout(() => {
+    //   document.getElementById("lesson-" + this.currentLesson).scrollIntoView();
+    // }, 100);
 
 
   }
@@ -139,70 +168,10 @@ export class SoundLessonViewComponent {
     }, 100);
   }
   next() {
-    this.videoBoolean = false;
-
-    if (this.currentLesson == 4) {
-      if (this.currentSubLession != 3) {
-        this.currentSubLession += 1;
-      }
-      else if (this.currentSubLession == 3) {
-        this.currentLesson += 1;
-        this.currentSubLession = 1;
-      }
-
+    if(this.pptData.length>=this.currentLesson){
+   this.currentLesson+=1;
+   this.changeView(this.currentLesson);
     }
-    else if (this.currentLesson == 5) {
-      if (this.currentSubLession != 3) {
-        this.currentSubLession += 1;
-      }
-      else if (this.currentSubLession == 3) {
-        this.currentLesson += 1;
-        this.currentSubLession = 1;
-      }
-
-    }
-    else if (this.currentLesson == 6) {
-      // alert(this.currentSubLession)
-      if (this.currentSubLession != 3) {
-        this.currentSubLession += 1;
-      }
-      else if (this.currentSubLession == 3) {
-        this.currentLesson += 1;
-        this.currentSubLession = 1;
-      }
-      // alert(this.currentSubLession)
-
-    }
-    else if (this.currentLesson == 7) {
-      // alert(this.currentSubLession)
-      if (this.currentSubLession != 2) {
-        this.currentSubLession += 1;
-      }
-      else if (this.currentSubLession == 2) {
-        this.currentLesson += 1;
-        this.currentSubLession = 1;
-      }
-      // alert(this.currentSubLession)
-
-    }
-    else if (this.currentLesson == 11) {
-      // alert(this.currentSubLession)
-      if (this.currentSubLession != 2) {
-        this.currentSubLession += 1;
-      }
-      else if (this.currentSubLession == 2) {
-        this.currentLesson += 1;
-        this.currentSubLession = 1;
-      }
-      // alert(this.currentSubLession)
-
-    }
-    else if (this.currentLesson != 16) {
-      this.currentLesson += 1;
-    }
-    setTimeout(() => {
-      document.getElementById("lesson-" + this.currentLesson).scrollIntoView();
-    }, 100);
 
   }
   home() {
@@ -213,5 +182,11 @@ export class SoundLessonViewComponent {
   }
   videoOpen() {
     this.videoBoolean = true;
+  }
+  ngOnInit(): void {
+    // window.location.reload();
+    if(document.getElementById("ppt"))
+    document.getElementById("ppt").remove();
+    
   }
 }
