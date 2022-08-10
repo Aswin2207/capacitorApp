@@ -66,41 +66,44 @@ export class SoundLessonViewComponent {
     document.getElementById("ppt").remove();
     this.lessonsList=JSON.parse(localStorage.getItem('menulist'))
     this.pptData=JSON.parse(localStorage.getItem('pptData'))
-    let pptData=JSON.parse(localStorage.getItem('pptData'))
-    
-    console.log(this.lessonsList)
     console.log(this.pptData)
-    this.currentLesson = 1;
+    // let pptData=JSON.parse(localStorage.getItem('pptData'))
+    this.currentLesson = 0;
     let x = document.getElementById("right-content");
-    var html: any = localStorage.getItem('html');
+    // var html: any = localStorage.getItem('html');
     var parser = new DOMParser();
     var doc = parser.parseFromString(this.pptData[0], 'text/html');
+    console.log(doc)
     x.appendChild(doc.body.firstChild)
-    let y = document.getElementById("ppt");
+    let y = document.getElementById("ppt-"+this.currentLesson);
+    console.log(y)
     y.style.top = "100px";
     console.log(this.common.pptData)
     // window.location.reload();
   }
 
   changeView(id) {
-    window.location.reload();
+    // window.location.reload();
+    console.log(this.currentLesson)
     this.videoBoolean = false;
+    let xy=document.getElementById("ppt-"+this.currentLesson);
+    console.log(xy);
+    xy.remove();
     this.currentLesson = parseInt(id);
     this.currentSubLession = 1;
     // this.currentLesson = 1;
-    console.log(this.pptData)
+    console.log(this.pptData[1])
     // alert(this.currentLesson)
     // let prev=document.getElementById("ppt-"+this.previous);
-    document.getElementById("ppt").remove();
     let x = document.getElementById("right-content");
-    var html: any = this.pptData[this.currentLesson-1];
+    var html: any = this.pptData[this.currentLesson];
     var parser = new DOMParser();
     var doc = parser.parseFromString(html, 'text/html');
     x.appendChild(doc.body.firstChild)
-    let y = document.getElementById("ppt");
+    let y = document.getElementById("ppt-"+this.currentLesson);
+    console.log(y)
     y.style.top = "100px";
     this.previous=this.currentLesson;
-    console.log(this.common.pptData)
 
     // setTimeout(() => {
     //   document.getElementById("lesson-" + this.currentLesson).scrollIntoView();

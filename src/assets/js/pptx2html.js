@@ -6,7 +6,6 @@ $(document).ready(function() {
 		var isDone = false;
 		
 		$("#uploadBtn").on("change", function(evt) {
-			console.log('cliocked')
 			
 			isDone = false;
 			
@@ -27,7 +26,6 @@ $(document).ready(function() {
 					worker.addEventListener('message', function(e) {
 						
 						var msg = e.data;
-						console.log(msg)
 						switch(msg.type) {
 							case "progress-update":
 								$("#load-progress").text(msg.data.toFixed(2) + "%")

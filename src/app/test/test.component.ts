@@ -32,6 +32,7 @@ export class TestComponent implements OnInit {
         var $result = $("#result");
 				var bodyHtml = $result.html();
 				$('section', '#result').each(function () {
+					console.log((this));
 					func.common.pptData.push($(this)
                     .prop('outerHTML')) //log every element found to console output
 				});
@@ -39,9 +40,10 @@ export class TestComponent implements OnInit {
 				// var blob = new Blob([bodyHtml], {type: "text/html;charset=utf-8"});
 				// localStorage.setItem('html',bodyHtml);
 				// func.route.navigateByUrl('/subject-View') 
-				console.log(func.common.pptData)
 				localStorage.setItem('pptData',JSON.stringify(func.common.pptData))
 				func.ShowBoolean=true;
+				func.common.pptData=func.common.pptData.filter((res,i)=>i<5)
+				console.log(func.common.pptData)
 				// saveAs(blob, "slides_p.html");
 			});
 		});

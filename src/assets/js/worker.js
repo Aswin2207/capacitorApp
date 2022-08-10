@@ -20,6 +20,7 @@ var bodyFontSize = 20;
 var otherFontSize = 16;
 
 var styleTable = {};
+var count=0;
 
 onmessage = function(e) {
     console.log(e)
@@ -230,9 +231,8 @@ function processSingleSlide(zip, sldFileName, index, slideSize) {
 
     
     var bgColor = getSlideBackgroundFill(slideContent, slideLayoutContent, slideMasterContent);
-    
-    var result = "<section id='ppt' style='width:" + slideSize.width + "px;  height:" + slideSize.height + "px; background-color: #" + bgColor + "'>"
-    
+    var result = "<section id="+'ppt-'+count+" style='width:" + slideSize.width + "px;  height:" + slideSize.height + "px; background-color: #" + bgColor + "'>"
+    count=count+1;
     for (var nodeKey in nodes) {
         if (nodes[nodeKey].constructor === Array) {
             for (var i=0; i<nodes[nodeKey].length; i++) {
