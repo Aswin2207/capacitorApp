@@ -10,6 +10,7 @@ import { CommonService } from '../common.service';
 })
 export class SoundLessonViewComponent {
   pptData:any=[];
+  name;
   lessonsList:any = [
     { id: 1, heading: "Learning Objective" },
     { id: 2, heading: "Introduction" },
@@ -61,6 +62,7 @@ export class SoundLessonViewComponent {
   constructor(private router: Router, private sanitize: DomSanitizer,public common:CommonService) { }
 
   ionViewDidEnter() {
+    this.name=localStorage.getItem('name');
 
     if(document.getElementById("ppt"))
     document.getElementById("ppt").remove();
@@ -70,7 +72,7 @@ export class SoundLessonViewComponent {
     
     console.log(this.lessonsList)
     console.log(this.pptData)
-    this.currentLesson = 1;
+    this.currentLesson = 0;
     let x = document.getElementById("right-content");
     var html: any = localStorage.getItem('html');
     var parser = new DOMParser();
@@ -83,7 +85,7 @@ export class SoundLessonViewComponent {
   }
 
   changeView(id) {
-    window.location.reload();
+    // window.location.reload();
     this.videoBoolean = false;
     this.currentLesson = parseInt(id);
     this.currentSubLession = 1;
@@ -91,9 +93,10 @@ export class SoundLessonViewComponent {
     console.log(this.pptData)
     // alert(this.currentLesson)
     // let prev=document.getElementById("ppt-"+this.previous);
+    if(document.getElementById("ppt"))
     document.getElementById("ppt").remove();
     let x = document.getElementById("right-content");
-    var html: any = this.pptData[this.currentLesson-1];
+    var html: any = this.pptData[this.currentLesson];
     var parser = new DOMParser();
     var doc = parser.parseFromString(html, 'text/html');
     x.appendChild(doc.body.firstChild)

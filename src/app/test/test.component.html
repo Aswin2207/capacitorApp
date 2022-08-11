@@ -12,7 +12,7 @@
             justify-content: space-evenly;">
               <div class="fileUpload btn btn-success">
                 <span><i class="glyphicon glyphicon-upload"></i> Choose a PPTX file</span>
-                <input id="uploadBtn" type="file" class="upload" accept="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <input [(ngModel)]="check" (change)="checkName($event)" id="uploadBtn" type="file" class="upload" accept="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
               </div>
               <div (click)="preview()" id="download-btn" >
                 <button style="outline: none;" class="btn btn-success"  [disabled]="isDone==false">Preview html</button>

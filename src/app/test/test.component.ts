@@ -15,12 +15,16 @@ export class TestComponent implements OnInit {
   inputIndex;
   menuList:any=[];
   ShowBoolean:boolean=false;
+  check;
 
   ngOnInit() {
     
   }
   preview(){
 	let func=this;
+	console.log(this.check)
+	let result = this.check.match("pptx");
+	console.log(result)
     $("#download-btn").click(function () {
 			console.log('clicked')
 			// if (!isDone) { return; }
@@ -40,6 +44,7 @@ export class TestComponent implements OnInit {
 				// localStorage.setItem('html',bodyHtml);
 				// func.route.navigateByUrl('/subject-View') 
 				console.log(func.common.pptData)
+				func.common.pptData=func.common.pptData.filter((res,i)=>i<9)
 				localStorage.setItem('pptData',JSON.stringify(func.common.pptData))
 				func.ShowBoolean=true;
 				// saveAs(blob, "slides_p.html");
@@ -49,6 +54,17 @@ export class TestComponent implements OnInit {
 
   change(){
 	this.route.navigateByUrl('/subject-View') 
+  }
+  checkName(eve){
+	console.log(eve)
+	console.log(eve.target.files[0].name)
+	let x="Subject";
+	if(eve.target.files[0].name){
+	
+	x= eve.target.files[0].name.toString();
+	
+	localStorage.setItem('name',x.replace(".pptx", ""))
+	}
   }
   save(){
 	let obj={menuName:this.inputMenu,slide:this.inputIndex}

@@ -3,7 +3,7 @@
     <img class="logo" (click)="home()" src="assets/img/tieke-connect-logo-10@1x.png">
     <div class="left-cont">
       <div class="header">
-        <strong>Motion</strong>
+        <strong>{{name}}</strong>
       </div>
       <div [ngClass]="{highLight: item.slide==currentLesson}" class="menuitem" *ngFor="let item of lessonsList">
         <p (click)="changeView(item.slide)">{{item.menuName}}</p>
