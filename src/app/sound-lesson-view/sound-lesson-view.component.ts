@@ -90,11 +90,12 @@ export class SoundLessonViewComponent {
     this.videoBoolean = false;
     let xy=document.getElementById("ppt-"+this.currentLesson);
     console.log(xy);
+    if(xy)
     xy.remove();
     this.currentLesson = parseInt(id);
     this.currentSubLession = 1;
     // this.currentLesson = 1;
-    console.log(this.pptData[1])
+  
     // alert(this.currentLesson)
     // let prev=document.getElementById("ppt-"+this.previous);
 
@@ -107,9 +108,13 @@ export class SoundLessonViewComponent {
     var doc = parser.parseFromString(html, 'text/html');
     x.appendChild(doc.body.firstChild)
     let y = document.getElementById("ppt-"+this.currentLesson);
-    console.log(y)
     y.style.top = "100px";
     this.previous=this.currentLesson;
+    let g=document.getElementsByClassName('h-left')
+    console.log(g)
+    for (var i = 0; i <= 3; i++) {
+      g[i].className = 'center-center';
+    }
 
     // setTimeout(() => {
     //   document.getElementById("lesson-" + this.currentLesson).scrollIntoView();
