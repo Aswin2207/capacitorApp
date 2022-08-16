@@ -49,10 +49,10 @@ section div.v-down {
 }
 
 section div.h-left {
-	/* align-items: flex-start;
-	text-align: left; */
-	align-items: center;
-	text-align: center;
+	align-items: flex-start;
+	text-align: left;
+	/* align-items: center; */
+	/* text-align: center; */
 }
 section div.h-mid {
 	align-items: center;

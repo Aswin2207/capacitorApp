@@ -58,11 +58,9 @@ export class TestComponent implements OnInit {
   }
 
   change(){
-	this.route.navigateByUrl('/subject-View') 
+	this.route.navigateByUrl('/subject-View').then(()=>window.location.reload()) 
   }
   checkName(eve){
-	console.log(eve)
-	console.log(eve.target.files[0].name)
 	let x="Subject";
 	if(eve.target.files[0].name){
 	

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { faXRay } from '@fortawesome/free-solid-svg-icons';
 import { CommonService } from '../common.service';
 
 @Component({
@@ -59,37 +60,47 @@ export class SoundLessonViewComponent {
   htmlContent: any;
   previous:any=1;
 
-  constructor(private router: Router, private sanitize: DomSanitizer,public common:CommonService) { }
+  constructor(private router: Router, private sanitize: DomSanitizer,public common:CommonService,private renderer: Renderer2, private el: ElementRef) { 
+    
+  }
 
   ionViewDidEnter() {
     this.name=localStorage.getItem('name');
-
     if(document.getElementById("ppt"))
     document.getElementById("ppt").remove();
     this.lessonsList=JSON.parse(localStorage.getItem('menulist'))
     this.pptData=JSON.parse(localStorage.getItem('pptData'))
-    console.log(this.pptData)
-
     this.currentLesson = 0;
     let x = document.getElementById("right-content");
     // var html: any = localStorage.getItem('html');
     var parser = new DOMParser();
     var doc = parser.parseFromString(this.pptData[0], 'text/html');
     console.log(doc)
-    x.appendChild(doc.body.firstChild)
+    x.appendChild(doc.body.firstChild);
     let y = document.getElementById("ppt-"+this.currentLesson);
     console.log(y)
-    y.style.top = "100px";
-    console.log(this.common.pptData)
+    // y.style.top = "100px";
     // window.location.reload();
   }
 
-  changeView(id) {
+  changeView(id,next?:any) {
     // window.location.reload();
 
-    this.videoBoolean = false;
-    let xy=document.getElementById("ppt-"+this.currentLesson);
-    console.log(xy);
+    let xy;
+    if(next){
+      let val;
+      if(this.currentLesson>0){
+       val=this.currentLesson-1;
+      }
+      else{
+         val=this.currentLesson;
+      }
+      console.log(val)
+       xy=document.getElementById("ppt-"+val);
+    }
+    else{
+     xy=document.getElementById("ppt-"+this.currentLesson);
+    }
     if(xy)
     xy.remove();
     this.currentLesson = parseInt(id);
@@ -103,15 +114,14 @@ export class SoundLessonViewComponent {
     document.getElementById("ppt").remove();
 
     let x = document.getElementById("right-content");
+    console.log(this.currentLesson)
     var html: any = this.pptData[this.currentLesson];
     var parser = new DOMParser();
     var doc = parser.parseFromString(html, 'text/html');
     x.appendChild(doc.body.firstChild)
-    let y = document.getElementById("ppt-"+this.currentLesson);
-    y.style.top = "100px";
+    // y.style.top = "100px";
     this.previous=this.currentLesson;
     let g=document.getElementsByClassName('h-left')
-    console.log(g)
     let h;
     if(g.length>2){
          h=2;
@@ -192,7 +202,7 @@ export class SoundLessonViewComponent {
   next() {
     if(this.pptData.length>=this.currentLesson){
    this.currentLesson+=1;
-   this.changeView(this.currentLesson);
+   this.changeView(this.currentLesson,true);
     }
 
   }
