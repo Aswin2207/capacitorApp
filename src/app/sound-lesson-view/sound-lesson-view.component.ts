@@ -112,7 +112,14 @@ export class SoundLessonViewComponent {
     this.previous=this.currentLesson;
     let g=document.getElementsByClassName('h-left')
     console.log(g)
-    for (var i = 0; i <= 3; i++) {
+    let h;
+    if(g.length>2){
+         h=2;
+    }
+    else{
+      h=g.length;
+    }
+    for (var i = 0; i <= h; i++) {
       g[i].className = 'center-center';
     }
 

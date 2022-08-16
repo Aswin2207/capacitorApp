@@ -46,7 +46,7 @@ export class TestComponent implements OnInit {
 				// func.route.navigateByUrl('/subject-View') 
 
 				console.log(func.common.pptData)
-				func.common.pptData=func.common.pptData.filter((res,i)=>i<8)
+				func.common.pptData=func.common.pptData.filter((res,i)=>i<6)
 
 				localStorage.setItem('pptData',JSON.stringify(func.common.pptData))
 				func.ShowBoolean=true;
