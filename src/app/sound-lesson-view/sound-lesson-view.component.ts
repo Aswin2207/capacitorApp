@@ -139,6 +139,7 @@ export class SoundLessonViewComponent {
       h=g.length;
     }
     for (var i = 0; i <= h; i++) {
+      if(g[i].className)
       g[i].className = 'center-center';
     }
 
