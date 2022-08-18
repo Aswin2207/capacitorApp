@@ -52,17 +52,28 @@
         </div>
         
     </div>
-    <div class="row" style="justify-content: center;
-    padding-top: 100px;" *ngIf="ShowBoolean">
+    <div style="display: flex;
+    justify-content: center; margin-top: 10px;" *ngIf="ShowBoolean">
     <div class="row">
-      <div class="col-6">
-        <label style="margin: 2px;">Add Video</label>
-        <input type="file" (change)="onSelectFile($event)" accept=".mp4">
-      </div>
-      <div class="col-3">
-        <button class="btn btn-success" (click)="change()">Show Original</button></div>
+      <div class="col-6" >
+        <div class="row">
+          <div class="col-6">
+            <label style="margin: 2px;">Add Video</label>
+          </div>
+          <div class="col-6">
+            <input type="file" (change)="onSelectFile($event)" accept=".mp4">
+          </div>
+         
+         
+        </div>
+       
       </div>
     </div>
+      <div style="display: flex;
+      justify-content: center; margin-top: 10px;" *ngIf="ShowBoolean">
+        <button class="btn btn-success" (click)="change()">Show HTML</button></div>
+      </div>
+   
 
       
 
