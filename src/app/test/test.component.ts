@@ -16,8 +16,10 @@ export class TestComponent implements OnInit {
   menuList:any=[];
   ShowBoolean:boolean=false;
   check;
+  url;
 
   ngOnInit() {
+	sessionStorage.clear();
     
   }
   preview(){
@@ -76,5 +78,17 @@ export class TestComponent implements OnInit {
 	this.inputIndex=undefined;
 	localStorage.setItem('menulist',JSON.stringify(this.menuList))
 
+  }
+  onSelectFile(event) {
+	const file = event.target.files && event.target.files[0];
+	if (file) {
+	  var reader = new FileReader();
+	  reader.readAsDataURL(file);
+	  reader.onload = (event) => {
+		this.url = (<FileReader>event.target).result;
+		sessionStorage.setItem('video',this.url)
+		console.log(this.url)
+	  }
+	}
   }
 }

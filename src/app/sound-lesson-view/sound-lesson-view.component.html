@@ -8,8 +8,14 @@
       <div [ngClass]="{highLight: item.slide==currentLesson}" class="menuitem" *ngFor="let item of lessonsList">
         <p (click)="changeView(item.slide)">{{item.menuName}}</p>
       </div>
+      <div [ngClass]="{highLight: videoTag==true}" class="menuitem" *ngIf="videoMenu" >
+        <p (click)="videoClick()">Video</p>
+      </div>
     </div>
     <div class="right-cont" id="right-content">
+      <div class="videoimg1" *ngIf="videoTag">
+        <video class="videotag" [src]="videoUrl" controls autoplay loop></video>
+         </div>
       <!-- {{htmlContent}} -->
      <!-- <iframe width="100%" height="96%" src={{htmlContent}}></iframe> -->
       <div class="footer" style="z-index: 9999;">

@@ -54,6 +54,7 @@
     </div>
     <div class="row" style="justify-content: center;
     padding-top: 100px;" *ngIf="ShowBoolean">
+    <input type="file" (change)="onSelectFile($event)" accept=".mp4">
       <button class="btn btn-success" (click)="change()">Show Original</button></div>
 
     

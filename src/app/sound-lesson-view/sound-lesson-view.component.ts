@@ -59,16 +59,24 @@ export class SoundLessonViewComponent {
   videoBoolean: boolean = false;
   htmlContent: any;
   previous:any=1;
+  videoTag:boolean=false;
+  videoMenu:boolean=false;
+  videoUrl;
 
   constructor(private router: Router, private sanitize: DomSanitizer,public common:CommonService,private renderer: Renderer2, private el: ElementRef) { 
     
   }
 
   ionViewDidEnter() {
+    this.videoUrl=sessionStorage.getItem('video');
+    if(this.videoUrl){
+      this.videoMenu=true
+    }
     this.name=localStorage.getItem('name');
     if(document.getElementById("ppt"))
     document.getElementById("ppt").remove();
-    this.lessonsList=JSON.parse(localStorage.getItem('menulist'))
+    this.lessonsList=JSON.parse(localStorage.getItem('menulist'));
+  
     this.pptData=JSON.parse(localStorage.getItem('pptData'))
     this.currentLesson = 0;
     let x = document.getElementById("right-content");
@@ -85,6 +93,7 @@ export class SoundLessonViewComponent {
 
   changeView(id,next?:any) {
     // window.location.reload();
+    this.videoTag=false;
 
     let xy;
     if(next){
@@ -200,10 +209,24 @@ export class SoundLessonViewComponent {
     }, 100);
   }
   next() {
-    if(this.pptData.length>=this.currentLesson){
+    // alert(this.pptData.length+'current'+this.currentLesson)
+    if(this.currentLesson!='check'){
+    if(this.pptData.length-1>=this.currentLesson+1){
    this.currentLesson+=1;
    this.changeView(this.currentLesson,true);
     }
+    else{
+      let xy=document.getElementById("ppt-"+this.currentLesson);
+      if(xy)
+      xy.remove();
+      this.videoTag=true;
+      this.currentLesson='check'; 
+    }
+  }
+  else{
+    this.currentLesson=0;
+   this.changeView(this.currentLesson,true);
+  }
 
   }
   home() {
@@ -220,5 +243,12 @@ export class SoundLessonViewComponent {
     if(document.getElementById("ppt"))
     document.getElementById("ppt").remove();
     
+  }
+  videoClick(){
+    let xy=document.getElementById("ppt-"+this.currentLesson);
+  if(xy)
+  xy.remove();
+    this.videoTag=true;
+    this.currentLesson="check";
   }
 }
