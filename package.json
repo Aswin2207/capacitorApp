@@ -34,6 +34,7 @@
     "@ionic/angular": "^6.0.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
+    "chalk": "^5.0.1",
     "cordova-plugin-inappbrowser": "^5.0.0",
     "d3": "^7.6.1",
     "filereader": "^0.10.3",

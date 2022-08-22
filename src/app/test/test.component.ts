@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
 import { CommonService } from '../common.service';
+import { HttpClient } from '@angular/common/http';
+import { timeStamp } from 'console';
 
 @Component({
   selector: 'app-test',
@@ -10,13 +12,14 @@ import { CommonService } from '../common.service';
 })
 export class TestComponent implements OnInit {
 
-  constructor(private route:Router,public common:CommonService) { }
+  constructor(private route:Router,public common:CommonService,private http:HttpClient) { }
   inputMenu;
   inputIndex;
   menuList:any=[];
   ShowBoolean:boolean=false;
   check;
   url;
+  appUrl;
 
   ngOnInit() {
 	sessionStorage.clear();
@@ -28,7 +31,6 @@ export class TestComponent implements OnInit {
 	let result = this.check.match("pptx");
 	console.log(result)
     $("#download-btn").click(function () {
-			console.log('clicked')
 			// if (!isDone) { return; }
 			var cssText = "";
 			$.get("./assets/css/pptx2html.css", function (data) {
@@ -37,8 +39,7 @@ export class TestComponent implements OnInit {
 				var headHtml = "<style>" + cssText + "</style>";
         var $result = $("#result");
 				var bodyHtml = $result.html();
-				$('section', '#result').each(function () {
-					console.log((this));
+				$('section', '#result').each(function (index, value ) {
 					func.common.pptData.push($(this)
                     .prop('outerHTML')) //log every element found to console output
 				});
@@ -46,15 +47,11 @@ export class TestComponent implements OnInit {
 				// var blob = new Blob([bodyHtml], {type: "text/html;charset=utf-8"});
 				// localStorage.setItem('html',bodyHtml);
 				// func.route.navigateByUrl('/subject-View') 
-
-				console.log(func.common.pptData)
 				func.common.pptData=func.common.pptData.filter((res,i)=>i<6)
 
-				localStorage.setItem('pptData',JSON.stringify(func.common.pptData))
 				func.ShowBoolean=true;
-				// func.common.pptData=func.common.pptData.filter((res,i)=>i<5)
-				console.log(func.common.pptData)
-				// saveAs(blob, "slides_p.html");
+				func.common.pptData = [...new Set(func.common.pptData)];
+				localStorage.setItem('pptData',JSON.stringify(func.common.pptData))
 			});
 		});
   }
@@ -76,7 +73,8 @@ export class TestComponent implements OnInit {
 	this.menuList.push(obj);
 	this.inputMenu=undefined;
 	this.inputIndex=undefined;
-	localStorage.setItem('menulist',JSON.stringify(this.menuList))
+	this.common.menuList=this.menuList;
+	localStorage.setItem('menulist',JSON.stringify(this.menuList));
 
   }
   onSelectFile(event) {
@@ -87,8 +85,24 @@ export class TestComponent implements OnInit {
 	  reader.onload = (event) => {
 		this.url = (<FileReader>event.target).result;
 		sessionStorage.setItem('video',this.url)
-		console.log(this.url)
 	  }
 	}
+  }
+  saveData(){
+	// const headers = {"Content-Type":"application/json"};
+	const menuData={
+		folderName:localStorage.getItem('name'),
+		menuList:this.menuList,
+		htmlData:this.common.pptData
+	}
+    this.http.post<any>('https://digitieke.com/html-proto',menuData).subscribe(data => {
+		this.appUrl="https://digitieke.com/angtieke?Subject="+localStorage.getItem('name');
+
+    })
+
+  }
+  copyText(){
+	$(".message").text("link copied");
+	navigator.clipboard.writeText(this.appUrl);
   }
 }

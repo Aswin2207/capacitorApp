@@ -70,9 +70,19 @@
       </div>
     </div>
       <div style="display: flex;
-      justify-content: center; margin-top: 10px;" *ngIf="ShowBoolean">
-        <button class="btn btn-success" (click)="change()">Show HTML</button></div>
+      justify-content: center; margin-top: 10px;flex-direction: column;" *ngIf="ShowBoolean">
+        <button class="btn btn-success" (click)="change()">Show HTML</button>
+        <button class="btn btn-success" style=" margin-top: 10px;" (click)="saveData()">Save Data</button></div>
       </div>
+    <div  class="row justify-content-center" *ngIf="appUrl">
+
+      <div class="col-md-6" >
+        <label class="pb-2" style="font-weight: 600">Page Link <span class="message"></span></label><br />
+        <input  class="col-10 ur px-2" type="url" [value]="appUrl"
+            id="myInput"  style="height: 40px;">
+        <button class="cpy pb-0" (click)="copyText()" style="height: 40px;"><i class="fa-solid fa-copy"></i></button>
+    </div>
+  </div>
    
 
       

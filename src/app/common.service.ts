@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CommonService {
  pptData:any=[];
+ menuList:any=[];
+ protoData:any=[];
   constructor() { }
 }
