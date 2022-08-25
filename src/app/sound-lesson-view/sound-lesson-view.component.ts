@@ -154,61 +154,61 @@ export class SoundLessonViewComponent {
       this.router.navigateByUrl('/lesson-sound');
     }
   }
-  prev() {
-    this.videoBoolean = false;
+  // prev() {
+  //   this.videoBoolean = false;
 
-    if (this.currentLesson == 4) {
-      if (this.currentSubLession == 1) {
-        this.currentLesson -= 1;
-      }
-      else if (this.currentSubLession != 1) {
-        this.currentSubLession -= 1;
-      }
+  //   if (this.currentLesson == 4) {
+  //     if (this.currentSubLession == 1) {
+  //       this.currentLesson -= 1;
+  //     }
+  //     else if (this.currentSubLession != 1) {
+  //       this.currentSubLession -= 1;
+  //     }
 
-    }
-    else if (this.currentLesson == 5 || this.currentLesson == 6) {
-      if (this.currentSubLession == 1) {
-        this.currentLesson -= 1;
-        this.currentSubLession = 3;
-      }
-      else if (this.currentSubLession != 1) {
-        this.currentSubLession -= 1;
-      }
+  //   }
+  //   else if (this.currentLesson == 5 || this.currentLesson == 6) {
+  //     if (this.currentSubLession == 1) {
+  //       this.currentLesson -= 1;
+  //       this.currentSubLession = 3;
+  //     }
+  //     else if (this.currentSubLession != 1) {
+  //       this.currentSubLession -= 1;
+  //     }
 
-    }
-    else if (this.currentLesson == 7) {
-      if (this.currentSubLession == 1) {
-        this.currentLesson -= 1;
-        this.currentSubLession = 3;
-      }
-      else if (this.currentSubLession != 1) {
-        this.currentSubLession -= 1;
-      }
+  //   }
+  //   else if (this.currentLesson == 7) {
+  //     if (this.currentSubLession == 1) {
+  //       this.currentLesson -= 1;
+  //       this.currentSubLession = 3;
+  //     }
+  //     else if (this.currentSubLession != 1) {
+  //       this.currentSubLession -= 1;
+  //     }
 
-    }
-    else if (this.currentLesson == 11) {
-      if (this.currentSubLession == 1) {
-        this.currentLesson -= 1;
-        this.currentSubLession = 1;
-      }
-      else if (this.currentSubLession != 1) {
-        this.currentSubLession -= 1;
-      }
+  //   }
+  //   else if (this.currentLesson == 11) {
+  //     if (this.currentSubLession == 1) {
+  //       this.currentLesson -= 1;
+  //       this.currentSubLession = 1;
+  //     }
+  //     else if (this.currentSubLession != 1) {
+  //       this.currentSubLession -= 1;
+  //     }
 
-    }
-    else if (this.currentLesson == 8 || this.currentLesson == 12) {
-      this.currentLesson -= 1;
-      this.currentSubLession = 2;
-    }
+  //   }
+  //   else if (this.currentLesson == 8 || this.currentLesson == 12) {
+  //     this.currentLesson -= 1;
+  //     this.currentSubLession = 2;
+  //   }
 
-    else if (this.currentLesson != 1) {
-      this.currentLesson -= 1;
-    }
+  //   else if (this.currentLesson != 1) {
+  //     this.currentLesson -= 1;
+  //   }
 
-    setTimeout(() => {
-      document.getElementById("lesson-" + this.currentLesson).scrollIntoView();
-    }, 100);
-  }
+  //   setTimeout(() => {
+  //     document.getElementById("lesson-" + this.currentLesson).scrollIntoView();
+  //   }, 100);
+  // }
   next() {
     // alert(this.pptData.length+'current'+this.currentLesson)
     if(this.currentLesson!='check'){
@@ -220,8 +220,9 @@ export class SoundLessonViewComponent {
       let xy=document.getElementById("ppt-"+this.currentLesson);
       if(xy)
       xy.remove();
-      this.videoTag=true;
-      this.currentLesson='check'; 
+      this.videoTag=false;
+      // this.currentLesson='check'; 
+      this.currentLesson=0; 
     }
   }
   else{
@@ -230,8 +231,23 @@ export class SoundLessonViewComponent {
   }
 
   }
+  prev() {
+    // alert(this.pptData.length+'current'+this.currentLesson)
+    if(this.currentLesson!='check'){
+    if(this.currentLesson>=1){
+      let xy=document.getElementById("ppt-"+this.currentLesson);
+      if(xy){
+        xy.remove();
+      }
+   this.currentLesson-=1;
+   this.changeView(this.currentLesson,true);
+    }
+  
+  }
+
+  }
   home() {
-    window.open("https://digitieke.com/angtieke/#/subjects");
+    window.open("https://digitieke.com/pptHtml/#/html-proto");
   }
   nextHeat() {
 
