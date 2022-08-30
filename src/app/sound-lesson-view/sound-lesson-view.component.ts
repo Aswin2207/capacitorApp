@@ -247,7 +247,9 @@ export class SoundLessonViewComponent {
 
   }
   home() {
-    window.open("https://digitieke.com/pptHtml/#/html-proto");
+    this.router.navigateByUrl('/subjects');
+    // window.open("https://digitieke.com/HtmlProto/#/html-proto");
+
   }
   nextHeat() {
 

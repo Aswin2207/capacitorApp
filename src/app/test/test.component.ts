@@ -17,15 +17,19 @@ export class TestComponent implements OnInit {
   inputIndex;
   menuList:any=[];
   ShowBoolean:boolean=false;
+  Showedit:boolean=false;
   check;
   url;
   appUrl;
+  getallList:any=[];
+  changePPt;
 
   ngOnInit() {
 	sessionStorage.clear();
     
   }
   preview(){
+	this.Showedit=false;
 	let func=this;
 	console.log(this.check)
 	let result = this.check.match("pptx");
@@ -104,5 +108,19 @@ export class TestComponent implements OnInit {
   copyText(){
 	$(".message").text("link copied");
 	navigator.clipboard.writeText(this.appUrl);
+  }
+  edit(){
+	this.Showedit=true;
+	this.http.get<any>('https://digitieke.com/html-proto?getFolder=true').subscribe(data => {
+		this.getallList=data;
+
+    })
+  }
+  editSave(data){
+	let menuData;
+	this.http.put<any>('https://digitieke.com/html-proto?modifyFolder='+data,menuData).subscribe(data => {
+		this.Showedit=false;
+
+    })
   }
 }

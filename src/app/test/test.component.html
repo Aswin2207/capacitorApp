@@ -17,6 +17,9 @@
               <div >
                 <button (click)="preview()"   style="outline: none;" id="download-btn" class="btn btn-success" >Preview html</button>
               </div>
+              <div >
+                <button (click)="edit()"   style="outline: none;" id="download-btn" class="btn btn-success" >Edit html</button>
+              </div>
                 
             </div>
         </div>
@@ -25,6 +28,29 @@
 
     
     <br>
+    <div class="row" style="justify-content: center;
+    padding-top: 100px;" *ngIf="Showedit">
+        <div class="col-md-6 col-md-offset-3">
+            
+            <!-- Split button -->
+            <div style="display: flex;
+            justify-content: space-evenly;">
+             
+              <div >
+                <label>Select PPT</label> &nbsp;
+                <select [(ngModel)]="changePPt" >
+                    <option *ngFor="let item of getallList; let i=index" value="{{item.folderName}}">{{item.folderName}}</option>
+                </select>
+              </div>
+              <br>
+              <div >
+               <button class="btn btn-success" (click)="editSave(changePPt)">Edit</button>
+              </div>
+                
+            </div>
+        </div>
+        
+    </div>
     <div class="row" style="justify-content: center;
     padding-top: 100px;" *ngIf="ShowBoolean">
         <div class="col-md-6 col-md-offset-3">
