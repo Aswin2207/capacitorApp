@@ -20,7 +20,8 @@ export class AppinitService {
       for (const [key, value] of urlParams) {
         params=`${value}`;
       }
-      this.http.get<any>('https://digitieke.com/html-proto?folder='+params).subscribe(data => {
+      this.getVideo(params);
+      this.http.get<any>('https://digitieke.com/html-proto/api/getFolder?value='+params).subscribe(data => {
         this.common.protoData=data;
         this.common.pptData=data.htmlData;
         localStorage.setItem('pptData',JSON.stringify(data.htmlData))
@@ -36,26 +37,31 @@ export class AppinitService {
 
   } else{
     const data=localStorage.getItem("name");
-    const routes = this.router.config;
-    routes.push({ path:data, component: SoundLessonViewComponent });
-    this.router.resetConfig(routes);
-    this.router.navigate(['/',data]); 
+    this.getVideo(data);
+    // const routes = this.router.config;
+    // routes.push({ path:data, component: SoundLessonViewComponent });
+    // this.router.resetConfig(routes);
      resolve();
   }
-        // Simple example from an array. In reality, I used the response of
-        // a GET. Important thing is that the app will wait for this promise to resolve
-        // const newDynamicRoutes = ['bulbasaur','charmander','squirtle']
-        // const routes = this.router.config;
-        // console.log(routes)
-
-
-          // routes.push({ path: "subject-View", component: SoundLessonViewComponent });
-
-
-        // this.router.resetConfig(routes);
-        // this.router.navigateByUrl('/subject-View'); 
-        // resolve();
+    
 
     });
+  }
+
+  getVideo(params){
+    var headers = {
+      'Content-Type': 'application/octet-stream',
+  };
+    this.http.get('https://digitieke.com/html-proto/api/getVideo?value='+params,{ responseType: 'blob'}).subscribe(data => {
+      console.log(data);
+      var newVideoBlob = new Blob([data], { type: 'video/mp4' })
+   this.common.videoUrl= URL.createObjectURL(newVideoBlob);
+   console.log(newVideoBlob)
+   const route=localStorage.getItem("name");
+   const routes = this.router.config;
+   routes.push({ path:route, component: SoundLessonViewComponent });
+   this.router.resetConfig(routes);
+   this.router.navigate(['/',route]); 
+  })
   }
 }

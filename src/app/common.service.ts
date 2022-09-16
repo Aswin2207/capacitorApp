@@ -7,5 +7,6 @@ export class CommonService {
  pptData:any=[];
  menuList:any=[];
  protoData:any=[];
+ videoUrl:any;
   constructor() { }
 }

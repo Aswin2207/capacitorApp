@@ -10,60 +10,60 @@ import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectviewComponent } from './subjectview/subjectview.component';
 import { TestComponent } from './test/test.component';
 
-const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'html-proto',
-    pathMatch: 'full'
-  },
-  {
-    path: 'subjects',
-    component:SubjectsComponent
-  },
-  {
-    path: 'subjectsView',
-    component:SubjectviewComponent
-  },
-  {
-    path: 'lesson',
-    component:ContainerComponent
-  },
-  {
-    path: 'lesson-view',
-    component:LessonsComponent
-  },
-  {
-    path: 'lesson-motion',
-    component:MotionContainerComponent
-  },
-  {
-    path: 'lesson-view-motion',
-    component:MotionLessionViewComponent
-  },
-  {
-    path: 'lesson-sound',
-    component:SoundContainerComponent
-  },
-  {
-    path: 'subject-View',
-    component:SoundLessonViewComponent
-  },
-  {
-    path:"html-proto",
-    component:TestComponent
-  }
-];
-
 // const routes: Routes = [
 //   {
 //     path: 'home',
 //     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+//   },
+//   {
+//     path: '',
+//     redirectTo: 'html-proto',
+//     pathMatch: 'full'
+//   },
+//   {
+//     path: 'subjects',
+//     component:SubjectsComponent
+//   },
+//   {
+//     path: 'subjectsView',
+//     component:SubjectviewComponent
+//   },
+//   {
+//     path: 'lesson',
+//     component:ContainerComponent
+//   },
+//   {
+//     path: 'lesson-view',
+//     component:LessonsComponent
+//   },
+//   {
+//     path: 'lesson-motion',
+//     component:MotionContainerComponent
+//   },
+//   {
+//     path: 'lesson-view-motion',
+//     component:MotionLessionViewComponent
+//   },
+//   {
+//     path: 'lesson-sound',
+//     component:SoundContainerComponent
+//   },
+//   {
+//     path: 'subject-View',
+//     component:SoundLessonViewComponent
+//   },
+//   {
+//     path:"html-proto",
+//     component:TestComponent
 //   }
-//   ];
+// ];
+
+const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  }
+  ];
 
 @NgModule({
   imports: [

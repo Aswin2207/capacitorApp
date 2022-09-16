@@ -69,6 +69,7 @@ export class SoundLessonViewComponent {
 
   ionViewDidEnter() {
     this.videoUrl=sessionStorage.getItem('video');
+    this.videoUrl=this.sanitize.bypassSecurityTrustResourceUrl(this.common.videoUrl);
     if(this.videoUrl){
       this.videoMenu=true
     }

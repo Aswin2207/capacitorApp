@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
 import { CommonService } from '../common.service';
-import { HttpClient } from '@angular/common/http';
-import { timeStamp } from 'console';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-test',
@@ -22,7 +21,8 @@ export class TestComponent implements OnInit {
   url;
   appUrl;
   getallList:any=[];
-  changePPt;
+  changePPt="Select to Edit";
+  file:any;
 
   ngOnInit() {
 	sessionStorage.clear();
@@ -83,12 +83,13 @@ export class TestComponent implements OnInit {
   }
   onSelectFile(event) {
 	const file = event.target.files && event.target.files[0];
+	this.file=file;
 	if (file) {
 	  var reader = new FileReader();
 	  reader.readAsDataURL(file);
 	  reader.onload = (event) => {
 		this.url = (<FileReader>event.target).result;
-		sessionStorage.setItem('video',this.url)
+		// sessionStorage.setItem('video',this.url)
 	  }
 	}
   }
@@ -99,7 +100,21 @@ export class TestComponent implements OnInit {
 		menuList:this.menuList,
 		htmlData:this.common.pptData
 	}
-    this.http.post<any>('https://digitieke.com/html-proto',menuData).subscribe(data => {
+    this.http.post<any>('https://digitieke.com/html-proto/api/postPptData',menuData).subscribe(data => {
+		this.appUrl="https://digitieke.com/angtieke?Subject="+localStorage.getItem('name');
+		if(this.file)
+		this.saveVideo();
+
+    })
+
+
+  }
+  saveVideo(){
+	const data: FormData = new FormData();
+    data.append('uploaded_file', this.file);
+
+		const folderName=localStorage.getItem('name');
+    this.http.post<any>('https://digitieke.com/html-proto/api/uploadVideo?value='+folderName,data).subscribe(data => {
 		this.appUrl="https://digitieke.com/angtieke?Subject="+localStorage.getItem('name');
 
     })
@@ -111,14 +126,14 @@ export class TestComponent implements OnInit {
   }
   edit(){
 	this.Showedit=true;
-	this.http.get<any>('https://digitieke.com/html-proto?getFolder=true').subscribe(data => {
-		this.getallList=data;
+	this.http.get<any>('https://digitieke.com/html-proto/api/getFolderList').subscribe(data => {
+		this.getallList=data.folderList;
 
     })
   }
   editSave(data){
-	let menuData;
-	this.http.put<any>('https://digitieke.com/html-proto?modifyFolder='+data,menuData).subscribe(data => {
+	let menuData={folderName:data};
+	this.http.put<any>('https://digitieke.com/html-proto/api/modifyPptData',menuData).subscribe(data => {
 		this.Showedit=false;
 
     })

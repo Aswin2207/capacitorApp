@@ -39,6 +39,7 @@
               <div >
                 <label>Select PPT</label> &nbsp;
                 <select [(ngModel)]="changePPt" >
+                  <option>Select to Edit</option>
                     <option *ngFor="let item of getallList; let i=index" value="{{item.folderName}}">{{item.folderName}}</option>
                 </select>
               </div>

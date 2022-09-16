@@ -24,10 +24,10 @@ import { AppinitService } from './appinit.service';
 
 
 export function initializeApp(appInitService: AppinitService,router:Router) {
-  // return (): Promise<any> => { 
-  //   return appInitService.init().then(res=>{
-  //   });
-  // }
+  return (): Promise<any> => { 
+    return appInitService.init().then(res=>{
+    });
+  }
 }
 @NgModule({
   declarations: [AppComponent,
@@ -41,12 +41,12 @@ export function initializeApp(appInitService: AppinitService,router:Router) {
   entryComponents: [],
   imports: [BrowserModule,CommonModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule,FormsModule,ReactiveFormsModule,HttpClientModule],
   providers: [
-    // AppinitService,{
-  //   provide: APP_INITIALIZER,
-  //   useFactory: initializeApp,
-  //   multi: true,
-  //   deps: [AppinitService]
-  // },
+    AppinitService,{
+    provide: APP_INITIALIZER,
+    useFactory: initializeApp,
+    multi: true,
+    deps: [AppinitService]
+  },
   { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })
